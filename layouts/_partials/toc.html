@@ -1,0 +1,222 @@
+{{/* Table of Contents – custom: crypto list + trending tags (safe Hugo real tags) + bottom actions */}}
+{{- $toc := .Params.toc | default true -}}
+{{- $tags := (T "tags") | default "Tags"}}
+{{- $editThisPage := (T "editThisPage") | default "Edit this page"}}
+{{- $backToTop := (T "backToTop") | default "Scroll to top" -}}
+
+<nav class="hextra-toc hx:order-last hx:hidden hx:w-64 hx:shrink-0 hx:xl:block hx:print:hidden hx:px-4" aria-label="{{ (T "tableOfContents") | default "Table of contents" }}">
+  {{- if $toc }}
+    <div class="hextra-scrollbar hx:sticky hx:top-[var(--hextra-navbar-height)] hx:overflow-y-auto hx:pr-4 hx:pt-6 hx:text-sm [hyphens:auto] hx:max-h-[calc(100vh-var(--hextra-navbar-height)-env(safe-area-inset-bottom))] hx:ltr:-mr-4 hx:rtl:-ml-4">
+
+      <!-- ===== TOP CRYPTOS (ваш текущий список) ===== -->
+      <div id="crypto-top10" style="margin-bottom: 24px;">
+        <div id="crypto-list" style="display: flex; flex-direction: column; gap: 12px;">
+          <!-- динамически заполняется -->
+        </div>
+      </div>
+
+      <!-- ===== TRENDING TAGS (из таксономии Hugo, с fallback) ===== -->
+      <div style="margin-bottom: 24px; border-top: 1px solid #e2e2e2; padding-top: 20px;">
+        <div style="font-weight: 600; font-size: 14px; margin-bottom: 12px; color: inherit;">
+          Trending tags this week
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px;">
+          {{- /* Безопасно получаем все теги */ -}}
+          {{- $allTags := slice -}}
+          {{- with site.Taxonomies.tags -}}
+            {{- $allTags = .ByCount -}}
+          {{- end -}}
+
+          {{- if $allTags -}}
+            {{- range first 10 $allTags -}}
+              <a href="/tags/{{ .Term | urlize }}/" style="color: inherit; text-decoration: none;">#{{ .Term }} <span style="color: #9ca3af; font-size: 12px;">{{ .Count }}</span></a>
+            {{- end -}}
+          {{- else -}}
+            {{/* Fallback – статический список без ссылок */}}
+            <span style="color: inherit;">#bitcoin <span style="color: #9ca3af; font-size: 12px;">13</span></span>
+            <span style="color: inherit;">#ethereum <span style="color: #9ca3af; font-size: 12px;">11</span></span>
+            <span style="color: inherit;">#defi <span style="color: #9ca3af; font-size: 12px;">9</span></span>
+            <span style="color: inherit;">#nft <span style="color: #9ca3af; font-size: 12px;">15</span></span>
+            <span style="color: inherit;">#memecoin <span style="color: #9ca3af; font-size: 12px;">8</span></span>
+            <span style="color: inherit;">#solana <span style="color: #9ca3af; font-size: 12px;">12</span></span>
+            <span style="color: inherit;">#altcoins <span style="color: #9ca3af; font-size: 12px;">7</span></span>
+            <span style="color: inherit;">#blockchain <span style="color: #9ca3af; font-size: 12px;">10</span></span>
+            <span style="color: inherit;">#web3 <span style="color: #9ca3af; font-size: 12px;">14</span></span>
+            <span style="color: inherit;">#trading <span style="color: #9ca3af; font-size: 12px;">9</span></span>
+          {{- end -}}
+        </div>
+      </div>
+
+      {{/* Нижняя часть с кнопками (Scroll to top и Edit) */}}
+      <div class="hx:mt-8 hx:border-t hx:bg-white hx:pt-8 hx:shadow-[0_-12px_16px_white] hx:dark:bg-dark hx:dark:shadow-[0_-12px_16px_#111] hx:sticky hx:bottom-0 hx:flex hx:flex-col hx:items-start hx:gap-2 hx:pb-8 hx:border-gray-200 hx:dark:border-neutral-800 hx:contrast-more:border-t hx:contrast-more:border-neutral-400 hx:contrast-more:shadow-none hx:contrast-more:dark:border-neutral-400">
+        {{- if and site.Params.toc.displayTags .Params.tags -}}
+          <div class="hx:flex hx:items-start hx:gap-x-2 hx:font-medium hx:text-xs">
+            <div class="hx:text-gray-500 hx:dark:text-gray-400 hx:contrast-more:text-gray-800 hx:contrast-more:dark:text-gray-50">{{ $tags }}</div>
+            <div class="hx:flex hx:flex-wrap hx:gap-y-1">
+              {{ partial "tags.html" (dict "context" .) }}
+            </div>
+          </div>
+        {{- end -}}
+        {{- if site.Params.editURL.enable -}}
+          {{- $editURL := site.Params.editURL.base | default "" -}}
+          {{- with .Params.editURL -}}
+            {{- $editURL = . -}}
+          {{- else -}}
+            {{- with .File -}}
+              {{- $sourceDir := replace (strings.TrimPrefix .FileInfo.Meta.BaseDir .FileInfo.Meta.SourceRoot) "\\" "/" -}}
+              {{- $sourceDir = strings.TrimPrefix "/content" $sourceDir -}}
+              {{- $path := replace .Path "\\" "/" -}}
+              {{- $editURL = urls.JoinPath $editURL $sourceDir $path -}}
+            {{- end -}}
+          {{- end -}}
+          <a class="hx:inline-block hx:rounded-sm hx:text-xs hx:font-medium hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-100 hx:contrast-more:text-gray-800 hx:contrast-more:dark:text-gray-50 hx:hextra-focus-visible-inset" href="{{ $editURL }}" target="_blank" rel="noreferrer">{{ $editThisPage }}</a>
+        {{- end -}}
+        {{/* Scroll To Top */}}
+        <button id="backToTop" tabindex="-1" class="hx:cursor-pointer hx:transition-all hx:duration-75 hx:opacity-0 hx:text-xs hx:font-medium hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-100 hx:contrast-more:text-gray-800 hx:contrast-more:dark:text-gray-50">
+          <span>
+            {{- $backToTop -}}
+          </span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" focusable="false" class="hx:inline hx:ltr:ml-1 hx:rtl:mr-1 hx:h-3.5 hx:w-3.5 hx:rounded-full hx:border hx:border-gray-500 hx:hover:border-gray-900 hx:dark:border-gray-400 hx:dark:hover:border-gray-100 hx:contrast-more:border-gray-800 hx:contrast-more:dark:border-gray-50">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  {{ end -}}
+</nav>
+
+<script>
+(async function() {
+  const cryptoList = document.getElementById('crypto-list');
+  if (!cryptoList) return;
+
+  const cgIds = 'bitcoin,ethereum,solana,tether-gold,binancecoin,mx-token,aptos,hedera-hashgraph,tron';
+  const cgUrl = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${cgIds}&sparkline=true&price_change_percentage=24h`;
+
+  try {
+    const cgRes = await fetch(cgUrl);
+    let coins = [];
+    if (cgRes.ok) {
+      const cgData = await cgRes.json();
+      coins = cgData.map(coin => ({
+        symbol: coin.symbol.toUpperCase(),
+        name: coin.name,
+        price: coin.current_price,
+        change24h: coin.price_change_percentage_24h,
+        sparkline: coin.sparkline_in_7d?.price || [],
+        url: `https://coinmarketcap.com/currencies/${coin.id}/`
+      }));
+    }
+
+    const hrbsSparkline = generateWavySparkline(0.00000543, 0.00000530, 0.00000560, 20);
+    coins.push({
+      symbol: 'HRBS',
+      name: 'HRBS',
+      price: 0.00000543,
+      change24h: 0.67,
+      sparkline: hrbsSparkline,
+      url: 'https://pump.fun/coin/5tNS57xgBvyZsy6PfvkGPJ5SDDBUVnHGECZyqMYmpump'
+    });
+
+    renderCryptoList(cryptoList, coins);
+  } catch (e) {
+    console.error('CoinGecko load error:', e);
+    const fallbackSparkline = generateWavySparkline(0.00000543, 0.00000530, 0.00000560, 20);
+    renderCryptoList(cryptoList, [{
+      symbol: 'HRBS', name: 'HRBS', price: 0.00000543, change24h: 0.67,
+      sparkline: fallbackSparkline,
+      url: 'https://pump.fun/coin/5tNS57xgBvyZsy6PfvkGPJ5SDDBUVnHGECZyqMYmpump'
+    }]);
+  }
+})();
+
+function renderCryptoList(container, coins) {
+  container.innerHTML = '';
+  coins.forEach(coin => {
+    const item = document.createElement('div');
+    item.style.display = 'flex';
+    item.style.alignItems = 'center';
+    item.style.justifyContent = 'space-between';
+    item.style.gap = '8px';
+    item.style.fontSize = '13px';
+
+    const nameLink = document.createElement('a');
+    nameLink.href = coin.url;
+    nameLink.target = '_blank';
+    nameLink.rel = 'nofollow noopener';
+    nameLink.style.textDecoration = 'none';
+    nameLink.style.color = 'inherit';
+    nameLink.style.fontWeight = '500';
+    nameLink.style.overflow = 'hidden';
+    nameLink.style.textOverflow = 'ellipsis';
+    nameLink.style.whiteSpace = 'nowrap';
+    nameLink.style.flexShrink = '1';
+    nameLink.textContent = coin.symbol;
+    item.appendChild(nameLink);
+
+    const canvas = document.createElement('canvas');
+    canvas.width = 60;
+    canvas.height = 20;
+    canvas.style.flexShrink = '0';
+    const ctx = canvas.getContext('2d');
+    if (coin.sparkline && coin.sparkline.length > 0) {
+      drawSparkline(ctx, coin.sparkline, canvas.width, canvas.height);
+    } else {
+      drawFlatLine(ctx, canvas.width, canvas.height);
+    }
+    item.appendChild(canvas);
+
+    const priceDiv = document.createElement('div');
+    priceDiv.style.display = 'flex';
+    priceDiv.style.flexDirection = 'column';
+    priceDiv.style.alignItems = 'flex-end';
+    priceDiv.style.flexShrink = '0';
+    const priceFormatted = coin.price ? `$${coin.price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: coin.price < 1 ? 6 : 2 })}` : '—';
+    const changeClass = coin.change24h != null && coin.change24h >= 0 ? '#16a34a' : '#dc2626';
+    const changeSign = coin.change24h != null && coin.change24h >= 0 ? '+' : '';
+    const changeFormatted = coin.change24h != null ? `${changeSign}${coin.change24h.toFixed(2)}%` : '—';
+    priceDiv.innerHTML = `
+      <span style="font-weight: 600; font-size: 13px;">${priceFormatted}</span>
+      <span style="font-size: 11px; color: ${changeClass};">${changeFormatted}</span>
+    `;
+    item.appendChild(priceDiv);
+
+    container.appendChild(item);
+  });
+}
+
+function generateWavySparkline(basePrice, minPrice, maxPrice, points) {
+  const prices = [];
+  for (let i = 0; i < points; i++) {
+    prices.push(minPrice + Math.random() * (maxPrice - minPrice));
+  }
+  return prices;
+}
+
+function drawSparkline(ctx, prices, width, height) {
+  if (!prices.length) return drawFlatLine(ctx, width, height);
+  const min = Math.min(...prices);
+  const max = Math.max(...prices);
+  if (min === max) return drawFlatLine(ctx, width, height);
+  const xStep = width / (prices.length - 1);
+  ctx.beginPath();
+  ctx.strokeStyle = '#3b82f6';
+  ctx.lineWidth = 1.2;
+  prices.forEach((price, idx) => {
+    const x = idx * xStep;
+    const y = height - ((price - min) / (max - min)) * height;
+    if (idx === 0) ctx.moveTo(x, y);
+    else ctx.lineTo(x, y);
+  });
+  ctx.stroke();
+}
+
+function drawFlatLine(ctx, width, height) {
+  ctx.beginPath();
+  ctx.moveTo(0, height / 2);
+  ctx.lineTo(width, height / 2);
+  ctx.strokeStyle = '#9ca3af';
+  ctx.lineWidth = 1;
+  ctx.stroke();
+}
+</script>
