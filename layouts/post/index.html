@@ -1,5 +1,5 @@
 {{ define "main" }}
-  {{ $paginator := .Paginate (where .Site.RegularPages "Section" "posts") }}
+  {{ $paginator := .Paginator }}
   
   <div class="hx:mx-auto hx:flex hextra-max-page-width">
     {{ partial "sidebar.html" (dict "context" . "disableSidebar" true "displayPlaceholder" true) }}
@@ -13,7 +13,7 @@
           </h1>
         {{ end }}
 
-        <!-- Post grid (first page) -->
+        <!-- Post grid -->
         <div id="posts-grid" class="hx:grid hx:grid-cols-1 md:hx:grid-cols-2 lg:hx:grid-cols-3 hx:gap-x-6 hx:gap-y-8 hx:mb-8">
           {{ range $paginator.Pages }}
             <a href="{{ .Permalink }}" class="hx:block hx:rounded-lg hx:bg-white hx:dark:bg-neutral-900 hx:transition-shadow hover:hx:shadow-lg hx:p-4 hx:text-inherit hx:no-underline">
@@ -46,7 +46,7 @@
     </article>
   </div>
 
-  <!-- Infinite scroll script (new posts appear at the top) -->
+  <!-- Infinite scroll script (same as on home page) -->
   <script>
     (function() {
       const grid = document.getElementById('posts-grid');
@@ -84,7 +84,7 @@
               return;
             }
 
-            // Вставляем карточки в начало сетки (новые посты сверху)
+            // Добавляем карточки в начало сетки (новые посты сверху)
             newCards.forEach(card => {
               grid.insertBefore(card, grid.firstChild);
             });
