@@ -1,91 +1,594 @@
 {{ define "main" }}
-  <div class="hx:mx-auto hx:flex hextra-max-page-width">
-    {{ partial "sidebar.html" (dict "context" . "disableSidebar" true "displayPlaceholder" true) }}
-    {{ partial "toc.html" . }}
-    <article class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--hextra-navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8 hx:pr-[calc(env(safe-area-inset-right)-1.5rem)]">
-      <main id="content" class="hx:w-full hx:min-w-0 hextra-max-content-width hx:px-6 hx:pt-4 hx:md:px-12">
-        {{ partial "custom/page-begin.html" . }}
-        {{ partial "breadcrumb.html" (dict "page" . "enable" false) }}
-        <br class="hx:mt-1.5 hx:text-sm" />
-        
-        <!-- Заголовок -->
-        {{ if .Title }}
-          <h1 class="hx:mt-2 hx:text-4xl hx:font-bold hx:tracking-tight hx:text-slate-900 hx:dark:text-slate-100" style="font-family: ui-sans-serif, system-ui, sans-serif;">
-            {{ .Title }}
-          </h1>
-        {{ end }}
-        
-        <!-- БЛОК АВТОРА В СТИЛЕ MEDIUM -->
-        <div class="hx:mt-6 hx:mb-6 hx:flex hx:items-center hx:text-sm hx:text-slate-500 hx:dark:text-slate-400">
-          <!-- Аватар строго 32x32 -->
-          <img src="https://unavatar.io/twitter/herobysatan" alt="Avatar" class="hx:rounded-full hx:mr-3 hx:object-cover" style="width: 32px; height: 32px; min-width: 32px; min-height: 32px;" />
-          
-          <div class="hx:flex hx:items-center hx:flex-wrap">
-            <!-- Имя -->
-            <span class="hx:font-medium hx:text-slate-900 hx:dark:text-slate-100 hx:mr-3">@herobysatan</span>
-            
-            <!-- Кнопка Follow -->
-            <a href="https://twitter.com/intent/user?screen_name=herobysatan" 
-               onclick="window.open(this.href, 'twitter-follow', 'width=500,height=600'); return false;" 
-               class="hx:mr-3 hx:px-3 hx:py-0.5 hx:rounded-full hx:transition-colors hover:hx:bg-slate-100 hx:dark:hover:bg-neutral-800"
-               style="border: 1px solid #1a8917; color: #1a8917; text-decoration: none;">
-              Follow
-            </a>
-            
-            <!-- Метаданные -->
-            <span class="hx:text-slate-500">{{ .ReadingTime }} min read</span>
-            <span class="hx:mx-1.5 hx:text-slate-500">·</span>
-            <span class="hx:text-slate-500">{{ .Date.Format "Jan 2, 2006" }}</span>
-          </div>
-        </div>
-        <!-- КОНЕЦ БЛОКА АВТОРА -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    {{ partial "head" . }}
+    {{ with .NextInSection }}
+      <link rel="prefetch" href="{{ .Permalink }}">
+    {{ end }}
 
-        <!-- ПАНЕЛЬ ВЗАИМОДЕЙСТВИЙ (MEDIUM STYLE) -->
-        <div class="hx:py-3 hx:border-t hx:border-b hx:border-slate-200 hx:dark:border-neutral-800 hx:mb-8 hx:flex hx:items-center hx:justify-between hx:text-slate-500 hx:dark:text-slate-400">
-          
-          <!-- Левая часть: Иконки реакций -->
-          <div class="hx:flex hx:gap-6 hx:items-center hx:text-sm">
-            <div class="hx:flex hx:items-center hx:gap-2 hx:cursor-pointer hover:hx:text-slate-900 hx:dark:hover:text-slate-100 hx:transition-colors">
-              <!-- Иконка хлопка/лайка -->
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+    {{- $ogImage := "" -}}
+    {{- if .Params.image -}}
+      {{- $ogImage = .Params.image | absURL -}}
+    {{- else -}}
+      {{- $bg := resources.Get "images/og-bg.png" -}}
+      {{- $font := resources.Get "fonts/Inter-Bold.ttf" -}}
+      {{- if and $bg $font -}}
+        {{- $text := .Title | safeHTML | truncate 60 -}}
+        {{- $img := $bg.Filter (images.Text $text (dict
+          "font" $font
+          "size" 72
+          "color" "#ffffff"
+          "x" 50
+          "y" 50
+          "linespacing" 16
+        )) -}}
+        {{- $ogImage = $img.Permalink -}}
+      {{- else -}}
+        {{- $ogImage = "/images/default-og.jpg" | absURL -}}
+      {{- end -}}
+    {{- end -}}
+
+    <meta property="og:image" content="{{ $ogImage }}">
+    <meta name="twitter:image" content="{{ $ogImage }}">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ .Permalink }}"
+      },
+      "headline": "{{ .Title }}",
+      "description": "{{ .Summary | plainify | truncate 160 }}",
+      "image": "{{ $ogImage }}",
+      "author": {
+        "@type": "Person",
+        "name": "Hero by Satan",
+        "url": "https://twitter.com/herobysatan"
+      },
+      "datePublished": "{{ .Date.Format "2006-01-02" }}",
+      "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Hero by Satan Blog",
+        "url": "{{ .Site.BaseURL }}"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div class="hx:mx-auto hx:flex hextra-max-page-width">
+      {{ partial "sidebar.html" (dict "context" . "disableSidebar" true "displayPlaceholder" true) }}
+      {{ partial "toc.html" . }}
+      <article class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--hextra-navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8 hx:pr-[calc(env(safe-area-inset-right)-1.5rem)]">
+        <main id="content" class="hx:w-full hx:min-w-0 hextra-max-content-width hx:px-6 hx:pt-4 hx:md:px-12">
+          {{ partial "custom/page-begin.html" . }}
+          {{ partial "breadcrumb.html" (dict "page" . "enable" false) }}
+          <br class="hx:mt-1.5 hx:text-sm" />
+
+          <style>
+            /* Reading progress bar */
+            #reading-progress {
+              position: fixed; top: 0; left: 0; height: 3px;
+              background: linear-gradient(to right, #f26522, #f59e0b);
+              z-index: 9999; width: 0; transition: width 0.1s ease;
+            }
+
+            /* Dark theme overrides */
+            html.dark .post-container hr {
+              border-color: #333 !important;
+            }
+            html.dark .post-container .hx\:bg-neutral-100 {
+              background-color: #2a2a2a !important;
+            }
+            /* Threads Follow button becomes light grey in dark mode */
+            html.dark a[title="Follow on Threads"] {
+              border-color: #9ca3af !important;
+              color: #9ca3af !important;
+            }
+
+            /* Anti-copy CSS */
+            .post-container .content,
+            .post-container .content * {
+              user-select: none !important;
+              -webkit-user-select: none !important;
+              -moz-user-select: none !important;
+              -ms-user-select: none !important;
+            }
+            .post-container .content {
+              -webkit-touch-callout: none;
+            }
+            /* Dot Navigation Styles */
+            .dot-nav-container {
+              position: absolute; left: -40px; top: 0; bottom: 0; z-index: 10; display: none;
+            }
+            @media (max-width: 1024px) { .dot-nav-container { display: none !important; } }
+            .dot-nav-sticky {
+              position: sticky; top: 300px; display: flex; flex-direction: column; gap: 16px;
+            }
+            .dot-item {
+              position: relative; display: flex; align-items: center; cursor: pointer; text-decoration: none; padding: 4px 0;
+            }
+            .dot-circle {
+              width: 8px; height: 8px; border-radius: 50%; background-color: #cbd5e1; transition: all 0.2s ease;
+            }
+            .dot-item:hover .dot-circle, .dot-item.active .dot-circle {
+              background-color: rgb(29, 155, 240); transform: scale(1.4);
+            }
+            .dot-tooltip {
+              position: absolute; right: 24px; background: #242424; color: #fff; padding: 6px 12px; border-radius: 6px; font-size: 13px;
+              font-family: ui-sans-serif, system-ui, sans-serif; white-space: nowrap; opacity: 0; visibility: hidden;
+              transition: opacity 0.2s ease, transform 0.2s ease; transform: translateX(5px); pointer-events: none;
+              box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            }
+            .dot-item:hover .dot-tooltip {
+              opacity: 1; visibility: visible; transform: translateX(0);
+            }
+            .dot-tooltip::before {
+              content: ''; position: absolute; top: 50%; left: 100%; margin-top: -5px;
+              border-width: 5px; border-style: solid; border-color: transparent transparent transparent #242424;
+            }
+          </style>
+
+          <!-- Wrapper for infinite scroll -->
+          <div id="posts-wrapper"></div>
+
+          <!-- Initial post (will be moved into #posts-wrapper by script) -->
+          <div class="post-container hx:relative" data-post-url="{{ .Permalink }}" data-next-url="{{ with .NextInSection }}{{ .Permalink }}{{ end }}" id="initial-post">
+            {{ if .Title }}
+              <h1 class="hx:mt-2 hx:mb-6 hx:font-bold hx:tracking-tight hx:text-slate-900 hx:dark:text-slate-100" style="font-family: ui-sans-serif, system-ui, sans-serif; font-size: 42px; line-height: 1.2;">
+                {{ .Title }}
+              </h1>
+            {{ end }}
+
+            <div class="hx:mb-6 hx:flex hx:items-center hx:text-sm hx:text-slate-500 hx:dark:text-slate-400">
+              <a href="https://twitter.com/herobysatan" target="_blank" rel="noopener noreferrer" style="display: block; text-decoration: none;">
+                <img src="https://unavatar.io/twitter/herobysatan" alt="Author Avatar" class="hx:rounded-full hx:mr-3 hx:object-cover" style="width: 32px; height: 32px; min-width: 32px; min-height: 32px;" />
+              </a>
+              <div class="hx:flex hx:items-center hx:flex-wrap" style="flex: 1;">
+                <a href="https://twitter.com/herobysatan" target="_blank" rel="noopener noreferrer" class="hx:font-medium hx:text-slate-900 hx:dark:text-slate-100 hx:mr-3" style="text-decoration: none;">
+                  Hero by Satan
+                </a>
+
+                <!-- Follow on X -->
+                <a href="https://twitter.com/intent/user?screen_name=herobysatan" 
+                   onclick="window.open(this.href, 'twitter-follow', 'width=500,height=600'); return false;" 
+                   class="hx:mr-3 hx:rounded-full hx:transition-colors hover:hx:bg-blue-50 hx:dark:hover:bg-blue-900/20 hx:flex hx:items-center hx:justify-center"
+                   style="border: 1px solid rgb(29, 155, 240); color: rgb(29, 155, 240); background-color: transparent; text-decoration: none; height: 32px; padding: 0 16px; border-radius: 9999px;">
+                  Follow
+                </a>
+
+                <!-- Follow on Threads -->
+                <a href="https://www.threads.com/@herobysatan" target="_blank" rel="noopener noreferrer"
+                   class="hx:mr-3 hx:rounded-full hx:transition-colors hx:flex hx:items-center hx:justify-center"
+                   style="border: 1px solid #000000; color: #000000; background-color: transparent; text-decoration: none; height: 32px; padding: 0 16px; border-radius: 9999px; font-size: 14px;"
+                   title="Follow on Threads">
+                  Follow
+                </a>
+
+                <span class="hx:text-slate-500">{{ .ReadingTime }} min read</span>
+                <span class="hx:text-slate-500" style="margin: 0 6px;">&middot;</span>
+                <span class="hx:text-slate-500">{{ .Date.Format "Jan 2, 2006" }}</span>
+                <span class="hx:text-slate-500" style="margin: 0 6px;">&middot;</span>
+                <span class="hx:text-slate-500 post-views">0 views</span>
+
+                <a href="/index.xml" 
+                   class="hx:rounded-full hx:transition-colors hx:flex hx:items-center hx:justify-center"
+                   style="border: 1px solid #f26522; color: #f26522; background-color: transparent; text-decoration: none; height: 32px; padding: 0 16px; border-radius: 9999px; font-size: 14px; margin-left: auto;"
+                   title="RSS Feed">
+                  RSS
+                </a>
+              </div>
             </div>
-            <div class="hx:flex hx:items-center hx:gap-2 hx:cursor-pointer hover:hx:text-slate-900 hx:dark:hover:text-slate-100 hx:transition-colors">
-              <!-- Иконка комментария -->
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+
+            <!-- Share + TTS + Copy link -->
+            <div class="hx:mb-8 hx:transition-colors" style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #f2f2f2; border-bottom: 1px solid #f2f2f2; color: #6b6b6b; padding: 12px 0;">
+              <button class="tts-button" role="switch" aria-pressed="false" aria-label="Listen to article"
+                      style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: transparent; border: none; border-radius: 50%; cursor: pointer; padding: 0; color: #6b6b6b; transition: background 0.2s;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" d="M3 12a9 9 0 1 1 18 0 9 9 0 0 1-18 0m9-10C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2m3.376 10.416-4.599 3.066a.5.5 0 0 1-.777-.416V8.934a.5.5 0 0 1 .777-.416l4.599 3.066a.5.5 0 0 1 0 .832" clip-rule="evenodd"/>
+                </svg>
+              </button>
+              <div style="display: flex; align-items: center; gap: 24px;">
+                <!-- Share on X (with hashtags) -->
+                <a href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink }}&hashtags={{ delimit .Params.tags "," }}"
+                   onclick="window.open(this.href, 'share-x', 'width=550,height=500'); return false;" 
+                   class="hover:hx:text-slate-900 hx:dark:hover:text-slate-100" 
+                   style="cursor: pointer; display: flex; color: inherit; text-decoration: none;" 
+                   title="Share on X">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.346 10.932 18.88 4.5h-1.311l-4.805 5.585L8.926 4.5H4.5l5.803 8.446L4.5 19.69h1.311l5.074-5.898 4.053 5.898h4.426zM11.55 13.02l-.588-.84-4.678-6.693h2.014l3.776 5.4.588.842 4.907 7.02h-2.014z"></path></svg>
+                </a>
+                <!-- Share on Threads (with tags in text) -->
+                <a href="https://threads.net/intent/post?text={{ .Title }}%20{{ delimit .Params.tags " " | replaceRE " " "%20" }}%20{{ .Permalink }}"
+                   onclick="window.open(this.href, 'share-threads', 'width=550,height=600'); return false;" 
+                   class="hover:hx:text-slate-900 hx:dark:hover:text-slate-100" 
+                   style="cursor: pointer; display: flex; color: inherit; text-decoration: none;" 
+                   title="Share on Threads">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948s.928 1.509 1.005 2.644q.492.207.905.484c1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.2 6.2 0 0 0-1.528-.161"></path></svg>
+                </a>
+                <!-- Share on Telegram -->
+                <a href="https://t.me/share/url?url={{ .Permalink }}&text={{ .Title }}" onclick="window.open(this.href, 'share-telegram', 'width=550,height=600'); return false;" class="hover:hx:text-slate-900 hx:dark:hover:text-slate-100" style="cursor: pointer; display: flex; color: inherit; text-decoration: none;" title="Share on Telegram">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                </a>
+                <!-- Copy link button (dynamic) -->
+                <button class="copy-link-btn" aria-label="Copy link to clipboard"
+                        style="cursor: pointer; display: flex; color: inherit; background: none; border: none; padding: 0;" title="Copy link">
+                  <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="m12.505 9.678.59-.59a5 5 0 0 1 1.027 7.862l-2.829 2.83a5 5 0 0 1-7.07-7.072l2.382-2.383q.002.646.117 1.298l-1.793 1.792a4 4 0 0 0 5.657 5.657l2.828-2.828a4 4 0 0 0-1.046-6.411q.063-.081.137-.155m-1.01 4.646-.589.59a5 5 0 0 1-1.027-7.862l2.828-2.83a5 5 0 0 1 7.071 7.072l-2.382 2.383a7.7 7.7 0 0 0-.117-1.297l1.792-1.793a4 4 0 1 0-5.657-5.657l-2.828 2.828a4 4 0 0 0 1.047 6.411 2 2 0 0 1-.138.155" clip-rule="evenodd"></path></svg>
+                  <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" style="display: none;"><path stroke="currentColor" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                </button>
+              </div>
             </div>
+
+            <div class="hx:relative">
+              <div class="dot-nav-container"></div>
+              <div class="content hx:prose dark:hx:prose-invert hx:max-w-none">
+                {{ partial "custom/content-begin.html" . }}
+                {{ .Content }}
+                {{ partial "custom/content-end.html" . }}
+              </div>
+            </div>
+
+            {{ if .Params.tags }}
+            <div style="margin-top: 40px; margin-bottom: 32px; display: flex; flex-wrap: wrap; gap: 8px;">
+              {{ range .Params.tags }}
+              <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" style="text-decoration: none; color: inherit;">
+                <div style="background-color: #f2f2f2; padding: 8px 16px; border-radius: 100px; white-space: nowrap; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: inset 0 0 0 1px #e5e5e5; font-size: 14px; font-weight: 400; color: #242424; transition: background-color 0.2s ease;" onmouseover="this.style.backgroundColor='#e5e5e5'" onmouseout="this.style.backgroundColor='#f2f2f2'">
+                  {{ . }}
+                </div>
+              </a>
+              {{ end }}
+            </div>
+            {{ end }}
+
+            <!-- Bottom share row -->
+            <div class="hx:mb-12 hx:transition-colors" style="display: flex; align-items: center; justify-content: flex-end; border-top: 1px solid #f2f2f2; border-bottom: 1px solid #f2f2f2; color: #6b6b6b; padding: 12px 0;">
+              <div style="display: flex; align-items: center; gap: 24px;">
+                <a href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink }}&hashtags={{ delimit .Params.tags "," }}" onclick="window.open(this.href, 'share-x', 'width=550,height=500'); return false;" class="hover:hx:text-slate-900 hx:dark:hover:text-slate-100" style="cursor: pointer; display: flex; color: inherit; text-decoration: none;" title="Share on X">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.346 10.932 18.88 4.5h-1.311l-4.805 5.585L8.926 4.5H4.5l5.803 8.446L4.5 19.69h1.311l5.074-5.898 4.053 5.898h4.426zM11.55 13.02l-.588-.84-4.678-6.693h2.014l3.776 5.4.588.842 4.907 7.02h-2.014z"></path></svg>
+                </a>
+                <a href="https://threads.net/intent/post?text={{ .Title }}%20{{ delimit .Params.tags " " | replaceRE " " "%20" }}%20{{ .Permalink }}" onclick="window.open(this.href, 'share-threads', 'width=550,height=600'); return false;" class="hover:hx:text-slate-900 hx:dark:hover:text-slate-100" style="cursor: pointer; display: flex; color: inherit; text-decoration: none;" title="Share on Threads">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948s.928 1.509 1.005 2.644q.492.207.905.484c1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.2 6.2 0 0 0-1.528-.161"></path></svg>
+                </a>
+                <a href="https://t.me/share/url?url={{ .Permalink }}&text={{ .Title }}" onclick="window.open(this.href, 'share-telegram', 'width=550,height=600'); return false;" class="hover:hx:text-slate-900 hx:dark:hover:text-slate-100" style="cursor: pointer; display: flex; color: inherit; text-decoration: none;" title="Share on Telegram">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-direction: row; gap: 16px; align-items: flex-start; margin-bottom: 48px; width: 100%;">
+              <a href="https://twitter.com/herobysatan" target="_blank" rel="noopener noreferrer" style="display: block; text-decoration: none;">
+                <img src="https://unavatar.io/twitter/herobysatan" alt="Author Avatar" class="hx:rounded-full hx:object-cover" style="width: 48px; height: 48px; min-width: 48px; min-height: 48px; border-radius: 50%;" />
+              </a>
+              <div style="flex: 1; display: flex; flex-direction: column; min-width: 0;">
+                <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; width: 100%; gap: 16px;">
+                  <a href="https://twitter.com/herobysatan" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <h2 style="font-family: ui-sans-serif, system-ui, sans-serif; font-size: 20px; font-weight: 700; margin: 0; letter-spacing: -0.01em;">
+                      Written by Hero by Satan
+                    </h2>
+                  </a>
+                  <a href="https://twitter.com/intent/user?screen_name=herobysatan" 
+                     onclick="window.open(this.href, 'twitter-follow', 'width=500,height=600'); return false;" 
+                     class="hx:rounded-full hx:transition-colors hover:hx:bg-blue-50 hx:dark:hover:bg-blue-900/20"
+                     style="border: 1px solid rgb(29, 155, 240); color: rgb(29, 155, 240); background-color: transparent; text-decoration: none; height: 38px; padding: 0 16px; font-weight: 500; border-radius: 9999px; display: inline-flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0;">
+                    Follow
+                  </a>
+                </div>
+                <p style="font-family: ui-sans-serif, system-ui, sans-serif; font-size: 15px; line-height: 1.5; color: #6b6b6b; margin: 6px 0 0 0;">
+                  Let the evil one lead me into temptation and show me the way...
+                </p>
+              </div>
+            </div>
+
+            <div class="hx:relative" style="border-top: 1px solid #f2f2f2; margin-top: 48px; padding-top: 32px;">
+              <h3 style="font-family: ui-sans-serif, system-ui, sans-serif; font-size: 22px; font-weight: 700; color: inherit; margin-bottom: 24px;">
+                Responses
+              </h3>
+              <div class="hx:bg-neutral-100 hx:dark:bg-neutral-800" style="padding: 14px 16px; border-radius: 8px; color: #9ca3af; font-size: 14px; margin-bottom: 32px; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.05); cursor: not-allowed;">
+                What are your thoughts?
+              </div>
+              <div style="max-height: 220px; overflow: hidden; -webkit-mask-image: linear-gradient(to bottom, black 30%, transparent 100%); mask-image: linear-gradient(to bottom, black 30%, transparent 100%); pointer-events: none;">
+                <div style="display: flex; gap: 12px; margin-bottom: 24px;">
+                  <img src="https://i.pravatar.cc/150?img=68" style="width: 40px; height: 40px; border-radius: 50%;" />
+                  <div>
+                    <div style="font-weight: 600; font-size: 14px; color: inherit;">Alex Carter</div>
+                    <div style="font-size: 14px; color: #6b6b6b; margin-top: 4px;">Great insights! I've been looking for something like this setup for a while. Definitely stealing the configuration.</div>
+                  </div>
+                </div>
+                <div style="display: flex; gap: 12px; margin-bottom: 24px;">
+                  <img src="https://i.pravatar.cc/150?img=47" style="width: 40px; height: 40px; border-radius: 50%;" />
+                  <div>
+                    <div style="font-weight: 600; font-size: 14px; color: inherit;">Sarah Jenkins</div>
+                    <div style="font-size: 14px; color: #6b6b6b; margin-top: 4px;">Have you tried using Raycast instead of Spotlight alongside these? It replaced half of my menubar apps!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="hx:relative" style="z-index: 2; text-align: center; margin-top: -80px; padding-bottom: 32px;">
+                <div style="display: flex; justify-content: center; margin-bottom: 16px;">
+                  <img src="https://i.pravatar.cc/150?img=11" class="hx:w-10 hx:h-10 hx:rounded-full hx:border-2 hx:border-white hx:dark:border-neutral-900" style="z-index: 4;" />
+                  <img src="https://i.pravatar.cc/150?img=32" class="hx:w-10 hx:h-10 hx:rounded-full hx:border-2 hx:border-white hx:dark:border-neutral-900" style="margin-left: -12px; z-index: 3;" />
+                  <img src="https://i.pravatar.cc/150?img=12" class="hx:w-10 hx:h-10 hx:rounded-full hx:border-2 hx:border-white hx:dark:border-neutral-900" style="margin-left: -12px; z-index: 2;" />
+                  <img src="https://i.pravatar.cc/150?img=33" class="hx:w-10 hx:h-10 hx:rounded-full hx:border-2 hx:border-white hx:dark:border-neutral-900" style="margin-left: -12px; z-index: 1;" />
+                </div>
+                <p style="font-family: ui-sans-serif, system-ui, sans-serif; font-size: 16px; font-weight: 500; color: inherit; margin-bottom: 24px; max-width: 480px; margin-left: auto; margin-right: auto;">
+                  Want to share your thoughts? Join the conversation on X (Twitter).
+                </p>
+                <a href="https://twitter.com/search?q={{ .Permalink }}" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="hx:rounded-full hx:transition-colors hover:hx:bg-blue-50 hx:dark:hover:bg-blue-900/20"
+                   style="border: 1px solid rgb(29, 155, 240); color: rgb(29, 155, 240); background-color: transparent; text-decoration: none; height: 40px; padding: 0 24px; font-weight: 600; border-radius: 9999px; display: inline-flex; align-items: center; justify-content: center; font-size: 15px;">
+                  Discuss on X
+                </a>
+              </div>
+            </div>
+            <hr style="border: none; border-top: 1px solid #e2e2e2; margin: 2rem 0 3rem 0;" />
           </div>
 
-          <!-- Правая часть: Кнопки "Поделиться" -->
-          <div class="hx:flex hx:gap-5 hx:items-center">
-            
-            <!-- X (Twitter) -->
-            <a href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink }}" target="_blank" rel="noopener noreferrer" class="hover:hx:text-slate-900 hx:dark:hover:text-slate-100 hx:transition-colors" title="Поделиться в X">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-            </a>
-            
-            <!-- Threads -->
-            <a href="https://threads.net/intent/post?text={{ .Title }}%20{{ .Permalink }}" target="_blank" rel="noopener noreferrer" class="hover:hx:text-slate-900 hx:dark:hover:text-slate-100 hx:transition-colors" title="Поделиться в Threads">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a10 10 0 1 0-10-10c0 4.5 3 8 7.5 8h.5"></path><path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path><path d="M15 9v6a3 3 0 0 0 3 3h0a3 3 0 0 0 3-3V9"></path></svg>
-            </a>
+          {{ partial "custom/page-end.html" . }}
+        </main>
+      </article>
+    </div>
 
-            <!-- Telegram -->
-            <a href="https://t.me/share/url?url={{ .Permalink }}&text={{ .Title }}" target="_blank" rel="noopener noreferrer" class="hover:hx:text-slate-900 hx:dark:hover:text-slate-100 hx:transition-colors" title="Поделиться в Telegram">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
-            </a>
+    <!-- Dot navigation script -->
+    <script>
+    function initDotNav(container) {
+      const content = container.querySelector('.content');
+      const dotContainer = container.querySelector('.dot-nav-container');
+      if (!content || !dotContainer) return;
+      const headings = content.querySelectorAll('h2, h3');
+      if (headings.length === 0) return;
+      dotContainer.style.display = 'block';
+      dotContainer.innerHTML = '';
+      const stickyNav = document.createElement('div');
+      stickyNav.className = 'dot-nav-sticky';
+      let dotItems = [];
+      headings.forEach((h) => {
+        if (!h.id) h.id = 'h-' + Math.random().toString(36).substr(2, 9);
+        const dot = document.createElement('a');
+        dot.className = 'dot-item';
+        dot.href = '#' + h.id;
+        const circle = document.createElement('div');
+        circle.className = 'dot-circle';
+        const tooltip = document.createElement('div');
+        tooltip.className = 'dot-tooltip';
+        tooltip.textContent = h.textContent.trim();
+        dot.appendChild(circle);
+        dot.appendChild(tooltip);
+        stickyNav.appendChild(dot);
+        dot.addEventListener('click', (e) => {
+          e.preventDefault();
+          const yOffset = -80;
+          const y = h.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        });
+        dotItems.push({ element: dot, target: h });
+      });
+      dotContainer.appendChild(stickyNav);
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            dotItems.forEach(item => item.element.classList.remove('active'));
+            const activeDot = dotItems.find(item => item.target === entry.target);
+            if (activeDot) activeDot.element.classList.add('active');
+          }
+        });
+      }, { rootMargin: '-100px 0px -70% 0px' });
+      headings.forEach(h => observer.observe(h));
+    }
+    </script>
 
-          </div>
-        </div>
-        <!-- КОНЕЦ ПАНЕЛИ ВЗАИМОДЕЙСТВИЙ -->
+    <!-- TTS Script -->
+    <script>
+    (function() {
+      let preferredVoice = null;
+      function selectVoice() {
+        const voices = speechSynthesis.getVoices();
+        if (voices.length === 0) return;
+        const preferredNames = ['Alex', 'Google UK English Male', 'Microsoft David Desktop', 'David', 'Daniel'];
+        for (const name of preferredNames) {
+          preferredVoice = voices.find(v => v.name === name && v.lang.startsWith('en'));
+          if (preferredVoice) break;
+        }
+        if (!preferredVoice) preferredVoice = voices.find(v => v.lang.startsWith('en') && (v.name.toLowerCase().includes('male') || v.name.toLowerCase().includes('david')));
+        if (!preferredVoice) preferredVoice = voices.find(v => v.lang.startsWith('en'));
+      }
+      speechSynthesis.onvoiceschanged = selectVoice;
+      selectVoice();
 
-        <div class="content">
-          {{ partial "custom/content-begin.html" . }}
-          {{ .Content }}
-          {{ partial "custom/content-end.html" . }}
-        </div>
-        <div class="hx:mt-16"></div>
-        {{ partial "components/comments.html" . }}
-        {{ partial "custom/page-end.html" . }}
-      </main>
-    </article>
-  </div>
+      document.addEventListener('click', function(e) {
+        const btn = e.target.closest('.tts-button');
+        if (!btn) return;
+        const postContainer = btn.closest('.post-container');
+        if (!postContainer) return;
+        const contentEl = postContainer.querySelector('.content');
+        if (!contentEl) return;
+
+        if (window.speechSynthesis.speaking) {
+          window.speechSynthesis.cancel();
+          btn.setAttribute('aria-pressed', 'false');
+          btn.style.background = 'transparent';
+          return;
+        }
+
+        const text = contentEl.textContent.trim();
+        if (!text) return;
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'en-US';
+        utterance.rate = 0.9;
+        utterance.pitch = 0.85;
+        if (preferredVoice) utterance.voice = preferredVoice;
+
+        btn.setAttribute('aria-pressed', 'true');
+        btn.style.background = 'rgba(0,0,0,0.05)';
+
+        utterance.onend = () => {
+          btn.setAttribute('aria-pressed', 'false');
+          btn.style.background = 'transparent';
+        };
+        utterance.onerror = () => {
+          btn.setAttribute('aria-pressed', 'false');
+          btn.style.background = 'transparent';
+        };
+
+        window.speechSynthesis.speak(utterance);
+      });
+    })();
+    </script>
+
+    <!-- Post views counter -->
+    <script>
+    function formatViews(count) {
+      if (count >= 1000000) return (count / 1000000).toFixed(1) + 'M views';
+      if (count >= 1000) return (count / 1000).toFixed(1) + 'K views';
+      return count + ' views';
+    }
+    function getRandomStart(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    function initPostViews(container) {
+      const postUrl = container.getAttribute('data-post-url');
+      if (!postUrl) return;
+      const key = 'post_views_' + postUrl;
+      let views = localStorage.getItem(key);
+      if (views === null) {
+        views = getRandomStart(1436, 1490);
+      } else {
+        views = parseInt(views, 10) + 1; 
+      }
+      localStorage.setItem(key, views);
+      const viewSpan = container.querySelector('.post-views');
+      if (viewSpan) viewSpan.textContent = formatViews(views);
+    }
+    </script>
+
+    <!-- Copy link dynamic init -->
+    <script>
+    function initCopyLink(container) {
+      const btn = container.querySelector('.copy-link-btn');
+      if (!btn) return;
+      const copyIcon = btn.querySelector('.copy-icon');
+      const checkIcon = btn.querySelector('.check-icon');
+      btn.addEventListener('click', async () => {
+        const url = container.getAttribute('data-post-url');
+        try {
+          await navigator.clipboard.writeText(url);
+          copyIcon.style.display = 'none';
+          checkIcon.style.display = 'block';
+          setTimeout(() => {
+            copyIcon.style.display = 'block';
+            checkIcon.style.display = 'none';
+          }, 1500);
+        } catch (err) {
+          alert('Failed to copy link');
+        }
+      });
+    }
+    </script>
+
+    <!-- Anti-copy script -->
+    <script>
+    (function() {
+      function showCopyWarning(e) { e.preventDefault(); alert('🚫 Hands off, copycat! This content is guarded by invisible ninjas. 🥷'); }
+      document.addEventListener('copy', showCopyWarning);
+      document.addEventListener('cut', showCopyWarning);
+      document.addEventListener('contextmenu', function(e) {
+        const contentArea = document.querySelector('.post-container .content');
+        if (contentArea && contentArea.contains(e.target)) { e.preventDefault(); return false; }
+      });
+      document.addEventListener('dragstart', function(e) {
+        const contentArea = document.querySelector('.post-container .content');
+        if (contentArea && contentArea.contains(e.target)) e.preventDefault();
+      });
+    })();
+    </script>
+
+    <!-- Reading progress bar script -->
+    <script>
+    (function() {
+      const bar = document.createElement('div');
+      bar.id = 'reading-progress';
+      document.body.prepend(bar);
+      window.addEventListener('scroll', () => {
+        const winScroll = document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        bar.style.width = height > 0 ? (winScroll / height) * 100 + '%' : '0%';
+      });
+    })();
+    </script>
+
+    <!-- Initialization and ONE-DIRECTIONAL infinite scroll (down only) using data-next-url -->
+    <script>
+    function initPost(container) {
+      initDotNav(container);
+      initPostViews(container);
+      initCopyLink(container);
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const wrapper = document.getElementById('posts-wrapper');
+      const initialPost = document.getElementById('initial-post');
+
+      // Move the initial post into the wrapper
+      wrapper.appendChild(initialPost);
+      initialPost.removeAttribute('id');
+      initPost(initialPost);
+
+      // Create a sentinel element for triggering the next load
+      function createSentinel(id) {
+        const d = document.createElement('div');
+        d.id = id;
+        d.style.height = '1px';
+        d.style.margin = '0';
+        d.style.padding = '0';
+        return d;
+      }
+
+      // Load and insert the next post using its data-next-url attribute
+      function loadNextPost(currentPost) {
+        const nextUrl = currentPost.getAttribute('data-next-url');
+        if (!nextUrl) return Promise.reject('No next URL');
+
+        return fetch(nextUrl)
+          .then(response => response.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+            const newPost = doc.querySelector('.post-container');
+            if (!newPost) throw new Error('Post container not found');
+            wrapper.appendChild(newPost);
+            initPost(newPost);
+            // Move sentinel to the very bottom
+            wrapper.appendChild(appendSentinel);
+            return newPost;
+          });
+      }
+
+      // Create the bottom sentinel and append it
+      const appendSentinel = createSentinel('append-sentinel');
+      wrapper.appendChild(appendSentinel);
+
+      // Observer for loading the next post when the sentinel becomes visible
+      let currentPost = initialPost;
+      const appendObserver = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          appendObserver.unobserve(appendSentinel); // stop observing while loading
+          loadNextPost(currentPost).then(newPost => {
+            currentPost = newPost;
+            // Only continue if there is a next URL
+            if (currentPost.getAttribute('data-next-url')) {
+              appendObserver.observe(appendSentinel);
+            }
+          }).catch(err => {
+            console.error('Failed to load next post:', err);
+            appendObserver.observe(appendSentinel); // resume observing in case of error
+          });
+        }
+      }, { rootMargin: '200px 0px 200px 0px' });
+      appendObserver.observe(appendSentinel);
+    });
+    </script>
+  </body>
+  </html>
 {{ end }}
