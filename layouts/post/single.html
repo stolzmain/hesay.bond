@@ -1,0 +1,91 @@
+{{ define "main" }}
+  <div class="hx:mx-auto hx:flex hextra-max-page-width">
+    {{ partial "sidebar.html" (dict "context" . "disableSidebar" true "displayPlaceholder" true) }}
+    {{ partial "toc.html" . }}
+    <article class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--hextra-navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8 hx:pr-[calc(env(safe-area-inset-right)-1.5rem)]">
+      <main id="content" class="hx:w-full hx:min-w-0 hextra-max-content-width hx:px-6 hx:pt-4 hx:md:px-12">
+        {{ partial "custom/page-begin.html" . }}
+        {{ partial "breadcrumb.html" (dict "page" . "enable" false) }}
+        <br class="hx:mt-1.5 hx:text-sm" />
+        
+        <!-- Заголовок -->
+        {{ if .Title }}
+          <h1 class="hx:mt-2 hx:text-4xl hx:font-bold hx:tracking-tight hx:text-slate-900 hx:dark:text-slate-100" style="font-family: ui-sans-serif, system-ui, sans-serif;">
+            {{ .Title }}
+          </h1>
+        {{ end }}
+        
+        <!-- БЛОК АВТОРА В СТИЛЕ MEDIUM -->
+        <div class="hx:mt-6 hx:mb-6 hx:flex hx:items-center hx:text-sm hx:text-slate-500 hx:dark:text-slate-400">
+          <!-- Аватар строго 32x32 -->
+          <img src="https://unavatar.io/twitter/herobysatan" alt="Avatar" class="hx:rounded-full hx:mr-3 hx:object-cover" style="width: 32px; height: 32px; min-width: 32px; min-height: 32px;" />
+          
+          <div class="hx:flex hx:items-center hx:flex-wrap">
+            <!-- Имя -->
+            <span class="hx:font-medium hx:text-slate-900 hx:dark:text-slate-100 hx:mr-3">@herobysatan</span>
+            
+            <!-- Кнопка Follow -->
+            <a href="https://twitter.com/intent/user?screen_name=herobysatan" 
+               onclick="window.open(this.href, 'twitter-follow', 'width=500,height=600'); return false;" 
+               class="hx:mr-3 hx:px-3 hx:py-0.5 hx:rounded-full hx:transition-colors hover:hx:bg-slate-100 hx:dark:hover:bg-neutral-800"
+               style="border: 1px solid #1a8917; color: #1a8917; text-decoration: none;">
+              Follow
+            </a>
+            
+            <!-- Метаданные -->
+            <span class="hx:text-slate-500">{{ .ReadingTime }} min read</span>
+            <span class="hx:mx-1.5 hx:text-slate-500">·</span>
+            <span class="hx:text-slate-500">{{ .Date.Format "Jan 2, 2006" }}</span>
+          </div>
+        </div>
+        <!-- КОНЕЦ БЛОКА АВТОРА -->
+
+        <!-- ПАНЕЛЬ ВЗАИМОДЕЙСТВИЙ (MEDIUM STYLE) -->
+        <div class="hx:py-3 hx:border-t hx:border-b hx:border-slate-200 hx:dark:border-neutral-800 hx:mb-8 hx:flex hx:items-center hx:justify-between hx:text-slate-500 hx:dark:text-slate-400">
+          
+          <!-- Левая часть: Иконки реакций -->
+          <div class="hx:flex hx:gap-6 hx:items-center hx:text-sm">
+            <div class="hx:flex hx:items-center hx:gap-2 hx:cursor-pointer hover:hx:text-slate-900 hx:dark:hover:text-slate-100 hx:transition-colors">
+              <!-- Иконка хлопка/лайка -->
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+            </div>
+            <div class="hx:flex hx:items-center hx:gap-2 hx:cursor-pointer hover:hx:text-slate-900 hx:dark:hover:text-slate-100 hx:transition-colors">
+              <!-- Иконка комментария -->
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            </div>
+          </div>
+
+          <!-- Правая часть: Кнопки "Поделиться" -->
+          <div class="hx:flex hx:gap-5 hx:items-center">
+            
+            <!-- X (Twitter) -->
+            <a href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink }}" target="_blank" rel="noopener noreferrer" class="hover:hx:text-slate-900 hx:dark:hover:text-slate-100 hx:transition-colors" title="Поделиться в X">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            
+            <!-- Threads -->
+            <a href="https://threads.net/intent/post?text={{ .Title }}%20{{ .Permalink }}" target="_blank" rel="noopener noreferrer" class="hover:hx:text-slate-900 hx:dark:hover:text-slate-100 hx:transition-colors" title="Поделиться в Threads">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a10 10 0 1 0-10-10c0 4.5 3 8 7.5 8h.5"></path><path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path><path d="M15 9v6a3 3 0 0 0 3 3h0a3 3 0 0 0 3-3V9"></path></svg>
+            </a>
+
+            <!-- Telegram -->
+            <a href="https://t.me/share/url?url={{ .Permalink }}&text={{ .Title }}" target="_blank" rel="noopener noreferrer" class="hover:hx:text-slate-900 hx:dark:hover:text-slate-100 hx:transition-colors" title="Поделиться в Telegram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+            </a>
+
+          </div>
+        </div>
+        <!-- КОНЕЦ ПАНЕЛИ ВЗАИМОДЕЙСТВИЙ -->
+
+        <div class="content">
+          {{ partial "custom/content-begin.html" . }}
+          {{ .Content }}
+          {{ partial "custom/content-end.html" . }}
+        </div>
+        <div class="hx:mt-16"></div>
+        {{ partial "components/comments.html" . }}
+        {{ partial "custom/page-end.html" . }}
+      </main>
+    </article>
+  </div>
+{{ end }}

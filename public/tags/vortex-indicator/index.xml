@@ -1,0 +1,47 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>He Say – Vortex Indicator</title>
+    <link>http://localhost:1313/tags/vortex-indicator/</link>
+    <description>Recent content in Vortex Indicator on He Say</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 Jul 2026 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/vortex-indicator/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Trend Momentum Indicator (Vortex Indicator) for Detecting Market Phase Reversals</title>
+      <link>http://localhost:1313/posts/trend-momentum-indicator-vortex-indicator-for-detecting-market-phase-reversals/</link>
+      <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/trend-momentum-indicator-vortex-indicator-for-detecting-market-phase-reversals/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/posts/trend-momentum-indicator-vortex-indicator-for-detecting-market-phase-reversals.png&#34; alt=&#34;Image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The Vortex Trend Indicator (VI), developed by Etienne Botes and Douglas Siepman in 2010, is an effective technical analysis tool for identifying the onset and confirmation of market trends [cite: 1, 5, 13]. Inspired by natural vortex flows, the indica&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Fees are the main enemy of any trading strategy. To maximize your profit from every market move, you need a platform with minimal charges. I highly recommend MEXC: &lt;a
+    href=&#34;https://promote.mexc.com/r/aep0hTSdh1&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Join MEXC&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;tor comprises two oscillating lines: +VI (positive movement) and -VI (negative movement) [cite: 2, 4, 5, 13]. It measures the strength of directional price movements, making it invaluable for spotting market phase shifts [cite: 1, 5, 9].&lt;/p&gt;
+&lt;h2&gt;Calculation and Operation&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;calculation-and-operation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#calculation-and-operation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;The Vortex Indicator&amp;rsquo;s calculation is based on analyzing price bars over a specific period (typically 14 days) [cite: 1, 3, 6, 11]. Key components include the True Range (TR) and Vortex Movements (VM+ and VM-) [cite: 1, 10, 11, 13]. VM+ measures the difference between the current high and the previous bar&amp;rsquo;s low, while VM- measures the difference between the current low and the previous bar&amp;rsquo;s high [cite: 1, 4, 6, 13]. These values are normalized using TR, forming the +VI and -VI lines [cite: 1, 11, 13]. The greater the distance between corresponding points of the current and previous bar, the stronger the movement reflected by the indicator [cite: 6].&lt;/p&gt;
+&lt;h2&gt;Signals and Interpretation&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;signals-and-interpretation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#signals-and-interpretation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Interpreting the Vortex Indicator focuses on the relative positioning and crossovers of the +VI and -VI lines [cite: 2, 3, 8, 9, 11]. When +VI is above -VI, it signals an uptrend (a bullish market) [cite: 2, 4, 9, 11]. A dominance of -VI over +VI indicates a downtrend (a bearish market) [cite: 2, 3, 4, 9, 11]. Line crossovers serve as primary trading signals: +VI crossing -VI from bottom to top is often interpreted as a buy signal; the inverse crossover (-VI over +VI) points to a sell signal [cite: 1, 3, 5, 9, 11]. A wide divergence between the lines implies a strengthening of the current trend [cite: 3, 4, 13].&lt;/p&gt;
+&lt;h2&gt;Identifying Phase Shifts&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;identifying-phase-shifts&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#identifying-phase-shifts&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;The Vortex Indicator excels at identifying market phase shifts, demonstrating transitions from consolidation to trend or from one trend to another [cite: 1, 3, 5, 8, 13]. When the Vortex lines oscillate closely together, it often signals sideways movement or market indecision [cite: 4]. A sharp crossover, accompanied by the lines diverging, indicates the emergence of a new, strong trend [cite: 3, 4].&lt;/p&gt;
+&lt;h2&gt;Indicator Advantages&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;indicator-advantages&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#indicator-advantages&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;VI stands out for its simplicity and clear signals, empowering traders to effectively analyze trends [cite: 3, 15]. It operates across various timeframes and is suitable for diverse assets [cite: 2, 3, 6, 11, 14]. VI identifies trend inception and helps pinpoint reversal moments [cite: 3, 5, 13, 14]. It&amp;rsquo;s a versatile tool for various strategies.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

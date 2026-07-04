@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="robots" content="noindex, nofollow" />
+  <link rel="icon shortcut" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" id="favicon-svg" />
+<link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+<link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
+
+  <title>How to Use the Triple Exponential Moving Average (TEMA) Indicator for Scalping</title>
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Leveraging the Triple Exponential Moving Average (TEMA) indicator is a pivotal tool for traders aiming for peak efficiency in the fast-paced, dynamic market …" />
+
+  
+  <meta name="keywords" content="Crypto futures trading, Bitcoin futures, Crypto trading indicators, Relative Strength Index (RSI), Moving Average Convergence Divergence (MACD), Bollinger Bands, Exponential Moving Average (EMA), Volume Weighted Average Price (VWAP), Open Interest (OI), Funding Rate, Leverage trading, Liquidation price, Long and Short squeeze, Perpetual futures, Crypto derivatives, Order book, Margin trading, Stop loss, Take profit, Risk management"><link rel="canonical" href="http://localhost:1313/posts/how-to-use-the-triple-exponential-moving-average-tema-indicator-for-scalping/" itemprop="url" />
+
+<meta property="og:title" content="How to Use the Triple Exponential Moving Average (TEMA) Indicator for Scalping">
+<meta
+  property="og:description"
+  content="
+    
+      Leveraging the Triple Exponential Moving Average (TEMA) indicator is a pivotal tool for traders aiming for peak efficiency in the fast-paced, dynamic market conditions inherent to scalping. This advanced indicator is engineered to minimize the lag i
+
+Want to test a new trading strategy but afraid of risking your capital? MEXC has an excellent demo account: trade on real charts with virtual money. Start testing now
+
+nherent in traditional moving averages, making it especially invaluable for short-term plays. TEMA&rsquo;s primary objective is to equip traders with clearer, more timely signals for executing swift, decisive actions.
+    
+  ">
+<meta
+  property="og:type"
+  content="
+    article
+  ">
+<meta property="og:url" content="http://localhost:1313/posts/how-to-use-the-triple-exponential-moving-average-tema-indicator-for-scalping/"><meta property="article:section" content="posts">
+
+<meta
+  property="article:published_time"
+  content="2026-07-04T00:00:00+00:00">
+
+
+<meta
+  property="article:modified_time"
+  content="2026-07-04T00:00:00+00:00">
+
+
+
+	<meta itemprop="name" content="How to Use the Triple Exponential Moving Average (TEMA) Indicator for Scalping">
+	<meta itemprop="description" content="Leveraging the Triple Exponential Moving Average (TEMA) indicator is a pivotal tool for traders aiming for peak efficiency in the fast-paced, dynamic market conditions inherent to scalping. This advanced indicator is engineered to minimize the lag i
+Want to test a new trading strategy but afraid of risking your capital? MEXC has an excellent demo account: trade on real charts with virtual money. Start testing now
+nherent in traditional moving averages, making it especially invaluable for short-term plays. TEMA’s primary objective is to equip traders with clearer, more timely signals for executing swift, decisive actions.">
+	<meta itemprop="datePublished" content="2026-07-04T00:00:00+00:00">
+	<meta itemprop="dateModified" content="2026-07-04T00:00:00+00:00">
+	<meta itemprop="wordCount" content="564">
+	<meta itemprop="keywords" content="Scalping,TEMA,TechnicalAnalysis">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="How to Use the Triple Exponential Moving Average (TEMA) Indicator for Scalping">
+	<meta name="twitter:description" content="Leveraging the Triple Exponential Moving Average (TEMA) indicator is a pivotal tool for traders aiming for peak efficiency in the fast-paced, dynamic market conditions inherent to scalping. This advanced indicator is engineered to minimize the lag i
+Want to test a new trading strategy but afraid of risking your capital? MEXC has an excellent demo account: trade on real charts with virtual money. Start testing now
+nherent in traditional moving averages, making it especially invaluable for short-term plays. TEMA’s primary objective is to equip traders with clearer, more timely signals for executing swift, decisive actions.">
+<link href="/css/compiled/main.css" rel="stylesheet" />
+    <link href="/css/variables.css" rel="stylesheet" />
+    <link href="/css/custom.css" rel="stylesheet" />
+
+  
+<script src="/js/main-head.js" integrity=""></script>
+
+  
+  
+  </head><body>
+    <a href="#content" class="hx:sr-only hx:focus-visible:not-sr-only hx:focus-visible:fixed hx:focus-visible:z-50 hx:focus-visible:top-2 hx:focus-visible:left-2 hx:focus-visible:bg-primary-500 hx:focus-visible:text-white hx:focus-visible:px-4 hx:focus-visible:py-2 hx:focus-visible:rounded-md hx:focus-visible:text-sm hx:focus-visible:font-medium">Skip to content</a><div class="hextra-nav-container hx:sticky hx:top-0 hx:w-full hx:bg-transparent hx:print:hidden hx:relative" style="z-index: 999995 !important;">
+  <div
+    class="hextra-nav-container-blur hx:pointer-events-none hx:absolute hx:z-[-1] hx:h-full hx:w-full hx:bg-white hx:dark:bg-dark hx:shadow-[0_2px_4px_rgba(0,0,0,.02),0_1px_0_rgba(0,0,0,.06)] hx:contrast-more:shadow-[0_0_0_1px_#000] hx:dark:shadow-[0_-1px_0_rgba(255,255,255,.1)_inset] hx:contrast-more:dark:shadow-[0_0_0_1px_#fff]"
+  ></div>
+
+  <style>
+    #theme-toggle-container {
+      position: relative !important;
+      z-index: 999999 !important;
+    }
+    #theme-toggle-container ul {
+      z-index: 999999 !important;
+    }
+    html.dark #theme-toggle-container ul {
+      background-color: #202023 !important; 
+      border: 1px solid #3f3f46 !important;
+    }
+    html:not(.dark) #theme-toggle-container ul {
+      background-color: #ffffff !important; 
+      border: 1px solid #e4e4e7 !important;
+    }
+     
+    #theme-toggle-container ul * {
+      border: none !important;
+    }
+  </style>
+
+  <nav class="hextra-max-navbar-width hx:mx-auto hx:flex hx:items-center hx:justify-end hx:gap-1 hx:md:gap-2 hx:h-[var(--hextra-navbar-height)] hx:px-6">
+    <a class="hx:flex hx:items-center hx:hover:opacity-75 hx:ltr:mr-auto hx:rtl:ml-auto" href="/">
+    <img class="hx:mr-2 hx:block hx:dark:hidden" src="/images/logo.svg" alt="Logo" height="20" width="20" />
+    <img class="hx:mr-2 hx:hidden hx:dark:block" src="/images/logo.svg" alt="Dark Logo" height="20" width="20" />
+    <span class="hx:mr-2 hx:font-extrabold hx:inline hx:select-none">He Say</span>
+</a>
+
+
+    <div class="hx:flex hx:items-center hx:gap-1 hx:md:gap-2 hx:ml-auto hx:relative" style="z-index: 999996 !important;"><div id="theme-toggle-container"><div class="hx:flex hx:justify-items-start hx:group" data-theme="light">
+  <button
+    title="Change theme"
+    data-state="closed"
+    data-location="top"
+    class="hextra-theme-toggle hx:cursor-pointer hx:rounded-md hx:text-left hx:font-medium hx:p-2 hx:text-current hx:transition-colors hover:hx:bg-gray-100 hover:hx:text-gray-900 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:rounded-md hx:grow"
+    type="button"
+    aria-label="Change theme"
+    aria-expanded="false"
+    aria-haspopup="menu"
+  >
+    <div class="hx:flex hx:items-center hx:gap-2 hx:capitalize"><svg height=24 class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg><svg height=24 class="hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg><svg height=24 class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="currentColor">
+  <path d="M 11.996094,2 C 6.4986225,2.0192368 2.03125,6.5024993 2.03125,12 c 0,5.497501 4.4673725,9.980763 9.964844,10 H 12 12.0039 c 5.497471,-0.01924 9.964844,-4.502499 9.964844,-10 0,-5.4975007 -4.467373,-9.9807632 -9.964844,-10 H 12 Z M 12,4 c 4.417218,0.017598 7.96875,3.5822356 7.96875,8 0,4.417764 -3.551532,7.982402 -7.96875,8 z" />
+</svg>
+</div>
+  </button>
+  <ul
+    class="hextra-theme-toggle-options hx:hidden hx:z-20 hx:max-h-64 hx:overflow-auto hx:rounded-lg hx:border hx:border-gray-200 hx:bg-white hx:p-1 hx:text-sm hx:shadow-lg hx:dark:border-neutral-700 hx:dark:bg-neutral-900"
+    style="position: fixed; inset: auto auto 0px 0px; margin: 0px; min-width: 100px;"
+    data-theme="light"
+    role="menu"
+  >
+    <li role="none" class="hx:flex hx:flex-col">
+      <button
+        type="button"
+        role="menuitemradio"
+        aria-checked="true"
+        tabindex="-1"
+        data-item="light"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9 hx:text-left hx:w-full hx:bg-transparent hx:border-0"
+      >
+        Light
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </button>
+    </li>
+    <li role="none" class="hx:flex hx:flex-col">
+      <button
+        type="button"
+        role="menuitemradio"
+        aria-checked="false"
+        tabindex="-1"
+        data-item="dark"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9 hx:text-left hx:w-full hx:bg-transparent hx:border-0"
+      >
+        Dark
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </button>
+    </li>
+    <li role="none" class="hx:flex hx:flex-col">
+      <button
+        type="button"
+        role="menuitemradio"
+        aria-checked="false"
+        tabindex="-1"
+        data-item="system"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9 hx:text-left hx:w-full hx:bg-transparent hx:border-0"
+      >
+        System
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </button>
+    </li>
+  </ul>
+</div>
+</div><button type="button" aria-label="Menu" aria-expanded="false" class="hextra-hamburger-menu hx:cursor-pointer hx:-mr-1 hx:rounded-sm hx:p-1 hx:active:bg-gray-400/20 hx:md:hidden hx:hextra-focus-visible-inset hx:relative" style="z-index: 999997 !important;"><svg height=24 fill="none" viewBox="0 0 24 24" stroke="currentColor"><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8H20"></path></g><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16H20"></path></g></svg></button>
+    </div>
+  </nav>
+</div>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="robots" content="noindex, nofollow" />
+  <link rel="icon shortcut" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" id="favicon-svg" />
+<link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+<link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
+
+  <title>How to Use the Triple Exponential Moving Average (TEMA) Indicator for Scalping</title>
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Leveraging the Triple Exponential Moving Average (TEMA) indicator is a pivotal tool for traders aiming for peak efficiency in the fast-paced, dynamic market …" />
+
+  
+  <meta name="keywords" content="Crypto futures trading, Bitcoin futures, Crypto trading indicators, Relative Strength Index (RSI), Moving Average Convergence Divergence (MACD), Bollinger Bands, Exponential Moving Average (EMA), Volume Weighted Average Price (VWAP), Open Interest (OI), Funding Rate, Leverage trading, Liquidation price, Long and Short squeeze, Perpetual futures, Crypto derivatives, Order book, Margin trading, Stop loss, Take profit, Risk management"><link rel="canonical" href="http://localhost:1313/posts/how-to-use-the-triple-exponential-moving-average-tema-indicator-for-scalping/" itemprop="url" />
+
+<meta property="og:title" content="How to Use the Triple Exponential Moving Average (TEMA) Indicator for Scalping">
+<meta
+  property="og:description"
+  content="
+    
+      Leveraging the Triple Exponential Moving Average (TEMA) indicator is a pivotal tool for traders aiming for peak efficiency in the fast-paced, dynamic market conditions inherent to scalping. This advanced indicator is engineered to minimize the lag i
+
+Want to test a new trading strategy but afraid of risking your capital? MEXC has an excellent demo account: trade on real charts with virtual money. Start testing now
+
+nherent in traditional moving averages, making it especially invaluable for short-term plays. TEMA&rsquo;s primary objective is to equip traders with clearer, more timely signals for executing swift, decisive actions.
+    
+  ">
+<meta
+  property="og:type"
+  content="
+    article
+  ">
+<meta property="og:url" content="http://localhost:1313/posts/how-to-use-the-triple-exponential-moving-average-tema-indicator-for-scalping/"><meta property="article:section" content="posts">
+
+<meta
+  property="article:published_time"
+  content="2026-07-04T00:00:00+00:00">
+
+
+<meta
+  property="article:modified_time"
+  content="2026-07-04T00:00:00+00:00">
+
+
+
+	<meta itemprop="name" content="How to Use the Triple Exponential Moving Average (TEMA) Indicator for Scalping">
+	<meta itemprop="description" content="Leveraging the Triple Exponential Moving Average (TEMA) indicator is a pivotal tool for traders aiming for peak efficiency in the fast-paced, dynamic market conditions inherent to scalping. This advanced indicator is engineered to minimize the lag i
+Want to test a new trading strategy but afraid of risking your capital? MEXC has an excellent demo account: trade on real charts with virtual money. Start testing now
+nherent in traditional moving averages, making it especially invaluable for short-term plays. TEMA’s primary objective is to equip traders with clearer, more timely signals for executing swift, decisive actions.">
+	<meta itemprop="datePublished" content="2026-07-04T00:00:00+00:00">
+	<meta itemprop="dateModified" content="2026-07-04T00:00:00+00:00">
+	<meta itemprop="wordCount" content="564">
+	<meta itemprop="keywords" content="Scalping,TEMA,TechnicalAnalysis">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="How to Use the Triple Exponential Moving Average (TEMA) Indicator for Scalping">
+	<meta name="twitter:description" content="Leveraging the Triple Exponential Moving Average (TEMA) indicator is a pivotal tool for traders aiming for peak efficiency in the fast-paced, dynamic market conditions inherent to scalping. This advanced indicator is engineered to minimize the lag i
+Want to test a new trading strategy but afraid of risking your capital? MEXC has an excellent demo account: trade on real charts with virtual money. Start testing now
+nherent in traditional moving averages, making it especially invaluable for short-term plays. TEMA’s primary objective is to equip traders with clearer, more timely signals for executing swift, decisive actions.">
+<link href="/css/compiled/main.css" rel="stylesheet" />
+    <link href="/css/variables.css" rel="stylesheet" />
+    <link href="/css/custom.css" rel="stylesheet" />
+
+  
+<script src="/js/main-head.js" integrity=""></script>
+
+  
+  
+  </head>
+    
+      <link rel="prefetch" href="http://localhost:1313/posts/how-to-set-breakeven-based-on-market-structure-not-a-mathematical-step/">
+    <meta property="og:image" content="http://localhost:1313/images/posts/how-to-use-the-triple-exponential-moving-average-tema-indicator-for-scalping.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/posts/how-to-use-the-triple-exponential-moving-average-tema-indicator-for-scalping.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http:\/\/localhost:1313\/posts\/how-to-use-the-triple-exponential-moving-average-tema-indicator-for-scalping\/"
+      },
+      "headline": "How to Use the Triple Exponential Moving Average (TEMA) Indicator for Scalping",
+      "description": "Leveraging the Triple Exponential Moving Average (TEMA) indicator is a pivotal tool for traders aiming for peak efficiency in the fast-paced, dynamic market …",
+      "image": "http:\/\/localhost:1313\/images\/posts\/how-to-use-the-triple-exponential-moving-average-tema-indicator-for-scalping.png",
+      "author": {
+        "@type": "Person",
+        "name": "Hero by Satan",
+        "url": "https://twitter.com/herobysatan"
+      },
+      "datePublished": "2026-07-04",
+      "dateModified": "2026-07-04",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Hero by Satan Blog",
+        "url": "http:\/\/localhost:1313\/"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div class="hx:mx-auto hx:flex hextra-max-page-width">
+      <aside class="hextra-sidebar-container hx:flex hx:flex-col hx:print:hidden hx:md:top-[var(--hextra-navbar-height)] hx:md:shrink-0 hx:md:w-64 hx:md:self-start hx:max-md:[transform:translate3d(0,-100%,0)] hx:md:hidden hx:xl:block">
+  <div class="hextra-scrollbar hx:overflow-y-auto hx:overflow-x-hidden hx:p-4 hx:grow hx:md:h-[calc(100vh-var(--hextra-navbar-height)-var(--menu-height))]">
+    <ul class="hx:flex hx:flex-col hx:gap-1 hx:md:hidden">
+      
+      
+            <li class="open"><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:hextra-focus-visible-inset hx:ltr:pr-8 hx:rtl:pl-8 hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/posts/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">Posts</span>
+    </a>
+      <button type="button" class="hextra-sidebar-collapsible-button hx:absolute hx:top-1/2 hx:-translate-y-1/2 hx:ltr:right-2 hx:rtl:left-2 hx:shrink-0 hx:cursor-pointer hx:p-0 hx:text-gray-500 hx:dark:text-neutral-400 hx:group-hover:text-gray-900 hx:dark:group-hover:text-gray-50 hx:group-data-[active=true]:text-primary-800 hx:group-data-[active=true]:dark:text-primary-600 hx:hextra-focus-visible-inset" aria-label="Toggle section" aria-expanded="true"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" focusable="false" class="hx:h-[18px] hx:min-w-[18px] hx:rounded-xs hx:p-0.5 hx:hover:bg-gray-800/5 hx:dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx:origin-center hx:transition-transform hx:rtl:-rotate-180"></path></svg></button>
+  </div><div class="hextra-sidebar-children hx:ltr:pr-0 hx:rtl:pl-0 hx:overflow-hidden">
+        <ul class='hx:relative hx:flex hx:flex-col hx:gap-1 hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:ltr:ml-3 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:mr-3 hx:rtl:pr-3 hx:rtl:before:right-0 hx:dark:before:bg-neutral-800'><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:hextra-focus-visible-inset hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/posts/how-to-correctly-draw-fibonacci-extension-levels-for-setting-take-profit-targets/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">How to Correctly Draw Fibonacci Extension Levels for Setting Take-Profit Targets</span>
+    </a>
+  </div>
+              
+            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:hextra-focus-visible-inset hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/posts/how-to-find-market-maker-manipulations-using-order-book-analysis/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">How to Find Market Maker Manipulations Using Order Book Analysis</span>
+    </a>
+  </div>
+              
+            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:hextra-focus-visible-inset hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/posts/how-to-find-market-structure-shifts-on-lower-timeframes/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">How to Find Market Structure Shifts on Lower Timeframes</span>
+    </a>
+  </div>
+              
+            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:hextra-focus-visible-inset hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/posts/how-to-set-breakeven-based-on-market-structure-not-a-mathematical-step/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">How to Set Breakeven Based on Market Structure, Not a Mathematical Step</span>
+    </a>
+  </div>
+              
+            </li><li class="hx:flex hx:flex-col open"><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="true">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:hextra-focus-visible-inset hextra-sidebar-active-item hx:bg-primary-100 hx:font-semibold hx:text-primary-800 hx:contrast-more:border hx:contrast-more:border-primary-500 hx:dark:bg-primary-400/10 hx:dark:text-primary-600 hx:contrast-more:dark:border-primary-500"
+      href="/posts/how-to-use-the-triple-exponential-moving-average-tema-indicator-for-scalping/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">How to Use the Triple Exponential Moving Average (TEMA) Indicator for Scalping</span>
+    </a>
+  </div>
+  
+    <ul class='hx:flex hx:flex-col hx:gap-1 hx:relative hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:dark:before:bg-neutral-800 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:pr-3 hx:rtl:before:right-0 hx:ltr:ml-3 hx:rtl:mr-3'><li>
+              <a
+                href="#the-essence-of-the-tema-indicator"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >The Essence of the TEMA Indicator</a>
+            </li>
+          <li>
+              <a
+                href="#temas-edge-for-scalping"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >TEMA’s Edge for Scalping</a>
+            </li>
+          <li>
+              <a
+                href="#setup-and-application"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Setup and Application</a>
+            </li>
+          <li>
+              <a
+                href="#tema-trading-strategies"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >TEMA Trading Strategies</a>
+            </li>
+          <li>
+              <a
+                href="#risk-management"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Risk Management</a>
+            </li>
+          </ul>
+  
+              
+            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:hextra-focus-visible-inset hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/posts/how-to-use-the-true-range-indicator-for-position-sizing/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">How to Use the True Range Indicator for Position Sizing</span>
+    </a>
+  </div>
+              
+            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:hextra-focus-visible-inset hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/posts/using-a-composite-consensus-indicator-for-signal-filtering/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">Using a Composite Consensus Indicator for Signal Filtering</span>
+    </a>
+  </div>
+              
+            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:hextra-focus-visible-inset hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/posts/using-the-price-channel-indicator-to-determine-overbought-zones/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">Using the Price Channel Indicator to Determine Overbought Zones</span>
+    </a>
+  </div>
+              
+            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:hextra-focus-visible-inset hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/posts/using-the-rolling-window-indicator-rolling-volatility-for-risk-assessment/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">Using the Rolling Window Indicator (Rolling Volatility) for Risk Assessment</span>
+    </a>
+  </div>
+              
+            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:hextra-focus-visible-inset hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/posts/using-the-standard-deviation-indicator-to-assess-volatility/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">Using the Standard Deviation Indicator to Assess Volatility</span>
+    </a>
+  </div>
+              
+            </li></ul>
+      </div></li>
+    </ul>
+
+    <div class="hx:max-xl:hidden hx:h-0 hx:w-64 hx:shrink-0"></div></div>
+  
+  
+    <div class="hx:md:hidden  hx:sticky hx:bottom-0 hx:max-h-(--menu-height) hx:bg-white hx:dark:bg-dark hx:mx-4 hx:py-4 hx:shadow-[0_-12px_16px_#fff] hx:flex hx:items-center hx:gap-2 hx:border-gray-200 hx:dark:border-neutral-800 hx:dark:shadow-[0_-12px_16px_#111] hx:contrast-more:border-neutral-400 hx:contrast-more:shadow-none hx:contrast-more:dark:shadow-none hx:border-t" data-toggle-animation="show"><div class="hx:flex hx:grow hx:flex-col"><div class="hx:flex hx:justify-items-start hx:group" data-theme="light">
+  <button
+    title="Change theme"
+    data-state="closed"
+    data-location="bottom"
+    class="hextra-theme-toggle hx:cursor-pointer hx:rounded-md hx:text-left hx:font-medium hx:h-7 hx:px-2 hx:text-xs hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:font-medium hx:text-gray-600 hx:transition-colors hx:dark:text-gray-400 hx:grow"
+    type="button"
+    aria-label="Change theme"
+    aria-expanded="false"
+    aria-haspopup="menu"
+  >
+    <div class="hx:flex hx:items-center hx:gap-2 hx:capitalize"><svg height=12 class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg><span class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden">Light</span><svg height=12 class="hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg><span class="hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden">Dark</span><svg height=12 class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="currentColor">
+  <path d="M 11.996094,2 C 6.4986225,2.0192368 2.03125,6.5024993 2.03125,12 c 0,5.497501 4.4673725,9.980763 9.964844,10 H 12 12.0039 c 5.497471,-0.01924 9.964844,-4.502499 9.964844,-10 0,-5.4975007 -4.467373,-9.9807632 -9.964844,-10 H 12 Z M 12,4 c 4.417218,0.017598 7.96875,3.5822356 7.96875,8 0,4.417764 -3.551532,7.982402 -7.96875,8 z" />
+</svg>
+<span class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden">System</span></div>
+  </button>
+  <ul
+    class="hextra-theme-toggle-options hx:hidden hx:z-20 hx:max-h-64 hx:overflow-auto hx:rounded-lg hx:border hx:border-gray-200 hx:bg-white hx:p-1 hx:text-sm hx:shadow-lg hx:dark:border-neutral-700 hx:dark:bg-neutral-900"
+    style="position: fixed; inset: auto auto 0px 0px; margin: 0px; min-width: 100px;"
+    data-theme="light"
+    role="menu"
+  >
+    <li role="none" class="hx:flex hx:flex-col">
+      <button
+        type="button"
+        role="menuitemradio"
+        aria-checked="true"
+        tabindex="-1"
+        data-item="light"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9 hx:text-left hx:w-full hx:bg-transparent hx:border-0"
+      >
+        Light
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </button>
+    </li>
+    <li role="none" class="hx:flex hx:flex-col">
+      <button
+        type="button"
+        role="menuitemradio"
+        aria-checked="false"
+        tabindex="-1"
+        data-item="dark"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9 hx:text-left hx:w-full hx:bg-transparent hx:border-0"
+      >
+        Dark
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </button>
+    </li>
+    <li role="none" class="hx:flex hx:flex-col">
+      <button
+        type="button"
+        role="menuitemradio"
+        aria-checked="false"
+        tabindex="-1"
+        data-item="system"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9 hx:text-left hx:w-full hx:bg-transparent hx:border-0"
+      >
+        System
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </button>
+    </li>
+  </ul>
+</div>
+</div></div></aside>
+      <nav class="hextra-toc hx:order-last hx:hidden hx:w-64 hx:shrink-0 hx:xl:block hx:print:hidden hx:px-4" aria-label="Table of contents">
+    <div class="hextra-scrollbar hx:sticky hx:top-[var(--hextra-navbar-height)] hx:overflow-y-auto hx:pr-4 hx:pt-6 hx:text-sm [hyphens:auto] hx:max-h-[calc(100vh-var(--hextra-navbar-height)-env(safe-area-inset-bottom))] hx:ltr:-mr-4 hx:rtl:-ml-4">
+
+      
+      <div id="crypto-top10" style="margin-bottom: 24px;">
+        <div id="crypto-list" style="display: flex; flex-direction: column; gap: 12px;">
+          
+        </div>
+      </div>
+
+      
+      <div style="margin-bottom: 24px; border-top: 1px solid #e2e2e2; padding-top: 20px;">
+        <div style="font-weight: 600; font-size: 14px; margin-bottom: 12px; color: inherit;">
+          Trending tags this week
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px;"><a href="/tags/technicalanalysis/" style="color: inherit; text-decoration: none;">#technicalanalysis <span style="color: #9ca3af; font-size: 12px;">5</span></a><a href="/tags/tradingstrategy/" style="color: inherit; text-decoration: none;">#tradingstrategy <span style="color: #9ca3af; font-size: 12px;">4</span></a><a href="/tags/riskmanagement/" style="color: inherit; text-decoration: none;">#riskmanagement <span style="color: #9ca3af; font-size: 12px;">3</span></a><a href="/tags/cryptotrading/" style="color: inherit; text-decoration: none;">#cryptotrading <span style="color: #9ca3af; font-size: 12px;">2</span></a><a href="/tags/atr/" style="color: inherit; text-decoration: none;">#atr <span style="color: #9ca3af; font-size: 12px;">1</span></a><a href="/tags/fibonacciextensions/" style="color: inherit; text-decoration: none;">#fibonacciextensions <span style="color: #9ca3af; font-size: 12px;">1</span></a><a href="/tags/marketanalysis/" style="color: inherit; text-decoration: none;">#marketanalysis <span style="color: #9ca3af; font-size: 12px;">1</span></a><a href="/tags/marketindicators/" style="color: inherit; text-decoration: none;">#marketindicators <span style="color: #9ca3af; font-size: 12px;">1</span></a><a href="/tags/marketmanipulation/" style="color: inherit; text-decoration: none;">#marketmanipulation <span style="color: #9ca3af; font-size: 12px;">1</span></a><a href="/tags/marketstructureshift/" style="color: inherit; text-decoration: none;">#marketstructureshift <span style="color: #9ca3af; font-size: 12px;">1</span></a></div>
+      </div>
+
+      
+      <div class="hx:mt-8 hx:border-t hx:bg-white hx:pt-8 hx:shadow-[0_-12px_16px_white] hx:dark:bg-dark hx:dark:shadow-[0_-12px_16px_#111] hx:sticky hx:bottom-0 hx:flex hx:flex-col hx:items-start hx:gap-2 hx:pb-8 hx:border-gray-200 hx:dark:border-neutral-800 hx:contrast-more:border-t hx:contrast-more:border-neutral-400 hx:contrast-more:shadow-none hx:contrast-more:dark:border-neutral-400"><a class="hx:inline-block hx:rounded-sm hx:text-xs hx:font-medium hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-100 hx:contrast-more:text-gray-800 hx:contrast-more:dark:text-gray-50 hx:hextra-focus-visible-inset" href="https://github.com/your-account/your-repo/edit/main/content/posts/how-to-use-the-triple-exponential-moving-average-tema-indicator-for-scalping.md" target="_blank" rel="noreferrer">Edit this page</a>
+        <button id="backToTop" tabindex="-1" class="hx:cursor-pointer hx:transition-all hx:duration-75 hx:opacity-0 hx:text-xs hx:font-medium hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-100 hx:contrast-more:text-gray-800 hx:contrast-more:dark:text-gray-50">
+          <span>Scroll to top</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" focusable="false" class="hx:inline hx:ltr:ml-1 hx:rtl:mr-1 hx:h-3.5 hx:w-3.5 hx:rounded-full hx:border hx:border-gray-500 hx:hover:border-gray-900 hx:dark:border-gray-400 hx:dark:hover:border-gray-100 hx:contrast-more:border-gray-800 hx:contrast-more:dark:border-gray-50">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+<script>
+(async function() {
+  const cryptoList = document.getElementById('crypto-list');
+  if (!cryptoList) return;
+
+  const cgIds = 'bitcoin,ethereum,solana,tether-gold,binancecoin,mx-token,aptos,hedera-hashgraph,tron';
+  const cgUrl = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${cgIds}&sparkline=true&price_change_percentage=24h`;
+
+  try {
+    const cgRes = await fetch(cgUrl);
+    let coins = [];
+    if (cgRes.ok) {
+      const cgData = await cgRes.json();
+      coins = cgData.map(coin => ({
+        symbol: coin.symbol.toUpperCase(),
+        name: coin.name,
+        price: coin.current_price,
+        change24h: coin.price_change_percentage_24h,
+        sparkline: coin.sparkline_in_7d?.price || [],
+        url: `https://coinmarketcap.com/currencies/${coin.id}/`
+      }));
+    }
+
+    const hrbsSparkline = generateWavySparkline(0.00000543, 0.00000530, 0.00000560, 20);
+    coins.push({
+      symbol: 'HRBS',
+      name: 'HRBS',
+      price: 0.00000543,
+      change24h: 0.67,
+      sparkline: hrbsSparkline,
+      url: 'https://pump.fun/coin/5tNS57xgBvyZsy6PfvkGPJ5SDDBUVnHGECZyqMYmpump'
+    });
+
+    renderCryptoList(cryptoList, coins);
+  } catch (e) {
+    console.error('CoinGecko load error:', e);
+    const fallbackSparkline = generateWavySparkline(0.00000543, 0.00000530, 0.00000560, 20);
+    renderCryptoList(cryptoList, [{
+      symbol: 'HRBS', name: 'HRBS', price: 0.00000543, change24h: 0.67,
+      sparkline: fallbackSparkline,
+      url: 'https://pump.fun/coin/5tNS57xgBvyZsy6PfvkGPJ5SDDBUVnHGECZyqMYmpump'
+    }]);
+  }
+})();
+
+function renderCryptoList(container, coins) {
+  container.innerHTML = '';
+  coins.forEach(coin => {
+    const item = document.createElement('div');
+    item.style.display = 'flex';
+    item.style.alignItems = 'center';
+    item.style.justifyContent = 'space-between';
+    item.style.gap = '8px';
+    item.style.fontSize = '13px';
+
+    const nameLink = document.createElement('a');
+    nameLink.href = coin.url;
+    nameLink.target = '_blank';
+    nameLink.rel = 'nofollow noopener';
+    nameLink.style.textDecoration = 'none';
+    nameLink.style.color = 'inherit';
+    nameLink.style.fontWeight = '500';
+    nameLink.style.overflow = 'hidden';
+    nameLink.style.textOverflow = 'ellipsis';
+    nameLink.style.whiteSpace = 'nowrap';
+    nameLink.style.flexShrink = '1';
+    nameLink.textContent = coin.symbol;
+    item.appendChild(nameLink);
+
+    const canvas = document.createElement('canvas');
+    canvas.width = 60;
+    canvas.height = 20;
+    canvas.style.flexShrink = '0';
+    const ctx = canvas.getContext('2d');
+    if (coin.sparkline && coin.sparkline.length > 0) {
+      drawSparkline(ctx, coin.sparkline, canvas.width, canvas.height);
+    } else {
+      drawFlatLine(ctx, canvas.width, canvas.height);
+    }
+    item.appendChild(canvas);
+
+    const priceDiv = document.createElement('div');
+    priceDiv.style.display = 'flex';
+    priceDiv.style.flexDirection = 'column';
+    priceDiv.style.alignItems = 'flex-end';
+    priceDiv.style.flexShrink = '0';
+    const priceFormatted = coin.price ? `$${coin.price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: coin.price < 1 ? 6 : 2 })}` : '—';
+    const changeClass = coin.change24h != null && coin.change24h >= 0 ? '#16a34a' : '#dc2626';
+    const changeSign = coin.change24h != null && coin.change24h >= 0 ? '+' : '';
+    const changeFormatted = coin.change24h != null ? `${changeSign}${coin.change24h.toFixed(2)}%` : '—';
+    priceDiv.innerHTML = `
+      <span style="font-weight: 600; font-size: 13px;">${priceFormatted}</span>
+      <span style="font-size: 11px; color: ${changeClass};">${changeFormatted}</span>
+    `;
+    item.appendChild(priceDiv);
+
+    container.appendChild(item);
+  });
+}
+
+function generateWavySparkline(basePrice, minPrice, maxPrice, points) {
+  const prices = [];
+  for (let i = 0; i < points; i++) {
+    prices.push(minPrice + Math.random() * (maxPrice - minPrice));
+  }
+  return prices;
+}
+
+function drawSparkline(ctx, prices, width, height) {
+  if (!prices.length) return drawFlatLine(ctx, width, height);
+  const min = Math.min(...prices);
+  const max = Math.max(...prices);
+  if (min === max) return drawFlatLine(ctx, width, height);
+  const xStep = width / (prices.length - 1);
+  ctx.beginPath();
+  ctx.strokeStyle = '#3b82f6';
+  ctx.lineWidth = 1.2;
+  prices.forEach((price, idx) => {
+    const x = idx * xStep;
+    const y = height - ((price - min) / (max - min)) * height;
+    if (idx === 0) ctx.moveTo(x, y);
+    else ctx.lineTo(x, y);
+  });
+  ctx.stroke();
+}
+
+function drawFlatLine(ctx, width, height) {
+  ctx.beginPath();
+  ctx.moveTo(0, height / 2);
+  ctx.lineTo(width, height / 2);
+  ctx.strokeStyle = '#9ca3af';
+  ctx.lineWidth = 1;
+  ctx.stroke();
+}
+</script>
+      <article class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--hextra-navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8 hx:pr-[calc(env(safe-area-inset-right)-1.5rem)]">
+        <main id="content" class="hx:w-full hx:min-w-0 hextra-max-content-width hx:px-6 hx:pt-4 hx:md:px-12">
+          
+          
+          <br class="hx:mt-1.5 hx:text-sm" />
+
+          <style>
+             
+            #reading-progress {
+              position: fixed; top: 0; left: 0; height: 3px;
+              background: linear-gradient(to right, #f26522, #f59e0b);
+              z-index: 9999; width: 0; transition: width 0.1s ease;
+            }
+
+             
+            html.dark .post-container hr {
+              border-color: #333 !important;
+            }
+            html.dark .post-container .hx\:bg-neutral-100 {
+              background-color: #2a2a2a !important;
+            }
+             
+            html.dark a[title="Follow on Threads"] {
+              border-color: #9ca3af !important;
+              color: #9ca3af !important;
+            }
+
+             
+            .post-container .content,
+            .post-container .content * {
+              user-select: none !important;
+              -webkit-user-select: none !important;
+              -moz-user-select: none !important;
+              -ms-user-select: none !important;
+            }
+            .post-container .content {
+              -webkit-touch-callout: none;
+            }
+             
+            .dot-nav-container {
+              position: absolute; left: -40px; top: 0; bottom: 0; z-index: 10; display: none;
+            }
+            @media (max-width: 1024px) { .dot-nav-container { display: none !important; } }
+            .dot-nav-sticky {
+              position: sticky; top: 300px; display: flex; flex-direction: column; gap: 16px;
+            }
+            .dot-item {
+              position: relative; display: flex; align-items: center; cursor: pointer; text-decoration: none; padding: 4px 0;
+            }
+            .dot-circle {
+              width: 8px; height: 8px; border-radius: 50%; background-color: #cbd5e1; transition: all 0.2s ease;
+            }
+            .dot-item:hover .dot-circle, .dot-item.active .dot-circle {
+              background-color: rgb(29, 155, 240); transform: scale(1.4);
+            }
+            .dot-tooltip {
+              position: absolute; right: 24px; background: #242424; color: #fff; padding: 6px 12px; border-radius: 6px; font-size: 13px;
+              font-family: ui-sans-serif, system-ui, sans-serif; white-space: nowrap; opacity: 0; visibility: hidden;
+              transition: opacity 0.2s ease, transform 0.2s ease; transform: translateX(5px); pointer-events: none;
+              box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            }
+            .dot-item:hover .dot-tooltip {
+              opacity: 1; visibility: visible; transform: translateX(0);
+            }
+            .dot-tooltip::before {
+              content: ''; position: absolute; top: 50%; left: 100%; margin-top: -5px;
+              border-width: 5px; border-style: solid; border-color: transparent transparent transparent #242424;
+            }
+          </style>
+
+          
+          <div id="posts-wrapper"></div>
+
+          
+          <div class="post-container hx:relative" data-post-url="http://localhost:1313/posts/how-to-use-the-triple-exponential-moving-average-tema-indicator-for-scalping/" data-next-url="http://localhost:1313/posts/how-to-set-breakeven-based-on-market-structure-not-a-mathematical-step/" id="initial-post">
+            
+              <h1 class="hx:mt-2 hx:mb-6 hx:font-bold hx:tracking-tight hx:text-slate-900 hx:dark:text-slate-100" style="font-family: ui-sans-serif, system-ui, sans-serif; font-size: 42px; line-height: 1.2;">
+                How to Use the Triple Exponential Moving Average (TEMA) Indicator for Scalping
+              </h1>
+            
+
+            <div class="hx:mb-6 hx:flex hx:items-center hx:text-sm hx:text-slate-500 hx:dark:text-slate-400">
+              <a href="https://twitter.com/herobysatan" target="_blank" rel="noopener noreferrer" style="display: block; text-decoration: none;">
+                <img src="https://unavatar.io/twitter/herobysatan" alt="Author Avatar" class="hx:rounded-full hx:mr-3 hx:object-cover" style="width: 32px; height: 32px; min-width: 32px; min-height: 32px;" />
+              </a>
+              <div class="hx:flex hx:items-center hx:flex-wrap" style="flex: 1;">
+                <a href="https://twitter.com/herobysatan" target="_blank" rel="noopener noreferrer" class="hx:font-medium hx:text-slate-900 hx:dark:text-slate-100 hx:mr-3" style="text-decoration: none;">
+                  Hero by Satan
+                </a>
+
+                
+                <a href="https://twitter.com/intent/user?screen_name=herobysatan" 
+                   onclick="window.open(this.href, 'twitter-follow', 'width=500,height=600'); return false;" 
+                   class="hx:mr-3 hx:rounded-full hx:transition-colors hover:hx:bg-blue-50 hx:dark:hover:bg-blue-900/20 hx:flex hx:items-center hx:justify-center"
+                   style="border: 1px solid rgb(29, 155, 240); color: rgb(29, 155, 240); background-color: transparent; text-decoration: none; height: 32px; padding: 0 16px; border-radius: 9999px;">
+                  Follow
+                </a>
+
+                
+                <a href="https://www.threads.com/@herobysatan" target="_blank" rel="noopener noreferrer"
+                   class="hx:mr-3 hx:rounded-full hx:transition-colors hx:flex hx:items-center hx:justify-center"
+                   style="border: 1px solid #000000; color: #000000; background-color: transparent; text-decoration: none; height: 32px; padding: 0 16px; border-radius: 9999px; font-size: 14px;"
+                   title="Follow on Threads">
+                  Follow
+                </a>
+
+                <span class="hx:text-slate-500">3 min read</span>
+                <span class="hx:text-slate-500" style="margin: 0 6px;">&middot;</span>
+                <span class="hx:text-slate-500">Jul 4, 2026</span>
+                <span class="hx:text-slate-500" style="margin: 0 6px;">&middot;</span>
+                <span class="hx:text-slate-500 post-views">0 views</span>
+
+                <a href="/index.xml" 
+                   class="hx:rounded-full hx:transition-colors hx:flex hx:items-center hx:justify-center"
+                   style="border: 1px solid #f26522; color: #f26522; background-color: transparent; text-decoration: none; height: 32px; padding: 0 16px; border-radius: 9999px; font-size: 14px; margin-left: auto;"
+                   title="RSS Feed">
+                  RSS
+                </a>
+              </div>
+            </div>
+
+            
+            <div class="hx:mb-8 hx:transition-colors" style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #f2f2f2; border-bottom: 1px solid #f2f2f2; color: #6b6b6b; padding: 12px 0;">
+              <button class="tts-button" role="switch" aria-pressed="false" aria-label="Listen to article"
+                      style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: transparent; border: none; border-radius: 50%; cursor: pointer; padding: 0; color: #6b6b6b; transition: background 0.2s;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" d="M3 12a9 9 0 1 1 18 0 9 9 0 0 1-18 0m9-10C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2m3.376 10.416-4.599 3.066a.5.5 0 0 1-.777-.416V8.934a.5.5 0 0 1 .777-.416l4.599 3.066a.5.5 0 0 1 0 .832" clip-rule="evenodd"/>
+                </svg>
+              </button>
+              <div style="display: flex; align-items: center; gap: 24px;">
+                
+                <a href="https://twitter.com/intent/tweet?text=How%20to%20Use%20the%20Triple%20Exponential%20Moving%20Average%20%28TEMA%29%20Indicator%20for%20Scalping&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fhow-to-use-the-triple-exponential-moving-average-tema-indicator-for-scalping%2f&hashtags=Scalping%2cTEMA%2cTechnicalAnalysis"
+                   onclick="window.open(this.href, 'share-x', 'width=550,height=500'); return false;" 
+                   class="hover:hx:text-slate-900 hx:dark:hover:text-slate-100" 
+                   style="cursor: pointer; display: flex; color: inherit; text-decoration: none;" 
+                   title="Share on X">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.346 10.932 18.88 4.5h-1.311l-4.805 5.585L8.926 4.5H4.5l5.803 8.446L4.5 19.69h1.311l5.074-5.898 4.053 5.898h4.426zM11.55 13.02l-.588-.84-4.678-6.693h2.014l3.776 5.4.588.842 4.907 7.02h-2.014z"></path></svg>
+                </a>
+                
+                <a href="https://threads.net/intent/post?text=How%20to%20Use%20the%20Triple%20Exponential%20Moving%20Average%20%28TEMA%29%20Indicator%20for%20Scalping%20Scalping%2520TEMA%2520TechnicalAnalysis%20http%3a%2f%2flocalhost%3a1313%2fposts%2fhow-to-use-the-triple-exponential-moving-average-tema-indicator-for-scalping%2f"
+                   onclick="window.open(this.href, 'share-threads', 'width=550,height=600'); return false;" 
+                   class="hover:hx:text-slate-900 hx:dark:hover:text-slate-100" 
+                   style="cursor: pointer; display: flex; color: inherit; text-decoration: none;" 
+                   title="Share on Threads">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948s.928 1.509 1.005 2.644q.492.207.905.484c1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.2 6.2 0 0 0-1.528-.161"></path></svg>
+                </a>
+                
+                <a href="https://t.me/share/url?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fhow-to-use-the-triple-exponential-moving-average-tema-indicator-for-scalping%2f&text=How%20to%20Use%20the%20Triple%20Exponential%20Moving%20Average%20%28TEMA%29%20Indicator%20for%20Scalping" onclick="window.open(this.href, 'share-telegram', 'width=550,height=600'); return false;" class="hover:hx:text-slate-900 hx:dark:hover:text-slate-100" style="cursor: pointer; display: flex; color: inherit; text-decoration: none;" title="Share on Telegram">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                </a>
+                
+                <button class="copy-link-btn" aria-label="Copy link to clipboard"
+                        style="cursor: pointer; display: flex; color: inherit; background: none; border: none; padding: 0;" title="Copy link">
+                  <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="m12.505 9.678.59-.59a5 5 0 0 1 1.027 7.862l-2.829 2.83a5 5 0 0 1-7.07-7.072l2.382-2.383q.002.646.117 1.298l-1.793 1.792a4 4 0 0 0 5.657 5.657l2.828-2.828a4 4 0 0 0-1.046-6.411q.063-.081.137-.155m-1.01 4.646-.589.59a5 5 0 0 1-1.027-7.862l2.828-2.83a5 5 0 0 1 7.071 7.072l-2.382 2.383a7.7 7.7 0 0 0-.117-1.297l1.792-1.793a4 4 0 1 0-5.657-5.657l-2.828 2.828a4 4 0 0 0 1.047 6.411 2 2 0 0 1-.138.155" clip-rule="evenodd"></path></svg>
+                  <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" style="display: none;"><path stroke="currentColor" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="hx:relative">
+              <div class="dot-nav-container"></div>
+              <div class="content hx:prose dark:hx:prose-invert hx:max-w-none">
+                
+                <p>Leveraging the Triple Exponential Moving Average (TEMA) indicator is a pivotal tool for traders aiming for peak efficiency in the fast-paced, dynamic market conditions inherent to scalping. This advanced indicator is engineered to minimize the lag i</p>
+<hr>
+<p>Want to test a new trading strategy but afraid of risking your capital? MEXC has an excellent demo account: trade on real charts with virtual money. <a
+    href="https://promote.mexc.com/r/aep0hTSdh1"target="_blank" rel="noopener">Start testing now</a></p>
+<hr>
+<p>nherent in traditional moving averages, making it especially invaluable for short-term plays. TEMA&rsquo;s primary objective is to equip traders with clearer, more timely signals for executing swift, decisive actions.</p>
+<h2>The Essence of the TEMA Indicator<span class="hx:absolute hx:-mt-20" id="the-essence-of-the-tema-indicator"></span>
+    <a href="#the-essence-of-the-tema-indicator" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>The Triple Exponential Moving Average (TEMA) is a technical indicator designed to significantly reduce lag compared to Simple and Exponential Moving Averages (SMA and EMA), rendering it far more sensitive to price fluctuations. It achieves this by combining singly, doubly, and triply smoothed exponential moving averages, allowing it to hug the price action more closely. This unique construction enables TEMA to react faster to price movements while simultaneously smoothing out market noise, a critical advantage for high-frequency trading.</p>
+<h2>TEMA&rsquo;s Edge for Scalping<span class="hx:absolute hx:-mt-20" id="temas-edge-for-scalping"></span>
+    <a href="#temas-edge-for-scalping" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>TEMA&rsquo;s primary advantage in scalping lies in its ability to drastically reduce signal lag, empowering traders to identify trends and potential reversals quicker. This facilitates more precise entry and exit points, which is the bedrock of profitable scalping. TEMA&rsquo;s high sensitivity to sudden price shifts makes it an ideal tool for volatile markets and tight timeframes, where every tick and second counts.</p>
+<h2>Setup and Application<span class="hx:absolute hx:-mt-20" id="setup-and-application"></span>
+    <a href="#setup-and-application" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>For scalping with TEMA, shorter periods like 9, 13, 21, or 50 are commonly employed, depending on the trading style and asset volatility. Interpreting TEMA is similar to other moving averages: an ascending TEMA line positioned above the price action signals a bullish trend, while a descending TEMA line below the price points to a bearish trend. Price crossing TEMA from below often flags a potential bullish reversal, whereas a cross from above indicates a bearish reversal. The slope of the TEMA can also provide insights into momentum strength. Furthermore, TEMA can act as dynamic support and resistance levels, especially during strong trends.</p>
+<h2>TEMA Trading Strategies<span class="hx:absolute hx:-mt-20" id="tema-trading-strategies"></span>
+    <a href="#tema-trading-strategies" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>One prevalent strategy involves using TEMA as the primary trend indicator. When the price crosses the TEMA line, an entry signal is generated. For example, if the price crosses TEMA from below, it can serve as a buy signal. For enhanced reliability, many traders leverage a confluence of multiple TEMAs with varying periods, such as 9, 21, and 55. A short-period TEMA crossing above a longer-period TEMA is considered a bullish signal, while the inverse cross points to a bearish signal.</p>
+<p>TEMA strategy efficacy significantly amplifies when paired with additional confirmation indicators. For instance, combining TEMA with volume can help filter out fakeouts: a crossover accompanied by a significant surge in volume is deemed more robust. Furthermore, oscillators like RSI can be deployed for heightened accuracy, or other tools, such as Fractal Chaos Bands, for pinpointing support and resistance levels.</p>
+<h2>Risk Management<span class="hx:absolute hx:-mt-20" id="risk-management"></span>
+    <a href="#risk-management" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>In scalping, especially when utilizing a sensitive indicator like TEMA, stringent risk management is paramount. The high frequency of trades amplifies transaction costs and the risk of losses during unfavorable market moves. It&rsquo;s imperative to set clear risk parameters for each trade and deploy tight stop-losses to cap potential downside. Position sizing should be determined based on your acceptable risk per trade and the distance to your stop-loss.</p>
+
+                
+              </div>
+            </div>
+
+            
+            <div style="margin-top: 40px; margin-bottom: 32px; display: flex; flex-wrap: wrap; gap: 8px;">
+              
+              <a href="/tags/scalping" style="text-decoration: none; color: inherit;">
+                <div style="background-color: #f2f2f2; padding: 8px 16px; border-radius: 100px; white-space: nowrap; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: inset 0 0 0 1px #e5e5e5; font-size: 14px; font-weight: 400; color: #242424; transition: background-color 0.2s ease;" onmouseover="this.style.backgroundColor='#e5e5e5'" onmouseout="this.style.backgroundColor='#f2f2f2'">
+                  Scalping
+                </div>
+              </a>
+              
+              <a href="/tags/tema" style="text-decoration: none; color: inherit;">
+                <div style="background-color: #f2f2f2; padding: 8px 16px; border-radius: 100px; white-space: nowrap; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: inset 0 0 0 1px #e5e5e5; font-size: 14px; font-weight: 400; color: #242424; transition: background-color 0.2s ease;" onmouseover="this.style.backgroundColor='#e5e5e5'" onmouseout="this.style.backgroundColor='#f2f2f2'">
+                  TEMA
+                </div>
+              </a>
+              
+              <a href="/tags/technicalanalysis" style="text-decoration: none; color: inherit;">
+                <div style="background-color: #f2f2f2; padding: 8px 16px; border-radius: 100px; white-space: nowrap; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: inset 0 0 0 1px #e5e5e5; font-size: 14px; font-weight: 400; color: #242424; transition: background-color 0.2s ease;" onmouseover="this.style.backgroundColor='#e5e5e5'" onmouseout="this.style.backgroundColor='#f2f2f2'">
+                  TechnicalAnalysis
+                </div>
+              </a>
+              
+            </div>
+            
+
+            
+            <div class="hx:mb-12 hx:transition-colors" style="display: flex; align-items: center; justify-content: flex-end; border-top: 1px solid #f2f2f2; border-bottom: 1px solid #f2f2f2; color: #6b6b6b; padding: 12px 0;">
+              <div style="display: flex; align-items: center; gap: 24px;">
+                <a href="https://twitter.com/intent/tweet?text=How%20to%20Use%20the%20Triple%20Exponential%20Moving%20Average%20%28TEMA%29%20Indicator%20for%20Scalping&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fhow-to-use-the-triple-exponential-moving-average-tema-indicator-for-scalping%2f&hashtags=Scalping%2cTEMA%2cTechnicalAnalysis" onclick="window.open(this.href, 'share-x', 'width=550,height=500'); return false;" class="hover:hx:text-slate-900 hx:dark:hover:text-slate-100" style="cursor: pointer; display: flex; color: inherit; text-decoration: none;" title="Share on X">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.346 10.932 18.88 4.5h-1.311l-4.805 5.585L8.926 4.5H4.5l5.803 8.446L4.5 19.69h1.311l5.074-5.898 4.053 5.898h4.426zM11.55 13.02l-.588-.84-4.678-6.693h2.014l3.776 5.4.588.842 4.907 7.02h-2.014z"></path></svg>
+                </a>
+                <a href="https://threads.net/intent/post?text=How%20to%20Use%20the%20Triple%20Exponential%20Moving%20Average%20%28TEMA%29%20Indicator%20for%20Scalping%20Scalping%2520TEMA%2520TechnicalAnalysis%20http%3a%2f%2flocalhost%3a1313%2fposts%2fhow-to-use-the-triple-exponential-moving-average-tema-indicator-for-scalping%2f" onclick="window.open(this.href, 'share-threads', 'width=550,height=600'); return false;" class="hover:hx:text-slate-900 hx:dark:hover:text-slate-100" style="cursor: pointer; display: flex; color: inherit; text-decoration: none;" title="Share on Threads">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948s.928 1.509 1.005 2.644q.492.207.905.484c1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.2 6.2 0 0 0-1.528-.161"></path></svg>
+                </a>
+                <a href="https://t.me/share/url?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fhow-to-use-the-triple-exponential-moving-average-tema-indicator-for-scalping%2f&text=How%20to%20Use%20the%20Triple%20Exponential%20Moving%20Average%20%28TEMA%29%20Indicator%20for%20Scalping" onclick="window.open(this.href, 'share-telegram', 'width=550,height=600'); return false;" class="hover:hx:text-slate-900 hx:dark:hover:text-slate-100" style="cursor: pointer; display: flex; color: inherit; text-decoration: none;" title="Share on Telegram">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-direction: row; gap: 16px; align-items: flex-start; margin-bottom: 48px; width: 100%;">
+              <a href="https://twitter.com/herobysatan" target="_blank" rel="noopener noreferrer" style="display: block; text-decoration: none;">
+                <img src="https://unavatar.io/twitter/herobysatan" alt="Author Avatar" class="hx:rounded-full hx:object-cover" style="width: 48px; height: 48px; min-width: 48px; min-height: 48px; border-radius: 50%;" />
+              </a>
+              <div style="flex: 1; display: flex; flex-direction: column; min-width: 0;">
+                <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; width: 100%; gap: 16px;">
+                  <a href="https://twitter.com/herobysatan" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <h2 style="font-family: ui-sans-serif, system-ui, sans-serif; font-size: 20px; font-weight: 700; margin: 0; letter-spacing: -0.01em;">
+                      Written by Hero by Satan
+                    </h2>
+                  </a>
+                  <a href="https://twitter.com/intent/user?screen_name=herobysatan" 
+                     onclick="window.open(this.href, 'twitter-follow', 'width=500,height=600'); return false;" 
+                     class="hx:rounded-full hx:transition-colors hover:hx:bg-blue-50 hx:dark:hover:bg-blue-900/20"
+                     style="border: 1px solid rgb(29, 155, 240); color: rgb(29, 155, 240); background-color: transparent; text-decoration: none; height: 38px; padding: 0 16px; font-weight: 500; border-radius: 9999px; display: inline-flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0;">
+                    Follow
+                  </a>
+                </div>
+                <p style="font-family: ui-sans-serif, system-ui, sans-serif; font-size: 15px; line-height: 1.5; color: #6b6b6b; margin: 6px 0 0 0;">
+                  Let the evil one lead me into temptation and show me the way...
+                </p>
+              </div>
+            </div>
+
+            <div class="hx:relative" style="border-top: 1px solid #f2f2f2; margin-top: 48px; padding-top: 32px;">
+              <h3 style="font-family: ui-sans-serif, system-ui, sans-serif; font-size: 22px; font-weight: 700; color: inherit; margin-bottom: 24px;">
+                Responses
+              </h3>
+              <div class="hx:bg-neutral-100 hx:dark:bg-neutral-800" style="padding: 14px 16px; border-radius: 8px; color: #9ca3af; font-size: 14px; margin-bottom: 32px; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.05); cursor: not-allowed;">
+                What are your thoughts?
+              </div>
+              <div style="max-height: 220px; overflow: hidden; -webkit-mask-image: linear-gradient(to bottom, black 30%, transparent 100%); mask-image: linear-gradient(to bottom, black 30%, transparent 100%); pointer-events: none;">
+                <div style="display: flex; gap: 12px; margin-bottom: 24px;">
+                  <img src="https://i.pravatar.cc/150?img=68" style="width: 40px; height: 40px; border-radius: 50%;" />
+                  <div>
+                    <div style="font-weight: 600; font-size: 14px; color: inherit;">Alex Carter</div>
+                    <div style="font-size: 14px; color: #6b6b6b; margin-top: 4px;">Great insights! I've been looking for something like this setup for a while. Definitely stealing the configuration.</div>
+                  </div>
+                </div>
+                <div style="display: flex; gap: 12px; margin-bottom: 24px;">
+                  <img src="https://i.pravatar.cc/150?img=47" style="width: 40px; height: 40px; border-radius: 50%;" />
+                  <div>
+                    <div style="font-weight: 600; font-size: 14px; color: inherit;">Sarah Jenkins</div>
+                    <div style="font-size: 14px; color: #6b6b6b; margin-top: 4px;">Have you tried using Raycast instead of Spotlight alongside these? It replaced half of my menubar apps!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="hx:relative" style="z-index: 2; text-align: center; margin-top: -80px; padding-bottom: 32px;">
+                <div style="display: flex; justify-content: center; margin-bottom: 16px;">
+                  <img src="https://i.pravatar.cc/150?img=11" class="hx:w-10 hx:h-10 hx:rounded-full hx:border-2 hx:border-white hx:dark:border-neutral-900" style="z-index: 4;" />
+                  <img src="https://i.pravatar.cc/150?img=32" class="hx:w-10 hx:h-10 hx:rounded-full hx:border-2 hx:border-white hx:dark:border-neutral-900" style="margin-left: -12px; z-index: 3;" />
+                  <img src="https://i.pravatar.cc/150?img=12" class="hx:w-10 hx:h-10 hx:rounded-full hx:border-2 hx:border-white hx:dark:border-neutral-900" style="margin-left: -12px; z-index: 2;" />
+                  <img src="https://i.pravatar.cc/150?img=33" class="hx:w-10 hx:h-10 hx:rounded-full hx:border-2 hx:border-white hx:dark:border-neutral-900" style="margin-left: -12px; z-index: 1;" />
+                </div>
+                <p style="font-family: ui-sans-serif, system-ui, sans-serif; font-size: 16px; font-weight: 500; color: inherit; margin-bottom: 24px; max-width: 480px; margin-left: auto; margin-right: auto;">
+                  Want to share your thoughts? Join the conversation on X (Twitter).
+                </p>
+                <a href="https://twitter.com/search?q=http%3a%2f%2flocalhost%3a1313%2fposts%2fhow-to-use-the-triple-exponential-moving-average-tema-indicator-for-scalping%2f" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="hx:rounded-full hx:transition-colors hover:hx:bg-blue-50 hx:dark:hover:bg-blue-900/20"
+                   style="border: 1px solid rgb(29, 155, 240); color: rgb(29, 155, 240); background-color: transparent; text-decoration: none; height: 40px; padding: 0 24px; font-weight: 600; border-radius: 9999px; display: inline-flex; align-items: center; justify-content: center; font-size: 15px;">
+                  Discuss on X
+                </a>
+              </div>
+            </div>
+            <hr style="border: none; border-top: 1px solid #e2e2e2; margin: 2rem 0 3rem 0;" />
+          </div>
+
+          
+        </main>
+      </article>
+    </div>
+
+    
+    <script>
+    function initDotNav(container) {
+      const content = container.querySelector('.content');
+      const dotContainer = container.querySelector('.dot-nav-container');
+      if (!content || !dotContainer) return;
+      const headings = content.querySelectorAll('h2, h3');
+      if (headings.length === 0) return;
+      dotContainer.style.display = 'block';
+      dotContainer.innerHTML = '';
+      const stickyNav = document.createElement('div');
+      stickyNav.className = 'dot-nav-sticky';
+      let dotItems = [];
+      headings.forEach((h) => {
+        if (!h.id) h.id = 'h-' + Math.random().toString(36).substr(2, 9);
+        const dot = document.createElement('a');
+        dot.className = 'dot-item';
+        dot.href = '#' + h.id;
+        const circle = document.createElement('div');
+        circle.className = 'dot-circle';
+        const tooltip = document.createElement('div');
+        tooltip.className = 'dot-tooltip';
+        tooltip.textContent = h.textContent.trim();
+        dot.appendChild(circle);
+        dot.appendChild(tooltip);
+        stickyNav.appendChild(dot);
+        dot.addEventListener('click', (e) => {
+          e.preventDefault();
+          const yOffset = -80;
+          const y = h.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        });
+        dotItems.push({ element: dot, target: h });
+      });
+      dotContainer.appendChild(stickyNav);
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            dotItems.forEach(item => item.element.classList.remove('active'));
+            const activeDot = dotItems.find(item => item.target === entry.target);
+            if (activeDot) activeDot.element.classList.add('active');
+          }
+        });
+      }, { rootMargin: '-100px 0px -70% 0px' });
+      headings.forEach(h => observer.observe(h));
+    }
+    </script>
+
+    
+    <script>
+    (function() {
+      let preferredVoice = null;
+      function selectVoice() {
+        const voices = speechSynthesis.getVoices();
+        if (voices.length === 0) return;
+        const preferredNames = ['Alex', 'Google UK English Male', 'Microsoft David Desktop', 'David', 'Daniel'];
+        for (const name of preferredNames) {
+          preferredVoice = voices.find(v => v.name === name && v.lang.startsWith('en'));
+          if (preferredVoice) break;
+        }
+        if (!preferredVoice) preferredVoice = voices.find(v => v.lang.startsWith('en') && (v.name.toLowerCase().includes('male') || v.name.toLowerCase().includes('david')));
+        if (!preferredVoice) preferredVoice = voices.find(v => v.lang.startsWith('en'));
+      }
+      speechSynthesis.onvoiceschanged = selectVoice;
+      selectVoice();
+
+      document.addEventListener('click', function(e) {
+        const btn = e.target.closest('.tts-button');
+        if (!btn) return;
+        const postContainer = btn.closest('.post-container');
+        if (!postContainer) return;
+        const contentEl = postContainer.querySelector('.content');
+        if (!contentEl) return;
+
+        if (window.speechSynthesis.speaking) {
+          window.speechSynthesis.cancel();
+          btn.setAttribute('aria-pressed', 'false');
+          btn.style.background = 'transparent';
+          return;
+        }
+
+        const text = contentEl.textContent.trim();
+        if (!text) return;
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'en-US';
+        utterance.rate = 0.9;
+        utterance.pitch = 0.85;
+        if (preferredVoice) utterance.voice = preferredVoice;
+
+        btn.setAttribute('aria-pressed', 'true');
+        btn.style.background = 'rgba(0,0,0,0.05)';
+
+        utterance.onend = () => {
+          btn.setAttribute('aria-pressed', 'false');
+          btn.style.background = 'transparent';
+        };
+        utterance.onerror = () => {
+          btn.setAttribute('aria-pressed', 'false');
+          btn.style.background = 'transparent';
+        };
+
+        window.speechSynthesis.speak(utterance);
+      });
+    })();
+    </script>
+
+    
+    <script>
+    function formatViews(count) {
+      if (count >= 1000000) return (count / 1000000).toFixed(1) + 'M views';
+      if (count >= 1000) return (count / 1000).toFixed(1) + 'K views';
+      return count + ' views';
+    }
+    function getRandomStart(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    function initPostViews(container) {
+      const postUrl = container.getAttribute('data-post-url');
+      if (!postUrl) return;
+      const key = 'post_views_' + postUrl;
+      let views = localStorage.getItem(key);
+      if (views === null) {
+        views = getRandomStart(1436, 1490);
+      } else {
+        views = parseInt(views, 10) + 1; 
+      }
+      localStorage.setItem(key, views);
+      const viewSpan = container.querySelector('.post-views');
+      if (viewSpan) viewSpan.textContent = formatViews(views);
+    }
+    </script>
+
+    
+    <script>
+    function initCopyLink(container) {
+      const btn = container.querySelector('.copy-link-btn');
+      if (!btn) return;
+      const copyIcon = btn.querySelector('.copy-icon');
+      const checkIcon = btn.querySelector('.check-icon');
+      btn.addEventListener('click', async () => {
+        const url = container.getAttribute('data-post-url');
+        try {
+          await navigator.clipboard.writeText(url);
+          copyIcon.style.display = 'none';
+          checkIcon.style.display = 'block';
+          setTimeout(() => {
+            copyIcon.style.display = 'block';
+            checkIcon.style.display = 'none';
+          }, 1500);
+        } catch (err) {
+          alert('Failed to copy link');
+        }
+      });
+    }
+    </script>
+
+    
+    <script>
+    (function() {
+      function showCopyWarning(e) { e.preventDefault(); alert('🚫 Hands off, copycat! This content is guarded by invisible ninjas. 🥷'); }
+      document.addEventListener('copy', showCopyWarning);
+      document.addEventListener('cut', showCopyWarning);
+      document.addEventListener('contextmenu', function(e) {
+        const contentArea = document.querySelector('.post-container .content');
+        if (contentArea && contentArea.contains(e.target)) { e.preventDefault(); return false; }
+      });
+      document.addEventListener('dragstart', function(e) {
+        const contentArea = document.querySelector('.post-container .content');
+        if (contentArea && contentArea.contains(e.target)) e.preventDefault();
+      });
+    })();
+    </script>
+
+    
+    <script>
+    (function() {
+      const bar = document.createElement('div');
+      bar.id = 'reading-progress';
+      document.body.prepend(bar);
+      window.addEventListener('scroll', () => {
+        const winScroll = document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        bar.style.width = height > 0 ? (winScroll / height) * 100 + '%' : '0%';
+      });
+    })();
+    </script>
+
+    
+    <script>
+    function initPost(container) {
+      initDotNav(container);
+      initPostViews(container);
+      initCopyLink(container);
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const wrapper = document.getElementById('posts-wrapper');
+      const initialPost = document.getElementById('initial-post');
+
+      
+      wrapper.appendChild(initialPost);
+      initialPost.removeAttribute('id');
+      initPost(initialPost);
+
+      
+      function createSentinel(id) {
+        const d = document.createElement('div');
+        d.id = id;
+        d.style.height = '1px';
+        d.style.margin = '0';
+        d.style.padding = '0';
+        return d;
+      }
+
+      
+      function loadNextPost(currentPost) {
+        const nextUrl = currentPost.getAttribute('data-next-url');
+        if (!nextUrl) return Promise.reject('No next URL');
+
+        return fetch(nextUrl)
+          .then(response => response.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+            const newPost = doc.querySelector('.post-container');
+            if (!newPost) throw new Error('Post container not found');
+            wrapper.appendChild(newPost);
+            initPost(newPost);
+            
+            wrapper.appendChild(appendSentinel);
+            return newPost;
+          });
+      }
+
+      
+      const appendSentinel = createSentinel('append-sentinel');
+      wrapper.appendChild(appendSentinel);
+
+      
+      let currentPost = initialPost;
+      const appendObserver = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          appendObserver.unobserve(appendSentinel); 
+          loadNextPost(currentPost).then(newPost => {
+            currentPost = newPost;
+            
+            if (currentPost.getAttribute('data-next-url')) {
+              appendObserver.observe(appendSentinel);
+            }
+          }).catch(err => {
+            console.error('Failed to load next post:', err);
+            appendObserver.observe(appendSentinel); 
+          });
+        }
+      }, { rootMargin: '200px 0px 200px 0px' });
+      appendObserver.observe(appendSentinel);
+    });
+    </script>
+  </body>
+  </html>
+
+      <footer class="hextra-footer hx:bg-gray-100 hx:pb-[env(safe-area-inset-bottom)] hx:dark:bg-neutral-900 hx:print:bg-transparent"><div class="hx:mx-auto hx:flex hx:gap-2 hx:py-2 hx:px-4 hextra-max-footer-width"><div class="hx:flex hx:justify-items-start hx:group" data-theme="light">
+  <button
+    title="Change theme"
+    data-state="closed"
+    data-location="bottom"
+    class="hextra-theme-toggle hx:cursor-pointer hx:rounded-md hx:text-left hx:font-medium hx:h-7 hx:px-2 hx:text-xs hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:font-medium hx:text-gray-600 hx:transition-colors hx:dark:text-gray-400 hx:grow"
+    type="button"
+    aria-label="Change theme"
+    aria-expanded="false"
+    aria-haspopup="menu"
+  >
+    <div class="hx:flex hx:items-center hx:gap-2 hx:capitalize"><svg height=12 class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg><span class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden">Light</span><svg height=12 class="hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg><span class="hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden">Dark</span><svg height=12 class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="currentColor">
+  <path d="M 11.996094,2 C 6.4986225,2.0192368 2.03125,6.5024993 2.03125,12 c 0,5.497501 4.4673725,9.980763 9.964844,10 H 12 12.0039 c 5.497471,-0.01924 9.964844,-4.502499 9.964844,-10 0,-5.4975007 -4.467373,-9.9807632 -9.964844,-10 H 12 Z M 12,4 c 4.417218,0.017598 7.96875,3.5822356 7.96875,8 0,4.417764 -3.551532,7.982402 -7.96875,8 z" />
+</svg>
+<span class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden">System</span></div>
+  </button>
+  <ul
+    class="hextra-theme-toggle-options hx:hidden hx:z-20 hx:max-h-64 hx:overflow-auto hx:rounded-lg hx:border hx:border-gray-200 hx:bg-white hx:p-1 hx:text-sm hx:shadow-lg hx:dark:border-neutral-700 hx:dark:bg-neutral-900"
+    style="position: fixed; inset: auto auto 0px 0px; margin: 0px; min-width: 100px;"
+    data-theme="light"
+    role="menu"
+  >
+    <li role="none" class="hx:flex hx:flex-col">
+      <button
+        type="button"
+        role="menuitemradio"
+        aria-checked="true"
+        tabindex="-1"
+        data-item="light"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9 hx:text-left hx:w-full hx:bg-transparent hx:border-0"
+      >
+        Light
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </button>
+    </li>
+    <li role="none" class="hx:flex hx:flex-col">
+      <button
+        type="button"
+        role="menuitemradio"
+        aria-checked="false"
+        tabindex="-1"
+        data-item="dark"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9 hx:text-left hx:w-full hx:bg-transparent hx:border-0"
+      >
+        Dark
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </button>
+    </li>
+    <li role="none" class="hx:flex hx:flex-col">
+      <button
+        type="button"
+        role="menuitemradio"
+        aria-checked="false"
+        tabindex="-1"
+        data-item="system"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9 hx:text-left hx:w-full hx:bg-transparent hx:border-0"
+      >
+        System
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </button>
+    </li>
+  </ul>
+</div>
+</div><hr class="hx:border-gray-200 hx:dark:border-neutral-800" /><div class="hextra-custom-footer hextra-max-footer-width hx:mx-auto hx:pl-[max(env(safe-area-inset-left),1.5rem)] hx:pr-[max(env(safe-area-inset-right),1.5rem)] hx:text-gray-600 hx:dark:text-gray-400"></div><div
+      class="hextra-max-footer-width hx:mx-auto hx:flex hx:justify-center hx:py-12 hx:pl-[max(env(safe-area-inset-left),1.5rem)] hx:pr-[max(env(safe-area-inset-right),1.5rem)] hx:text-gray-600 hx:dark:text-gray-400 hx:md:justify-start"
+    >
+      <div class="hx:flex hx:w-full hx:flex-col hx:items-center hx:sm:items-start"><div class="hx:font-semibold"><a class="hx:flex hx:text-sm hx:items-center hx:gap-1 hx:text-current" target="_blank" rel="noopener noreferrer" title="Hextra GitHub Homepage" href="https://github.com/imfing/hextra">
+    <span>Powered by Hextra<svg height=1em class="hx:inline-block hx:ltr:ml-1 hx:rtl:mr-1 hx:align-[-2.5px]" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="m 105.50024,22.224647 c -9.59169,-5.537563 -21.40871,-5.537563 -31.000093,0 L 39.054693,42.689119 C 29.463353,48.226675 23.55484,58.460531 23.55484,69.535642 v 40.928918 c 0,11.07542 5.908513,21.3092 15.499853,26.84652 l 35.445453,20.46446 c 9.591313,5.53732 21.408404,5.53732 31.000094,0 l 35.44507,-20.46446 c 9.59131,-5.53732 15.49985,-15.7711 15.49985,-26.84652 V 69.535642 c 0,-11.075111 -5.90854,-21.308967 -15.49985,-26.846523 z M 34.112797,85.737639 c -1.384445,2.397827 -1.384445,5.352099 0,7.749927 l 24.781554,42.922974 c 1.38437,2.39783 3.942853,3.87496 6.711592,3.87496 h 49.563107 c 2.76905,0 5.3273,-1.47713 6.71144,-3.87496 l 24.78194,-42.922974 c 1.38414,-2.397828 1.38414,-5.3521 0,-7.749927 L 121.88049,42.814746 c -1.38414,-2.397828 -3.94239,-3.874964 -6.71144,-3.874964 H 65.605944 c -2.768739,0 -5.327223,1.477059 -6.711592,3.874964 z" style="stroke-width:0.774993" /></svg></span>
+  </a></div></div>
+    </div></footer>
+    
+    <dialog
+    id="hextra-search-dialog"
+    class="hextra-search-dialog"
+    aria-label="Search..."
+  >
+    <div class="hextra-search">
+      <div class="hextra-search-input-wrapper"><svg class="hextra-search-input-icon" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg><input
+          class="hextra-search-input"
+          type="search"
+          role="combobox"
+          autocomplete="off"
+          autocorrect="off"
+          autocapitalize="off"
+          spellcheck="false"
+          placeholder="Search..."
+          aria-label="Search..."
+          aria-controls="hextra-search-results"
+          aria-expanded="false"
+        /><button
+          type="button"
+          class="hextra-search-input-kbd"
+          data-search-close
+          aria-label="Close"
+        >ESC</button>
+      </div>
+      <div class="hextra-search-results-viewport" data-search-viewport>
+        <div class="hextra-search-results-inner hextra-scrollbar" data-search-inner>
+          <ul
+            id="hextra-search-results"
+            class="hextra-search-results"
+            role="listbox"
+            aria-label="Search results"
+          ></ul>
+          <div class="hextra-search-empty" data-search-empty hidden>No results found.</div>
+        </div>
+      </div>
+      <div class="hextra-search-status hx:sr-only" aria-live="polite" role="status"></div>
+    </div>
+  </dialog>
+    <script defer src="/js/main.js" integrity=""></script>
+<script defer src="/js/flexsearch.9f5b5908f93ae86f1ecd4b043b799f580c2d1654e703dd9357d568ac41b2547a.js" integrity="sha256-n1tZCPk66G8ezUsEO3mfWAwtFlTnA92TV9VorEGyVHo=" crossorigin="anonymous"></script><script defer src="/en-us.search.js" integrity=""></script>
+    <script defer src="/en-us.search-dialog.js" integrity=""></script>
+  </body>
+</html>

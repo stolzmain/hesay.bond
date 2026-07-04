@@ -1,0 +1,62 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>He Say – Positionsizing</title>
+    <link>http://localhost:1313/tags/positionsizing/</link>
+    <description>Recent content in Positionsizing on He Say</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 Jul 2026 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/positionsizing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>How to Use the True Range Indicator for Position Sizing</title>
+      <link>http://localhost:1313/posts/how-to-use-the-true-range-indicator-for-position-sizing/</link>
+      <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/how-to-use-the-true-range-indicator-for-position-sizing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Position sizing is a cornerstone of successful trading, directly impacting capital preservation and consistency of results. While many traders laser-focus on pinpointing entry points, true long-term profitability often hinges on smart risk managemen&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Want to test a new trading strategy but afraid of risking your capital? MEXC has an excellent demo account: trade on real charts with virtual money. &lt;a
+    href=&#34;https://promote.mexc.com/r/aep0hTSdh1&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Start testing now&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;t. The True Range (TR) indicator and its averaged value, Average True Range (ATR), offer a powerful tool for dynamically calculating position size, adapting to current market volatility for more effective risk control.&lt;/p&gt;
+&lt;h2&gt;What is True Range?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;what-is-true-range&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-is-true-range&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;True Range is a volatility measure developed by Welles Wilder that accounts for price gaps, which simple High-Low calculations miss. It&amp;rsquo;s the greatest of three values: the current high minus the current low; the absolute value of the current high minus the previous day&amp;rsquo;s close; or the absolute value of the current low minus the previous day&amp;rsquo;s close. This approach ensures the indicator always captures the full price movement over a period, including overnight swings.&lt;/p&gt;
+&lt;h2&gt;Volatility and Risk&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;volatility-and-risk&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#volatility-and-risk&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;True Range directly quantifies market volatility. High TR readings signal periods of heightened price action and uncertainty, while low readings suggest a calmer market. For position sizing, Average True Range (ATR) is more commonly used – a moving average of True Range over a specified period (typically 14 or 20 bars). ATR smooths out instantaneous fluctuations, providing a more stable representation of an asset&amp;rsquo;s average volatility. Using ATR allows traders to set stops that appropriately react to current market conditions, rather than arbitrary, fixed levels.&lt;/p&gt;
+&lt;h2&gt;Calculating Position Size&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;calculating-position-size&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#calculating-position-size&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;The core concept of using True Range (or ATR) for position sizing is to keep your risk per trade a consistent percentage of your trading capital, regardless of asset volatility. This is achieved by dynamically adjusting the number of units traded.
+The calculation formula is as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Define your risk amount per trade in your account currency. This is typically a fixed percentage of your total trading capital (e.g., 1-2%).
+Risk Amount = Capital  Risk Percentage&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Determine your stop-loss based on ATR. For example, you might set your stop-loss at a distance of 2  ATR from your entry point. This allows the stop to be wide enough to avoid random whipsaws from natural price fluctuations, yet narrow enough to control losses.
+Stop Loss Distance (in pips/dollars) = ATR  Multiplier (e.g., 2)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Calculate your position size (number of shares, lots, or contracts):
+Position Size = Risk Amount / Stop Loss Distance
+It&amp;rsquo;s crucial to consider the value of a pip or unit of the asset in your calculation. For instance, with stocks, this would be ATR in dollars; for Forex, it&amp;rsquo;s ATR multiplied by the pip value.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Practical Application&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;practical-application&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#practical-application&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Applying True Range for position sizing requires discipline and a clear understanding of your trading system. The choice of ATR period should align with your trading style: shorter periods (e.g., 5-10) might suit intraday trading, while longer periods (14-20) are better for swing trading. Using a dynamic, ATR-based stop-loss allows you to adapt to changing market conditions: in more volatile markets, your stop will be wider, automatically leading to a smaller position size while maintaining constant risk. In less volatile markets, the stop will be tighter, allowing for a larger trade volume.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

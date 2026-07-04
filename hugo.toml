@@ -1,0 +1,52 @@
+# =============================================
+# Base site settings
+# =============================================
+baseURL         = 'https://hesay.bond/'
+title           = 'He Say'
+theme           = "hextra"
+languageCode    = 'en-us'
+defaultContentLanguage = 'en-us'
+canonifyURLs    = true
+
+# =============================================
+# Display settings
+# =============================================
+[params]
+  displayUpdatedDate = true
+
+[params.editURL]
+  enable = true
+  base = "https://github.com/your-account/your-repo/edit/main/content/"
+
+[params.social]
+  # must exist for Hextra
+
+# =============================================
+# Pagination
+# =============================================
+paginate = 10
+paginatePath = "page"
+
+# =============================================
+# Build settings
+# =============================================
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+# =============================================
+# Output formats (RSS + JSON feeds)
+# =============================================
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[mediaTypes]
+  [mediaTypes.'application/json']
+    suffixes = ["json"]
+
+[outputFormats]
+  [outputFormats.JSON]
+    mediaType = 'application/json'
+    baseName = 'index'
+    isPlainText = false
+    notAlternative = true

@@ -1,0 +1,51 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>He Say – TradingSignals</title>
+    <link>http://localhost:1313/tags/tradingsignals/</link>
+    <description>Recent content in TradingSignals on He Say</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 Jul 2026 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/tradingsignals/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Using the Fisher Transform Indicator for Early Detection of Extremes</title>
+      <link>http://localhost:1313/posts/using-the-fisher-transform-indicator-for-early-detection-of-extremes/</link>
+      <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/using-the-fisher-transform-indicator-for-early-detection-of-extremes/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/posts/using-the-fisher-transform-indicator-for-early-detection-of-extremes.png&#34; alt=&#34;Image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Using the Fisher Transform Indicator for Early Extremum Detection&lt;/p&gt;
+&lt;p&gt;The Fisher Transform indicator, developed by John Ehlers, is a powerful technical analysis tool that converts price data into a so-called Gaussian normal distribution. The main goal&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Fees are the main enemy of any trading strategy. To maximize your profit from every market move, you need a platform with minimal charges. I highly recommend MEXC: &lt;a
+    href=&#34;https://promote.mexc.com/r/aep0hTSdh1&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Join MEXC&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;of this transformation is to amplify and clearly highlight market turning points and extreme conditions that might otherwise be less noticeable. The indicator aims to reduce the lag characteristic of many traditional oscillators, providing traders with more timely signals for decision-making.&lt;/p&gt;
+&lt;h2&gt;📈 Indicator Fundamentals&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;-indicator-fundamentals&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#-indicator-fundamentals&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;At its core, the Fisher Transform maps ordinary price fluctuations into a normalized range, typically from -1 to +1, although some implementations may use wider levels, such as -4 to +4, for better visual highlighting of extremes. This is achieved by applying a complex mathematical function, involving natural logarithm and hyperbolic tangent, to normalized price data like the high and low prices over a specific period. The indicator usually consists of two lines: the main Fisher Transform line and a signal line, which is a smoothed version of the former. These two lines move in sync, but their crossovers and divergences play a key role in generating trading signals.&lt;/p&gt;
+&lt;h2&gt;🔍 Early Detection Signals&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;-early-detection-signals&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#-early-detection-signals&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;The Fisher Transform is known for its ability to generate early signals of potential trend reversals. Key trading signals include:&lt;/p&gt;
+&lt;p&gt;Line Crossovers: When the main Fisher Transform line crosses the signal line from bottom to top, it&amp;rsquo;s often interpreted as a bullish signal, indicating a potential upward reversal and an opportunity to buy. Conversely, a top-down crossover signals a possible bearish reversal and a time to sell.&lt;/p&gt;
+&lt;p&gt;Extreme Values: When the indicator reaches upper (+1, +4) or lower (-1, -4) extreme levels, it indicates an overbought or oversold condition for the asset, respectively. Such values often precede a change in price direction.&lt;/p&gt;
+&lt;p&gt;Divergences: Particularly valuable is the detection of divergences, where the asset&amp;rsquo;s price makes new highs/lows, but the Fisher Transform indicator fails to confirm this, forming lower highs/higher lows. Such a divergence suggests weakening current momentum and a high potential for an imminent reversal.&lt;/p&gt;
+&lt;h2&gt;🚀 Trading Advantages&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;-trading-advantages&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#-trading-advantages&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;One of the key advantages of the Fisher Transform is its ability to identify market turning points early on. Through its mathematical transformation, it effectively &amp;ldquo;filters out&amp;rdquo; price noise and makes significant momentum changes more apparent. This allows traders to react faster to market shifts and potentially improve their entry and exit points. Furthermore, the indicator is versatile and can be applied to various financial assets and across different timeframes, making it a flexible tool in a trader&amp;rsquo;s arsenal. It&amp;rsquo;s also relatively straightforward to interpret, making it accessible even to traders with minimal experience.&lt;/p&gt;
+&lt;h2&gt;⚠️ Risks and Limitations&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;-risks-and-limitations&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#-risks-and-limitations&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Despite its advantages, the Fisher Transform is not a foolproof tool and has certain limitations. Like any other indicator, it can generate false signals, especially in volatile or sideways markets. Therefore, professional traders emphasize the need for additional confirmations. It&amp;rsquo;s important to note that the Fisher Transform can exhibit repainting characteristics, where previous signals may change, although not critically. Moreover, the indicator can produce numerous trading signals, not all of which may align with a specific trading strategy.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
