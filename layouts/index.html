@@ -13,28 +13,21 @@
           </h1>
         {{ end }}
 
-        <!-- Post grid -->
-        <div class="hx:grid hx:grid-cols-1 md:hx:grid-cols-2 lg:hx:grid-cols-3 hx:gap-x-6 hx:gap-y-8 hx:mb-8">
+        <!-- Post grid (first page) -->
+        <div id="posts-grid" class="hx:grid hx:grid-cols-1 md:hx:grid-cols-2 lg:hx:grid-cols-3 hx:gap-x-6 hx:gap-y-8 hx:mb-8">
           {{ range $paginator.Pages }}
             <a href="{{ .Permalink }}" class="hx:block hx:rounded-lg hx:bg-white hx:dark:bg-neutral-900 hx:transition-shadow hover:hx:shadow-lg hx:p-4 hx:text-inherit hx:no-underline">
-              <!-- Date -->
               <time datetime="{{ .Date.Format "2006-01-02" }}" class="hx:text-xs hx:text-slate-500 hx:dark:text-slate-400">
                 {{ .Date.Format "Jan 2, 2006" }}
               </time>
-              
-              <!-- Title -->
               <h2 class="hx:mt-1 hx:mb-2 hx:font-semibold hx:leading-tight hx:text-lg hx:text-slate-900 hx:dark:text-slate-100">
                 {{ .Title }}
               </h2>
-              
-              <!-- Summary -->
               {{ with .Summary | plainify | truncate 120 }}
                 <p class="hx:text-sm hx:text-slate-600 hx:dark:text-slate-400 hx:line-clamp-3">
                   {{ . }}
                 </p>
               {{ end }}
-              
-              <!-- Reading time -->
               <div class="hx:mt-3 hx:flex hx:items-center hx:text-xs hx:text-slate-500">
                 <span>{{ .ReadingTime }} min read</span>
               </div>
@@ -42,26 +35,81 @@
           {{ end }}
         </div>
 
-        {{ if gt $paginator.TotalPages 1 }}
-          <div class="hx:flex hx:justify-center hx:items-center hx:gap-4 hx:mt-8">
-            {{ if $paginator.HasPrev }}
-              <a href="{{ $paginator.Prev.URL }}" class="hx:px-4 hx:py-2 hx:rounded-full hx:bg-slate-100 hx:dark:bg-neutral-800 hx:hover:bg-slate-200 hx:dark:hover:bg-neutral-700 hx:transition-colors">
-                ← Back
-              </a>
-            {{ end }}
-            <span class="hx:text-sm hx:text-slate-500">
-              {{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}
-            </span>
-            {{ if $paginator.HasNext }}
-              <a href="{{ $paginator.Next.URL }}" class="hx:px-4 hx:py-2 hx:rounded-full hx:bg-slate-100 hx:dark:bg-neutral-800 hx:hover:bg-slate-200 hx:dark:hover:bg-neutral-700 hx:transition-colors">
-                Next →
-              </a>
-            {{ end }}
-          </div>
+        <!-- Sentinel for infinite scroll -->
+        {{ if $paginator.HasNext }}
+          <div id="load-more-sentinel" style="height: 1px; margin: 0; padding: 0;"></div>
+          <div id="next-page-url" style="display: none;">{{ $paginator.Next.URL | relURL }}</div>
         {{ end }}
 
         {{ partial "custom/page-end.html" . }}
       </main>
     </article>
   </div>
+
+  <!-- Infinite scroll script -->
+  <script>
+    (function() {
+      const grid = document.getElementById('posts-grid');
+      const sentinel = document.getElementById('load-more-sentinel');
+      const nextPageDiv = document.getElementById('next-page-url');
+      if (!grid || !sentinel || !nextPageDiv) return;
+
+      let nextPageUrl = nextPageDiv.textContent.trim();
+      if (!nextPageUrl) return;
+
+      let loading = false;
+
+      const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting && !loading) {
+          loadNextPage();
+        }
+      }, { rootMargin: '200px' });
+
+      observer.observe(sentinel);
+
+      function loadNextPage() {
+        if (loading || !nextPageUrl) return;
+        loading = true;
+
+        // Add a skeleton loader or just fetch
+        fetch(nextPageUrl)
+          .then(response => response.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+            
+            // Get all post cards from the loaded page
+            const newCards = doc.querySelectorAll('#posts-grid > a');
+            if (newCards.length === 0) {
+              nextPageUrl = '';
+              observer.unobserve(sentinel);
+              return;
+            }
+
+            newCards.forEach(card => grid.appendChild(card));
+
+            // Find the next page link on the loaded page
+            const nextPageElement = doc.getElementById('next-page-url');
+            if (nextPageElement) {
+              nextPageUrl = nextPageElement.textContent.trim();
+              // Update the hidden div so that we always have the latest URL
+              nextPageDiv.textContent = nextPageUrl;
+              if (!nextPageUrl) {
+                observer.unobserve(sentinel);
+              }
+            } else {
+              // No more pages
+              nextPageUrl = '';
+              observer.unobserve(sentinel);
+            }
+          })
+          .catch(err => {
+            console.error('Failed to load next page:', err);
+          })
+          .finally(() => {
+            loading = false;
+          });
+      }
+    })();
+  </script>
 {{ end }}
