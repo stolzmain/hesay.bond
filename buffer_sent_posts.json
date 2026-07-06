@@ -1,29 +1,172 @@
 {
-  "how-to-correctly-draw-fibonacci-extension-levels-for-setting-take-profit-targets": "2026-07-05T01:16:10.687107",
-  "how-to-find-market-maker-manipulations-using-order-book-analysis": "2026-07-05T01:20:28.562093",
-  "how-to-find-market-structure-shifts-on-lower-timeframes": "2026-07-05T01:20:55.145282",
-  "how-to-set-breakeven-based-on-market-structure-not-a-mathematical-step": "2026-07-05T01:21:25.798660",
-  "how-to-use-the-triple-exponential-moving-average-tema-indicator-for-scalping": "2026-07-05T01:21:54.394518",
-  "how-to-use-the-true-range-indicator-for-position-sizing": "2026-07-05T01:22:22.102260",
-  "using-a-composite-consensus-indicator-for-signal-filtering": "2026-07-05T01:22:57.012429",
-  "using-the-price-channel-indicator-to-determine-overbought-zones": "2026-07-05T01:23:24.665039",
-  "using-the-rolling-window-indicator-rolling-volatility-for-risk-assessment": "2026-07-05T01:23:55.493029",
-  "using-the-standard-deviation-indicator-to-assess-volatility": "2026-07-05T01:24:30.148669",
-  "how-to-apply-the-hull-moving-average-hma-to-reduce-signal-lag": "failed_2026-07-05T01:31:19.350739",
-  "the-concept-of-mitigation-block-in-smart-money-trading": "failed_2026-07-05T01:31:21.095044",
+  "how-to-correctly-draw-fibonacci-extension-levels-for-setting-take-profit-targets": {
+    "twitter": "2026-07-05T01:16:10.687107",
+    "bluesky": "2026-07-06T08:44:48.124121",
+    "threads": "2026-07-06T08:44:49.974801"
+  },
+  "how-to-find-market-maker-manipulations-using-order-book-analysis": {
+    "twitter": "2026-07-05T01:20:28.562093",
+    "bluesky": "failed_2026-07-06T08:45:55.572841",
+    "threads": "failed_2026-07-06T08:45:57.365796"
+  },
+  "how-to-find-market-structure-shifts-on-lower-timeframes": {
+    "twitter": "2026-07-05T01:20:55.145282",
+    "bluesky": "failed_2026-07-06T08:46:28.206537",
+    "threads": "failed_2026-07-06T08:46:29.964362"
+  },
+  "how-to-set-breakeven-based-on-market-structure-not-a-mathematical-step": {
+    "twitter": "2026-07-05T01:21:25.798660",
+    "bluesky": "failed_2026-07-06T08:46:59.735930",
+    "threads": "failed_2026-07-06T08:47:01.508023"
+  },
+  "how-to-use-the-triple-exponential-moving-average-tema-indicator-for-scalping": {
+    "twitter": "2026-07-05T01:21:54.394518",
+    "bluesky": "failed_2026-07-06T08:48:14.789175",
+    "threads": "failed_2026-07-06T08:48:16.539838"
+  },
+  "how-to-use-the-true-range-indicator-for-position-sizing": {
+    "twitter": "2026-07-05T01:22:22.102260",
+    "bluesky": "failed_2026-07-06T08:48:49.346559",
+    "threads": "failed_2026-07-06T08:48:51.049977"
+  },
+  "using-a-composite-consensus-indicator-for-signal-filtering": {
+    "twitter": "2026-07-05T01:22:57.012429",
+    "bluesky": "failed_2026-07-06T08:56:47.248040",
+    "threads": "failed_2026-07-06T08:56:49.140988"
+  },
+  "using-the-price-channel-indicator-to-determine-overbought-zones": {
+    "twitter": "2026-07-05T01:23:24.665039",
+    "bluesky": "failed_2026-07-06T08:57:19.915146",
+    "threads": "failed_2026-07-06T08:57:21.665670"
+  },
+  "using-the-rolling-window-indicator-rolling-volatility-for-risk-assessment": {
+    "twitter": "2026-07-05T01:23:55.493029",
+    "bluesky": "failed_2026-07-06T08:58:31.765008",
+    "threads": "failed_2026-07-06T08:58:33.616566"
+  },
+  "using-the-standard-deviation-indicator-to-assess-volatility": {
+    "twitter": "2026-07-05T01:24:30.148669",
+    "bluesky": "failed_2026-07-06T08:59:07.344393",
+    "threads": "failed_2026-07-06T08:59:09.189633"
+  },
+  "how-to-apply-the-hull-moving-average-hma-to-reduce-signal-lag": {
+    "twitter": "2026-07-06T08:44:10.798340",
+    "bluesky": "2026-07-06T08:44:13.031574",
+    "threads": "2026-07-06T08:44:15.144354"
+  },
+  "the-concept-of-mitigation-block-in-smart-money-trading": {
+    "twitter": "failed_2026-07-06T08:53:38.608616",
+    "bluesky": "failed_2026-07-06T08:53:40.393107",
+    "threads": "failed_2026-07-06T08:53:42.275002"
+  },
   "engulfing-candlestick-pattern-rules-for-pattern-validation-in-the-crypto-market": {
-    "twitter": "failed_2026-07-06T01:41:11.271185",
-    "bluesky": "failed_2026-07-06T01:41:14.861265",
-    "threads": "failed_2026-07-06T01:41:18.452962"
+    "twitter": "2026-07-06T08:41:37.883469",
+    "bluesky": "2026-07-06T08:41:39.804237",
+    "threads": "2026-07-06T08:41:41.770150"
   },
   "using-the-relative-vigor-index-rvi": {
-    "twitter": "failed_2026-07-06T03:16:44.340069",
-    "bluesky": "failed_2026-07-06T03:16:47.171969",
-    "threads": "failed_2026-07-06T03:16:50.143551"
+    "twitter": "failed_2026-07-06T08:57:56.392814",
+    "bluesky": "failed_2026-07-06T08:57:58.191097",
+    "threads": "failed_2026-07-06T08:57:59.943802"
   },
   "morning-star-and-evening-star-candlestick-patterns-on-daily-cryptocurrency-charts": {
-    "twitter": "failed_2026-07-06T05:08:15.544284",
-    "bluesky": "failed_2026-07-06T05:08:18.602661",
-    "threads": "failed_2026-07-06T05:08:21.605280"
+    "twitter": "failed_2026-07-06T08:49:59.389574",
+    "bluesky": "failed_2026-07-06T08:50:01.407955",
+    "threads": "failed_2026-07-06T08:50:03.225098"
+  },
+  "how-to-determine-the-strength-of-a-horizontal-level-by-the-number-of-touches-and-volume": {
+    "twitter": "2026-07-06T08:45:23.953339",
+    "bluesky": "2026-07-06T08:45:25.852689",
+    "threads": "2026-07-06T08:45:27.753237"
+  },
+  "cup-and-handle-pattern-formation-mechanics-and-entry-rules": {
+    "twitter": "2026-07-06T08:39:41.494744",
+    "bluesky": "2026-07-06T08:39:43.391000",
+    "threads": "2026-07-06T08:39:45.824776"
+  },
+  "cup-pattern-without-a-handle-specifics-of-trading-breakout-impulses": {
+    "twitter": "2026-07-06T08:40:18.814909",
+    "bluesky": "2026-07-06T08:40:20.566815",
+    "threads": "2026-07-06T08:40:22.526820"
+  },
+  "dark-cloud-cover-candlestick-pattern-as-a-short-signal-in-the-crypto-market": {
+    "twitter": "2026-07-06T08:40:57.444233",
+    "bluesky": "2026-07-06T08:40:59.794677",
+    "threads": "2026-07-06T08:41:01.998009"
+  },
+  "features-of-trading-the-wedge-pattern-falling-and-rising-in-a-bear-market": {
+    "twitter": "2026-07-06T08:42:15.662091",
+    "bluesky": "2026-07-06T08:42:17.633148",
+    "threads": "2026-07-06T08:42:19.543629"
+  },
+  "finding-entry-points-on-the-retest-of-the-double-top-pattern-neckline": {
+    "twitter": "2026-07-06T08:42:49.480464",
+    "bluesky": "2026-07-06T08:42:51.344506",
+    "threads": "2026-07-06T08:42:53.450791"
+  },
+  "folding-rule-pattern-three-consecutive-trend-lines-for-identifying-a-deep-correction": {
+    "twitter": "2026-07-06T08:43:30.219978",
+    "bluesky": "2026-07-06T08:43:32.041315",
+    "threads": "2026-07-06T08:43:33.929686"
+  },
+  "how-to-use-the-chande-kroll-stop-indicator": {
+    "twitter": "2026-07-06T08:47:37.453574",
+    "bluesky": "failed_2026-07-06T08:47:39.137372",
+    "threads": "failed_2026-07-06T08:47:41.010093"
+  },
+  "market-trend-indicator-klinger-oscillator-for-long-term-volume-analysis": {
+    "twitter": "failed_2026-07-06T08:49:20.031300",
+    "bluesky": "failed_2026-07-06T08:49:21.829014",
+    "threads": "failed_2026-07-06T08:49:23.587312"
+  },
+  "pin-bar-pattern-how-to-enter-a-trade-against-a-local-trend": {
+    "twitter": "failed_2026-07-06T08:50:37.003904",
+    "bluesky": "failed_2026-07-06T08:50:38.768454",
+    "threads": "failed_2026-07-06T08:50:40.500441"
+  },
+  "premium-and-discount-zones-concept-for-effective-shopping": {
+    "twitter": "failed_2026-07-06T08:51:11.222450",
+    "bluesky": "failed_2026-07-06T08:51:12.986242",
+    "threads": "failed_2026-07-06T08:51:14.732953"
+  },
+  "rectangle-pattern-how-to-trade-accumulation-before-a-breakout": {
+    "twitter": "failed_2026-07-06T08:51:50.465538",
+    "bluesky": "failed_2026-07-06T08:51:52.197881",
+    "threads": "failed_2026-07-06T08:51:54.365951"
+  },
+  "ross-hook-pattern-trend-continuation-after-fractal-breakout": {
+    "twitter": "failed_2026-07-06T08:52:22.151380",
+    "bluesky": "failed_2026-07-06T08:52:24.203476",
+    "threads": "failed_2026-07-06T08:52:25.964564"
+  },
+  "the-concept-of-equal-highs-and-lows-equal-highsequal-lows-as-price-magnets": {
+    "twitter": "failed_2026-07-06T08:53:01.947136",
+    "bluesky": "failed_2026-07-06T08:53:03.765043",
+    "threads": "failed_2026-07-06T08:53:05.813800"
+  },
+  "the-concept-of-order-blocks-in-smart-money-how-to-find-zones-of-institutional-interest": {
+    "twitter": "failed_2026-07-06T08:54:18.097408",
+    "bluesky": "failed_2026-07-06T08:54:19.768866",
+    "threads": "failed_2026-07-06T08:54:21.487732"
+  },
+  "the-concept-of-stop-hunting-liquidity-run-how-not-to-become-liquidity-for-large-players": {
+    "twitter": "failed_2026-07-06T08:54:58.172169",
+    "bluesky": "failed_2026-07-06T08:55:00.100670",
+    "threads": "failed_2026-07-06T08:55:01.967448"
+  },
+  "the-full-mitigation-concept-in-mid-term-trading": {
+    "twitter": "failed_2026-07-06T08:55:29.910020",
+    "bluesky": "failed_2026-07-06T08:55:31.790507",
+    "threads": "failed_2026-07-06T08:55:33.608340"
+  },
+  "three-drives-pattern-as-a-reversal-harmonic-model": {
+    "twitter": "failed_2026-07-06T08:56:06.524567",
+    "bluesky": "failed_2026-07-06T08:56:08.409682",
+    "threads": "failed_2026-07-06T08:56:10.556424"
+  },
+  "using-the-volume-rate-of-change-volume-roc-indicator-to-confirm-a-trend": {
+    "twitter": "failed_2026-07-06T08:59:40.100822",
+    "bluesky": "failed_2026-07-06T08:59:41.933277",
+    "threads": "failed_2026-07-06T08:59:43.686702"
   }
 }
