@@ -31,8 +31,8 @@
   },
   "using-a-composite-consensus-indicator-for-signal-filtering": {
     "twitter": "2026-07-05T01:22:57.012429",
-    "bluesky": "failed_2026-07-06T08:56:47.248040",
-    "threads": "failed_2026-07-06T08:56:49.140988"
+    "bluesky": "2026-07-13T11:05:01.901118+00:00",
+    "threads": "2026-07-13T11:05:03.763846+00:00"
   },
   "using-the-price-channel-indicator-to-determine-overbought-zones": {
     "twitter": "2026-07-05T01:23:24.665039",
@@ -65,7 +65,7 @@
     "threads": "2026-07-06T08:41:41.770150"
   },
   "using-the-relative-vigor-index-rvi": {
-    "twitter": "failed_2026-07-06T08:57:56.392814",
+    "twitter": "2026-07-13T11:05:17.825078+00:00",
     "bluesky": "failed_2026-07-06T08:57:58.191097",
     "threads": "failed_2026-07-06T08:57:59.943802"
   },
@@ -165,7 +165,7 @@
     "threads": "2026-07-12T11:01:23.793533+00:00"
   },
   "using-the-volume-rate-of-change-volume-roc-indicator-to-confirm-a-trend": {
-    "twitter": "failed_2026-07-06T08:59:40.100822",
+    "twitter": "2026-07-13T11:05:21.522264+00:00",
     "bluesky": "failed_2026-07-06T08:59:41.933277",
     "threads": "failed_2026-07-06T08:59:43.686702"
   },
@@ -250,7 +250,7 @@
     "threads": "2026-07-08T07:56:36.056823+00:00"
   },
   "using-the-price-oscillator-indicator": {
-    "twitter": "failed_2026-07-08T10:33:17.058915+00:00",
+    "twitter": "2026-07-13T11:05:15.914506+00:00",
     "bluesky": "failed_2026-07-08T10:33:20.296881+00:00",
     "threads": "failed_2026-07-08T10:33:23.106962+00:00"
   },
@@ -335,7 +335,9 @@
     "threads": "2026-07-12T11:01:44.540614+00:00"
   },
   "trading-strategy-using-three-white-soldiers-and-three-black-crows-patterns": {
-    "twitter": "2026-07-11T10:58:29.474789+00:00"
+    "twitter": "2026-07-11T10:58:29.474789+00:00",
+    "bluesky": "2026-07-13T11:04:40.461494+00:00",
+    "threads": "2026-07-13T11:04:42.643977+00:00"
   },
   "falling-three-methods-pattern-for-cryptocurrency-bearish-trading": {
     "twitter": "2026-07-12T11:00:58.411962+00:00",
@@ -363,21 +365,49 @@
     "threads": "2026-07-12T11:01:29.883814+00:00"
   },
   "trading-support-and-resistance-levels-the-mirror-levels-concept": {
-    "twitter": "2026-07-12T11:01:46.518653+00:00"
+    "twitter": "2026-07-12T11:01:46.518653+00:00",
+    "bluesky": "2026-07-13T11:04:44.491345+00:00",
+    "threads": "2026-07-13T11:04:46.510335+00:00"
   },
   "trading-the-harami-bullish-and-bearish-candlestick-pattern-at-trend-reversals": {
-    "twitter": "2026-07-12T11:01:48.320436+00:00"
+    "twitter": "2026-07-12T11:01:48.320436+00:00",
+    "bluesky": "2026-07-13T11:04:48.469832+00:00",
+    "threads": "2026-07-13T11:04:50.421957+00:00"
   },
   "trend-strength-indicator-r-squared-for-determining-movement-stability": {
-    "twitter": "2026-07-12T11:01:50.118232+00:00"
+    "twitter": "2026-07-12T11:01:50.118232+00:00",
+    "bluesky": "2026-07-13T11:04:57.865795+00:00",
+    "threads": "2026-07-13T11:04:59.831445+00:00"
   },
   "using-kaufmans-adaptive-moving-average-kama-in-flat-zones": {
-    "twitter": "2026-07-12T11:01:52.340661+00:00"
+    "twitter": "2026-07-12T11:01:52.340661+00:00",
+    "bluesky": "2026-07-13T11:05:05.596324+00:00",
+    "threads": "2026-07-13T11:05:07.574427+00:00"
   },
   "using-the-arnaud-legoux-moving-average-alma-indicator-for-entry-precision": {
-    "twitter": "failed_2026-07-12T13:01:58.764228+00:00"
+    "twitter": "2026-07-13T11:05:09.754244+00:00",
+    "bluesky": "2026-07-13T11:05:12.151796+00:00",
+    "threads": "failed_2026-07-13T11:05:14.023267+00:00"
   },
   "using-the-normalized-volume-indicator-to-compare-trading-sessions": {
     "twitter": "2026-07-12T13:47:24.334663+00:00"
+  },
+  "how-to-detect-spoofing-manipulation-in-the-order-book": {
+    "twitter": "2026-07-13T11:04:28.387931+00:00",
+    "bluesky": "2026-07-13T11:04:30.787486+00:00",
+    "threads": "2026-07-13T11:04:32.640735+00:00"
+  },
+  "how-to-use-the-elder-ray-index-in-systematic-trading": {
+    "twitter": "2026-07-13T11:04:34.577090+00:00",
+    "bluesky": "2026-07-13T11:04:36.447478+00:00",
+    "threads": "2026-07-13T11:04:38.653960+00:00"
+  },
+  "trading-the-rounding-bottom-pattern-on-long-term-timeframes": {
+    "twitter": "2026-07-13T11:04:52.224418+00:00",
+    "bluesky": "2026-07-13T11:04:54.061709+00:00",
+    "threads": "2026-07-13T11:04:55.922167+00:00"
+  },
+  "using-the-true-strength-index-tsi": {
+    "twitter": "2026-07-13T11:05:19.734597+00:00"
   }
 }
