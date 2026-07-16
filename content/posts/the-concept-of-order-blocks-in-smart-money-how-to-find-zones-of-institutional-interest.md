@@ -6,7 +6,7 @@ tags = ["trading", "smartmoney", "orderblocks"]
 image = "/images/posts/the-concept-of-order-blocks-in-smart-money-how-to-find-zones-of-institutional-interest.png"
 +++
 
-## What are Order Blocks?
+What are Order Blocks?
 
 The concept of Order Blocks is one of the cornerstones of the Smart Money Concepts (SMC) methodology, offering traders a unique perspective on market structure and the behavior of major institutional players. An order block 
 

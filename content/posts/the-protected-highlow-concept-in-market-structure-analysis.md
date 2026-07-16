@@ -18,7 +18,7 @@ By the way, if you're looking for a reliable exchange with fair conditions, chec
 
 
 
-## What is a Protected High/Low?
+What is a Protected High/Low?
 A Protected High is a swing high that is expected to hold without being breached before price continues its move downward. Similarly, a Protected Low is a swing low that is expected to hold without being breached before price continues its move upward. These levels serve as critical points on the chart where a strong price reaction is expected if the current trend is to continue. Identifying them helps establish the boundaries of the price range in which the market is moving.
 
 ## The Importance of Protected Levels

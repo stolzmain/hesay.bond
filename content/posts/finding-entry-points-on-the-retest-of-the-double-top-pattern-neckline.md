@@ -28,7 +28,7 @@ The neckline is a horizontal or slightly sloped line connecting the lows between
 
 When an asset price breaks the neckline after the second peak forms, it indicates intensifying bearish pressure. Trading volume often spikes at the moment of the breakdown, which further confirms the strength of the move. However, experienced traders rarely enter a position immediately after the breakout. They prefer to wait for a retest of the broken neckline to secure a more reliable entry point with a better risk/reward ratio.
 
-## What is a retest and why is it important?
+What is a retest and why is it important?
 
 A retest is a price return to a previously broken level. In the case of a Double Top, after the neckline is broken downward, the price often returns to this line, which now acts as resistance, to test it. If the neckline successfully acts as resistance and the price bounces off it, this creates an ideal entry point for opening a short position. A retest reduces the risk of a fakeout and provides a second, often more profitable, opportunity to enter.
 

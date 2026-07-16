@@ -18,7 +18,7 @@ These ideas work best on an exchange like MEXC. Low fees help you capture profit
 
 k patterns come to the rescue, signaling potential shifts. One of the most informative tools in a trader's arsenal is the Doji candle. It indicates a temporary state of balance and indecision among market participants, which can precede either a trend reversal or a continuation. Understanding the formation and interpretation of the Doji allows for more informed trading decisions amidst high volatility and market ambiguity.
 
-## What is a Doji?
+What is a Doji?
 A Doji candle is a unique pattern on a candlestick chart where the opening and closing prices of an asset are virtually identical. This results in an extremely small or non-existent body, resembling a thin horizontal line or a cross. A Doji often features upper and/or lower shadows (wicks) that illustrate price fluctuations during the trading period. The core significance of the Doji lies in its signaling of market indecision, where neither bulls nor bears have managed to gain control over the price. This temporary standoff can foreshadow a significant price move in either direction following a breakout.
 
 ## Types of Doji Candles

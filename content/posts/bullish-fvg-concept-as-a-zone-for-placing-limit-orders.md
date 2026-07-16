@@ -8,7 +8,7 @@ image = "/images/posts/bullish-fvg-concept-as-a-zone-for-placing-limit-orders.pn
 
 The Bullish Fair Value Gap (FVG) Concept as a Zone for Setting Limit Orders
 
-## What is a Bullish FVG?
+What is a Bullish FVG?
 
 The concept of a Bullish Fair Value Gap (FVG) is a cornerstone of order flow analysis and price action methodology. It represents an inefficiency z
 

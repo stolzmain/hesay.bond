@@ -16,7 +16,7 @@ Want to test a new trading strategy but afraid of risking your capital? MEXC has
 
 t. The True Range (TR) indicator and its averaged value, Average True Range (ATR), offer a powerful tool for dynamically calculating position size, adapting to current market volatility for more effective risk control.
 
-##  What is True Range?
+ What is True Range?
 True Range is a volatility measure developed by Welles Wilder that accounts for price gaps, which simple High-Low calculations miss. It's the greatest of three values: the current high minus the current low; the absolute value of the current high minus the previous day's close; or the absolute value of the current low minus the previous day's close. This approach ensures the indicator always captures the full price movement over a period, including overnight swings.
 
 ##  Volatility and Risk

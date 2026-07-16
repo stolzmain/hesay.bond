@@ -16,7 +16,7 @@ Trading in the green, but exchange fees are eating into your profits? MEXC curre
 
 
 
-## What is Market Structure Shift?
+What is Market Structure Shift?
 Market Structure Shift (MSS) signifies a change in the sequence of price highs and lows, indicating a reversal of the current trend. In an uptrend, the market forms higher highs and higher lows. If the price breaks the last higher low, it may signal a bearish structure break and a potential transition to a downtrend. Conversely, in a downtrend, characterized by lower highs and lower lows, a break of the last lower high indicates a bullish structure break and a potential transition to an uptrend. It's crucial to distinguish MSS from a Break of Structure (BOS), which confirms the continuation of the current trend, and a Change of Character (CHoCH), which is an earlier but less confirmed signal of trend weakening. Attention should also be paid to "liquidity grabs," which are short-term wicks through levels without subsequent decisive price displacement, often not leading to a true reversal.
 
 ## Identifying Key Swings

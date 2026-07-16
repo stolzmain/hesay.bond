@@ -18,7 +18,7 @@ Trading in the green, but exchange fees are eating into your profits? MEXC curre
 
  with clear boundaries within which an asset's price moves. Unlike other channel indicators, such as Bollinger Bands, the Price Channel doesn't rely on moving averages to construct its boundaries. Instead, its upper line is formed by the highest high over a specified number of preceding periods ('N'), while the lower line is based on the lowest low over the same period. The central line, if present, is a simple arithmetic average between the upper and lower boundaries. These lines dynamically adapt to market shifts, constantly redrawing as new highs or lows are established.
 
-## What's an Overbought Zone?
+What's an Overbought Zone?
 
 In trading, an overbought zone indicates that an asset's price has significantly surged over a short period, potentially reaching unsustainable levels. This is often interpreted as a signal that the upward momentum is exhausted, and a price correction or reversal downwards may soon occur. Identifying such zones is crucial for traders looking to lock in profits or open short positions before a downward move begins.
 

@@ -6,7 +6,7 @@ tags = ["cryptotrading", "technicalanalysis", "priceaction"]
 image = "/images/posts/morning-star-and-evening-star-candlestick-patterns-on-daily-cryptocurrency-charts.png"
 +++
 
-## What are the Morning Star and Evening Star patterns?
+What are the Morning Star and Evening Star patterns?
 
 The Morning Star and Evening Star candlestick patterns are powerful reversal formations frequently encountered in financial markets, including crypto. These three-candle patterns signal a potential change in trend direction. On daily charts, they carry significant weight as they provide more reliable signals compared to those on lower timeframes.
 
