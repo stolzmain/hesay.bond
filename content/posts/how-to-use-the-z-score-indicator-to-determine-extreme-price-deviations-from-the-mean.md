@@ -5,7 +5,7 @@ draft = false
 tags = ["Trading", "CryptoAnalysis", "TechnicalIndicators"]
 +++
 
-## How to use the Z-Score indicator to identify extreme price deviations from the mean
+How to use the Z-Score indicator to identify extreme price deviations from the mean
 
 Market prices follow statistical laws: most of the time, assets fluctuate around their mean value. Understanding the extent of a price deviation from the norm give
 
