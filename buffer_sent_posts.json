@@ -627,5 +627,8 @@
   },
   "qqe-quantitative-qualitative-estimation-indicator-a-lag-free-rsi-analogue": {
     "threads": "failed_2026-07-17T22:00:25.225250+00:00"
+  },
+  "vwap-indicator-with-deviations-intraday-trading-using-institutional-levels": {
+    "threads": "failed_2026-07-17T22:51:27.063353+00:00"
   }
 }
