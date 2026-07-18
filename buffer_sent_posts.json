@@ -558,7 +558,7 @@
   "how-to-use-the-chande-momentum-oscillator-cmo": {
     "twitter": "2026-07-16T21:24:28.026854+00:00",
     "bluesky": "2026-07-17T11:32:47.106696+00:00",
-    "threads": "failed_2026-07-18T07:49:44.746795+00:00"
+    "threads": "failed_2026-07-18T08:50:33.280998+00:00"
   },
   "how-to-use-the-trade-volume-index-tvi-indicator": {
     "twitter": "2026-07-17T00:05:53.139898+00:00",
@@ -568,26 +568,26 @@
   "how-to-use-alexander-elders-bulls-and-bears-power-indicator": {
     "twitter": "2026-07-17T03:27:50.505900+00:00",
     "bluesky": "2026-07-17T11:32:40.896429+00:00",
-    "threads": "failed_2026-07-18T07:49:41.050026+00:00"
+    "threads": "failed_2026-07-18T08:50:30.015797+00:00"
   },
   "how-to-use-the-average-directional-index-adx-indicator-to-exit-a-position": {
     "twitter": "2026-07-17T11:32:17.789764+00:00",
     "bluesky": "2026-07-17T11:32:20.613720+00:00",
-    "threads": "failed_2026-07-18T07:49:43.088534+00:00"
+    "threads": "failed_2026-07-18T08:50:31.633672+00:00"
   },
   "belt-hold-pattern-in-cryptocurrency-candlestick-analysis": {
     "twitter": "2026-07-17T11:32:26.142715+00:00",
     "bluesky": "2026-07-17T11:32:28.306527+00:00",
-    "threads": "failed_2026-07-18T07:49:30.699784+00:00"
+    "threads": "failed_2026-07-18T08:50:19.498837+00:00"
   },
   "dead-cat-bounce-pattern-how-not-to-buy-a-false-bottom-bounce": {
     "bluesky": "2026-07-17T11:32:32.102398+00:00",
-    "threads": "failed_2026-07-18T07:49:35.982711+00:00",
+    "threads": "failed_2026-07-18T08:50:24.463622+00:00",
     "twitter": "2026-07-17T19:37:34.341053+00:00"
   },
   "hidden-order-block-concept-based-on-candle-wicks": {
     "bluesky": "2026-07-17T11:32:37.371197+00:00",
-    "threads": "failed_2026-07-18T07:49:39.391345+00:00",
+    "threads": "failed_2026-07-18T08:50:28.067735+00:00",
     "twitter": "2026-07-17T19:37:37.849821+00:00"
   },
   "how-to-use-the-cumulative-volume-index-to-track-long-term-trends": {
@@ -636,7 +636,7 @@
   },
   "currency-pair-correlation-indicator-and-its-application-in-cryptocurrency": {
     "twitter": "2026-07-18T00:12:59.103000+00:00",
-    "threads": "failed_2026-07-18T07:49:34.343266+00:00"
+    "threads": "failed_2026-07-18T08:50:22.798018+00:00"
   },
   "market-balance-volume-indicator": {
     "threads": "failed_2026-07-18T00:48:49.210049+00:00"
@@ -652,18 +652,21 @@
     "threads": "failed_2026-07-18T03:30:49.606939+00:00"
   },
   "chande-momentum-oscillator-cmo-vs-rsi-a-signal-comparison": {
-    "threads": "failed_2026-07-18T07:49:32.365066+00:00"
+    "threads": "failed_2026-07-18T08:50:21.150659+00:00"
   },
   "exponential-ribbon-ema-ribbon-indicator-on-a-5-minute-chart": {
-    "threads": "failed_2026-07-18T07:49:37.741674+00:00"
+    "threads": "failed_2026-07-18T08:50:26.107072+00:00"
   },
   "relative-strength-rs-indicator-for-selecting-altcoins-against-btc": {
     "threads": "failed_2026-07-18T06:18:08.056898+00:00"
   },
   "absolute-trend-strength-indicator": {
-    "threads": "failed_2026-07-18T07:49:29.057942+00:00"
+    "threads": "failed_2026-07-18T08:50:17.261823+00:00"
   },
   "squeeze-indicator-for-identifying-pre-volatility-breakout-moments": {
     "threads": "failed_2026-07-18T07:44:25.856280+00:00"
+  },
+  "volume-weighted-rsi-indicator": {
+    "threads": "failed_2026-07-18T08:45:14.107117+00:00"
   }
 }
