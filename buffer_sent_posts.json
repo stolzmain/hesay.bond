@@ -558,46 +558,46 @@
   "how-to-use-the-chande-momentum-oscillator-cmo": {
     "twitter": "2026-07-16T21:24:28.026854+00:00",
     "bluesky": "2026-07-17T11:32:47.106696+00:00",
-    "threads": "failed_2026-07-17T22:40:37.077267+00:00"
+    "threads": "failed_2026-07-17T23:42:26.887950+00:00"
   },
   "how-to-use-the-trade-volume-index-tvi-indicator": {
     "twitter": "2026-07-17T00:05:53.139898+00:00",
     "bluesky": "2026-07-17T11:32:57.954447+00:00",
-    "threads": "failed_2026-07-17T22:40:41.977679+00:00"
+    "threads": "failed_2026-07-17T23:42:32.563418+00:00"
   },
   "how-to-use-alexander-elders-bulls-and-bears-power-indicator": {
     "twitter": "2026-07-17T03:27:50.505900+00:00",
     "bluesky": "2026-07-17T11:32:40.896429+00:00",
-    "threads": "failed_2026-07-17T22:40:33.781818+00:00"
+    "threads": "failed_2026-07-17T23:42:23.560142+00:00"
   },
   "how-to-use-the-average-directional-index-adx-indicator-to-exit-a-position": {
     "twitter": "2026-07-17T11:32:17.789764+00:00",
     "bluesky": "2026-07-17T11:32:20.613720+00:00",
-    "threads": "failed_2026-07-17T22:40:35.440588+00:00"
+    "threads": "failed_2026-07-17T23:42:25.204956+00:00"
   },
   "belt-hold-pattern-in-cryptocurrency-candlestick-analysis": {
     "twitter": "2026-07-17T11:32:26.142715+00:00",
     "bluesky": "2026-07-17T11:32:28.306527+00:00",
-    "threads": "failed_2026-07-17T22:40:28.482150+00:00"
+    "threads": "failed_2026-07-17T23:42:18.454520+00:00"
   },
   "dead-cat-bounce-pattern-how-not-to-buy-a-false-bottom-bounce": {
     "bluesky": "2026-07-17T11:32:32.102398+00:00",
-    "threads": "failed_2026-07-17T22:40:30.497082+00:00",
+    "threads": "failed_2026-07-17T23:42:20.146740+00:00",
     "twitter": "2026-07-17T19:37:34.341053+00:00"
   },
   "hidden-order-block-concept-based-on-candle-wicks": {
     "bluesky": "2026-07-17T11:32:37.371197+00:00",
-    "threads": "failed_2026-07-17T22:40:32.146794+00:00",
+    "threads": "failed_2026-07-17T23:42:21.808075+00:00",
     "twitter": "2026-07-17T19:37:37.849821+00:00"
   },
   "how-to-use-the-cumulative-volume-index-to-track-long-term-trends": {
     "bluesky": "2026-07-17T11:32:50.969280+00:00",
-    "threads": "failed_2026-07-17T22:40:38.702052+00:00",
+    "threads": "failed_2026-07-17T23:42:28.913832+00:00",
     "twitter": "2026-07-17T20:38:41.275867+00:00"
   },
   "how-to-use-the-geometric-moving-average-gma-indicator": {
     "bluesky": "2026-07-17T11:32:54.471560+00:00",
-    "threads": "failed_2026-07-17T22:40:40.333521+00:00",
+    "threads": "failed_2026-07-17T23:42:30.924737+00:00",
     "twitter": "2026-07-17T20:38:45.151376+00:00"
   },
   "trading-from-linear-regression-channel-boundaries-on-a-15-minute-chart": {
@@ -616,7 +616,7 @@
     "threads": "failed_2026-07-17T19:07:28.480786+00:00"
   },
   "how-to-use-the-z-score-indicator-to-determine-extreme-price-deviations-from-the-mean": {
-    "threads": "failed_2026-07-17T22:40:43.654034+00:00",
+    "threads": "failed_2026-07-17T23:42:34.661477+00:00",
     "twitter": "2026-07-17T21:39:49.783440+00:00"
   },
   "rainbow-moving-average-indicator-setting-up-multi-moving-averages-for-trend-identification": {
@@ -630,5 +630,8 @@
   },
   "vwap-indicator-with-deviations-intraday-trading-using-institutional-levels": {
     "threads": "failed_2026-07-17T22:51:27.063353+00:00"
+  },
+  "time-sales-market-indicator-in-crypto-trading": {
+    "threads": "failed_2026-07-17T23:32:14.820273+00:00"
   }
 }
