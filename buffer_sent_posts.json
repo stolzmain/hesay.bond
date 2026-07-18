@@ -659,5 +659,8 @@
   },
   "relative-strength-rs-indicator-for-selecting-altcoins-against-btc": {
     "threads": "failed_2026-07-18T06:18:08.056898+00:00"
+  },
+  "absolute-trend-strength-indicator": {
+    "threads": "failed_2026-07-18T07:03:55.852060+00:00"
   }
 }
