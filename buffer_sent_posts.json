@@ -689,5 +689,8 @@
   "high-low-activator-indicator-for-stops": {
     "threads": "failed_2026-07-18T11:53:07.279277+00:00",
     "bluesky": "2026-07-18T11:53:05.573024+00:00"
+  },
+  "triangular-moving-average-trima-indicator-in-noise-filtering": {
+    "threads": "failed_2026-07-18T12:13:50.087154+00:00"
   }
 }
