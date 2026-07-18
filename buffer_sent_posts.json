@@ -578,16 +578,16 @@
   "belt-hold-pattern-in-cryptocurrency-candlestick-analysis": {
     "twitter": "2026-07-17T11:32:26.142715+00:00",
     "bluesky": "2026-07-17T11:32:28.306527+00:00",
-    "threads": "failed_2026-07-18T13:55:14.830508+00:00"
+    "threads": "failed_2026-07-18T14:56:04.102251+00:00"
   },
   "dead-cat-bounce-pattern-how-not-to-buy-a-false-bottom-bounce": {
     "bluesky": "2026-07-17T11:32:32.102398+00:00",
-    "threads": "failed_2026-07-18T13:55:22.080481+00:00",
+    "threads": "failed_2026-07-18T14:56:11.134987+00:00",
     "twitter": "2026-07-17T19:37:34.341053+00:00"
   },
   "hidden-order-block-concept-based-on-candle-wicks": {
     "bluesky": "2026-07-17T11:32:37.371197+00:00",
-    "threads": "failed_2026-07-18T13:55:27.657775+00:00",
+    "threads": "failed_2026-07-18T14:56:16.428873+00:00",
     "twitter": "2026-07-17T19:37:37.849821+00:00"
   },
   "how-to-use-the-cumulative-volume-index-to-track-long-term-trends": {
@@ -638,7 +638,7 @@
   },
   "currency-pair-correlation-indicator-and-its-application-in-cryptocurrency": {
     "twitter": "2026-07-18T00:12:59.103000+00:00",
-    "threads": "failed_2026-07-18T13:55:20.398248+00:00",
+    "threads": "failed_2026-07-18T14:56:09.485728+00:00",
     "bluesky": "2026-07-18T11:52:54.430371+00:00"
   },
   "market-balance-volume-indicator": {
@@ -657,19 +657,19 @@
     "threads": "failed_2026-07-18T03:30:49.606939+00:00"
   },
   "chande-momentum-oscillator-cmo-vs-rsi-a-signal-comparison": {
-    "threads": "failed_2026-07-18T13:55:18.737241+00:00",
+    "threads": "failed_2026-07-18T14:56:07.833444+00:00",
     "twitter": "2026-07-18T11:52:48.654038+00:00",
     "bluesky": "2026-07-18T11:52:50.656470+00:00"
   },
   "exponential-ribbon-ema-ribbon-indicator-on-a-5-minute-chart": {
-    "threads": "failed_2026-07-18T13:55:25.798618+00:00",
+    "threads": "failed_2026-07-18T14:56:14.785896+00:00",
     "bluesky": "2026-07-18T11:52:59.944110+00:00"
   },
   "relative-strength-rs-indicator-for-selecting-altcoins-against-btc": {
     "threads": "failed_2026-07-18T06:18:08.056898+00:00"
   },
   "absolute-trend-strength-indicator": {
-    "threads": "failed_2026-07-18T13:55:13.156767+00:00",
+    "threads": "failed_2026-07-18T14:56:02.033298+00:00",
     "twitter": "2026-07-18T11:52:40.372059+00:00",
     "bluesky": "2026-07-18T11:52:42.756926+00:00"
   },
@@ -687,16 +687,19 @@
     "threads": "failed_2026-07-18T10:26:49.118225+00:00"
   },
   "high-low-activator-indicator-for-stops": {
-    "threads": "failed_2026-07-18T13:55:29.424348+00:00",
+    "threads": "failed_2026-07-18T14:56:18.071184+00:00",
     "bluesky": "2026-07-18T11:53:05.573024+00:00"
   },
   "triangular-moving-average-trima-indicator-in-noise-filtering": {
     "threads": "failed_2026-07-18T12:13:50.087154+00:00"
   },
   "donchian-channel-with-atr-filter-indicator": {
-    "threads": "failed_2026-07-18T13:55:24.156167+00:00"
+    "threads": "failed_2026-07-18T14:56:12.787022+00:00"
   },
   "bollinger-bands-based-on-median-indicator-instead-of-moving-average": {
-    "threads": "failed_2026-07-18T13:55:16.476003+00:00"
+    "threads": "failed_2026-07-18T14:56:05.767615+00:00"
+  },
+  "three-strike-pattern-in-candlestick-analysis": {
+    "threads": "failed_2026-07-18T14:25:58.788563+00:00"
   }
 }
