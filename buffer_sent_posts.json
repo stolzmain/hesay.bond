@@ -578,11 +578,11 @@
   "belt-hold-pattern-in-cryptocurrency-candlestick-analysis": {
     "twitter": "2026-07-17T11:32:26.142715+00:00",
     "bluesky": "2026-07-17T11:32:28.306527+00:00",
-    "threads": "failed_2026-07-19T00:04:37.425999+00:00"
+    "threads": "failed_2026-07-19T01:05:25.816539+00:00"
   },
   "dead-cat-bounce-pattern-how-not-to-buy-a-false-bottom-bounce": {
     "bluesky": "2026-07-17T11:32:32.102398+00:00",
-    "threads": "failed_2026-07-19T00:04:47.420456+00:00",
+    "threads": "failed_2026-07-19T01:05:36.828383+00:00",
     "twitter": "2026-07-17T19:37:34.341053+00:00"
   },
   "hidden-order-block-concept-based-on-candle-wicks": {
@@ -638,7 +638,7 @@
   },
   "currency-pair-correlation-indicator-and-its-application-in-cryptocurrency": {
     "twitter": "2026-07-18T00:12:59.103000+00:00",
-    "threads": "failed_2026-07-19T00:04:45.776134+00:00",
+    "threads": "failed_2026-07-19T01:05:35.173487+00:00",
     "bluesky": "2026-07-18T11:52:54.430371+00:00"
   },
   "market-balance-volume-indicator": {
@@ -657,7 +657,7 @@
     "threads": "failed_2026-07-18T03:30:49.606939+00:00"
   },
   "chande-momentum-oscillator-cmo-vs-rsi-a-signal-comparison": {
-    "threads": "failed_2026-07-19T00:04:42.346736+00:00",
+    "threads": "failed_2026-07-19T01:05:31.901547+00:00",
     "twitter": "2026-07-18T11:52:48.654038+00:00",
     "bluesky": "2026-07-18T11:52:50.656470+00:00"
   },
@@ -669,7 +669,7 @@
     "threads": "failed_2026-07-18T06:18:08.056898+00:00"
   },
   "absolute-trend-strength-indicator": {
-    "threads": "failed_2026-07-19T00:04:35.299622+00:00",
+    "threads": "failed_2026-07-19T01:05:24.029208+00:00",
     "twitter": "2026-07-18T11:52:40.372059+00:00",
     "bluesky": "2026-07-18T11:52:42.756926+00:00"
   },
@@ -694,11 +694,11 @@
     "threads": "failed_2026-07-18T12:13:50.087154+00:00"
   },
   "donchian-channel-with-atr-filter-indicator": {
-    "threads": "failed_2026-07-19T00:04:50.686752+00:00",
+    "threads": "failed_2026-07-19T01:05:40.102286+00:00",
     "twitter": "2026-07-18T22:03:10.768064+00:00"
   },
   "bollinger-bands-based-on-median-indicator-instead-of-moving-average": {
-    "threads": "failed_2026-07-19T00:04:39.082317+00:00",
+    "threads": "failed_2026-07-19T01:05:27.808959+00:00",
     "twitter": "2026-07-18T20:01:13.868621+00:00"
   },
   "three-strike-pattern-in-candlestick-analysis": {
@@ -708,7 +708,7 @@
     "threads": "failed_2026-07-18T15:11:47.512419+00:00"
   },
   "broadening-wedge-pattern-in-crypto-trading": {
-    "threads": "failed_2026-07-19T00:04:40.712087+00:00",
+    "threads": "failed_2026-07-19T01:05:30.254829+00:00",
     "twitter": "2026-07-18T20:01:17.330893+00:00"
   },
   "the-dragon-pattern-in-harmonic-analysis": {
@@ -725,11 +725,11 @@
     "twitter": "2026-07-18T22:03:14.408873+00:00"
   },
   "diamond-top-pattern-reversal-after-growth": {
-    "threads": "failed_2026-07-19T00:04:49.053263+00:00",
+    "threads": "failed_2026-07-19T01:05:38.466155+00:00",
     "twitter": "2026-07-18T21:02:18.663379+00:00"
   },
   "cup-without-handle-pattern-in-a-falling-market": {
-    "threads": "failed_2026-07-19T00:04:44.133479+00:00",
+    "threads": "failed_2026-07-19T01:05:33.532153+00:00",
     "twitter": "2026-07-18T21:02:11.154568+00:00"
   },
   "triple-topbottom-pattern-with-volume-analysis": {
@@ -740,5 +740,9 @@
   },
   "umbrella-pattern-in-the-context-of-supportresistance": {
     "threads": "failed_2026-07-18T23:19:32.084402+00:00"
+  },
+  "three-white-soldiers-candlestick-pattern-with-volume-filter": {
+    "twitter": "2026-07-19T00:20:15.730394+00:00",
+    "threads": "failed_2026-07-19T00:20:20.716749+00:00"
   }
 }
