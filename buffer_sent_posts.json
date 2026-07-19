@@ -578,7 +578,7 @@
   "belt-hold-pattern-in-cryptocurrency-candlestick-analysis": {
     "twitter": "2026-07-17T11:32:26.142715+00:00",
     "bluesky": "2026-07-17T11:32:28.306527+00:00",
-    "threads": "failed_2026-07-19T15:19:48.454490+00:00"
+    "threads": "failed_2026-07-19T16:20:36.450235+00:00"
   },
   "dead-cat-bounce-pattern-how-not-to-buy-a-false-bottom-bounce": {
     "bluesky": "2026-07-17T11:32:32.102398+00:00",
@@ -657,7 +657,7 @@
     "threads": "failed_2026-07-18T03:30:49.606939+00:00"
   },
   "chande-momentum-oscillator-cmo-vs-rsi-a-signal-comparison": {
-    "threads": "failed_2026-07-19T15:20:00.295257+00:00",
+    "threads": "failed_2026-07-19T16:20:48.614247+00:00",
     "twitter": "2026-07-18T11:52:48.654038+00:00",
     "bluesky": "2026-07-18T11:52:50.656470+00:00"
   },
@@ -669,7 +669,7 @@
     "threads": "failed_2026-07-18T06:18:08.056898+00:00"
   },
   "absolute-trend-strength-indicator": {
-    "threads": "failed_2026-07-19T15:19:45.134346+00:00",
+    "threads": "failed_2026-07-19T16:20:32.704215+00:00",
     "twitter": "2026-07-18T11:52:40.372059+00:00",
     "bluesky": "2026-07-18T11:52:42.756926+00:00"
   },
@@ -699,7 +699,7 @@
     "bluesky": "2026-07-19T12:17:01.446523+00:00"
   },
   "bollinger-bands-based-on-median-indicator-instead-of-moving-average": {
-    "threads": "failed_2026-07-19T15:19:51.806121+00:00",
+    "threads": "failed_2026-07-19T16:20:39.748486+00:00",
     "twitter": "2026-07-18T20:01:13.868621+00:00",
     "bluesky": "2026-07-19T12:16:37.658966+00:00"
   },
@@ -710,7 +710,7 @@
     "threads": "failed_2026-07-18T15:11:47.512419+00:00"
   },
   "broadening-wedge-pattern-in-crypto-trading": {
-    "threads": "failed_2026-07-19T15:19:55.139572+00:00",
+    "threads": "failed_2026-07-19T16:20:43.100128+00:00",
     "twitter": "2026-07-18T20:01:17.330893+00:00",
     "bluesky": "2026-07-19T12:16:41.471302+00:00"
   },
@@ -757,7 +757,7 @@
     "threads": "failed_2026-07-19T01:51:39.408966+00:00"
   },
   "belt-hold-pattern-on-daily-charts": {
-    "threads": "failed_2026-07-19T15:19:50.121891+00:00",
+    "threads": "failed_2026-07-19T16:20:38.093745+00:00",
     "twitter": "2026-07-19T12:16:32.192241+00:00",
     "bluesky": "2026-07-19T12:16:34.026612+00:00"
   },
@@ -772,11 +772,11 @@
     "threads": "failed_2026-07-19T05:09:36.606692+00:00"
   },
   "bullbear-trap-pattern-with-volume-confirmation": {
-    "threads": "failed_2026-07-19T15:19:58.626658+00:00",
+    "threads": "failed_2026-07-19T16:20:46.557301+00:00",
     "bluesky": "2026-07-19T12:16:48.437315+00:00"
   },
   "basket-handle-pattern-on-point-and-figure-charts": {
-    "threads": "failed_2026-07-19T15:19:46.801334+00:00",
+    "threads": "failed_2026-07-19T16:20:34.777290+00:00",
     "twitter": "2026-07-19T12:16:24.379301+00:00",
     "bluesky": "2026-07-19T12:16:26.606189+00:00"
   },
@@ -790,7 +790,7 @@
     "threads": "failed_2026-07-19T08:28:24.980368+00:00"
   },
   "bubble-burst-pattern-signs-on-the-chart": {
-    "threads": "failed_2026-07-19T15:19:56.946649+00:00",
+    "threads": "failed_2026-07-19T16:20:44.766856+00:00",
     "bluesky": "2026-07-19T12:16:44.968911+00:00"
   },
   "wyckoffs-absorption-of-supply-concept": {
@@ -807,12 +807,15 @@
     "threads": "failed_2026-07-19T12:37:30.232291+00:00"
   },
   "break-of-structure-bos-concept-using-btc-as-an-example": {
-    "threads": "failed_2026-07-19T15:19:53.464808+00:00"
+    "threads": "failed_2026-07-19T16:20:41.429843+00:00"
   },
   "the-flip-zone-concept-how-resistance-becomes-support": {
     "threads": "failed_2026-07-19T14:18:51.676172+00:00"
   },
   "the-shadow-order-blocks-concept-in-crypto-trading": {
     "threads": "failed_2026-07-19T15:19:41.653068+00:00"
+  },
+  "institutional-breakout-concept-with-high-volume": {
+    "threads": "failed_2026-07-19T15:50:29.470102+00:00"
   }
 }
