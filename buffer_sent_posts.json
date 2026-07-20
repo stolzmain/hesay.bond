@@ -936,5 +936,8 @@
   },
   "trade-only-during-high-volatility-strategy-volatility-breakout": {
     "threads": "failed_2026-07-20T16:55:34.639887+00:00"
+  },
+  "combined-signal-rsi-macd-volume-strategy": {
+    "threads": "failed_2026-07-20T17:51:23.391344+00:00"
   }
 }
