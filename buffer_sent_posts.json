@@ -921,5 +921,8 @@
   },
   "trading-from-fibonacci-levels-with-a-macd-filter-strategy": {
     "threads": "failed_2026-07-20T13:11:43.709881+00:00"
+  },
+  "imbalance-rebalance-trading-strategy": {
+    "threads": "failed_2026-07-20T13:52:32.784926+00:00"
   }
 }
