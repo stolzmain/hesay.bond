@@ -6,7 +6,7 @@ tags = ["Trading", "CryptoAnalysis", "TechnicalAnalysis"]
 image = "/images/posts/trading-strategy-using-japanese-candlesticks-evening-star-and-morning-star-with-volume-filter.png"
 +++
 
-## Trading Strategy: Japanese Candlestick Patterns - Morning and Evening Star with Volume Filter
+Trading Strategy: Japanese Candlestick Patterns - Morning and Evening Star with Volume Filter
 
 ## The Nature of Reversal Patterns
 Japanese candlesticks are among the most informative tools in technical analysis, allowing traders to read the psycholog
