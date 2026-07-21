@@ -578,7 +578,7 @@
   "belt-hold-pattern-in-cryptocurrency-candlestick-analysis": {
     "twitter": "2026-07-17T11:32:26.142715+00:00",
     "bluesky": "2026-07-17T11:32:28.306527+00:00",
-    "threads": "failed_2026-07-20T22:51:00.203855+00:00"
+    "threads": "failed_2026-07-20T23:51:50.854324+00:00"
   },
   "dead-cat-bounce-pattern-how-not-to-buy-a-false-bottom-bounce": {
     "bluesky": "2026-07-17T11:32:32.102398+00:00",
@@ -669,7 +669,7 @@
     "threads": "failed_2026-07-18T06:18:08.056898+00:00"
   },
   "absolute-trend-strength-indicator": {
-    "threads": "failed_2026-07-20T22:50:56.547356+00:00",
+    "threads": "failed_2026-07-20T23:51:46.611454+00:00",
     "twitter": "2026-07-18T11:52:40.372059+00:00",
     "bluesky": "2026-07-18T11:52:42.756926+00:00"
   },
@@ -699,7 +699,7 @@
     "bluesky": "2026-07-19T12:17:01.446523+00:00"
   },
   "bollinger-bands-based-on-median-indicator-instead-of-moving-average": {
-    "threads": "failed_2026-07-20T22:51:03.901578+00:00",
+    "threads": "failed_2026-07-20T23:51:54.299433+00:00",
     "twitter": "2026-07-18T20:01:13.868621+00:00",
     "bluesky": "2026-07-19T12:16:37.658966+00:00"
   },
@@ -710,7 +710,7 @@
     "threads": "failed_2026-07-18T15:11:47.512419+00:00"
   },
   "broadening-wedge-pattern-in-crypto-trading": {
-    "threads": "failed_2026-07-20T22:51:09.153024+00:00",
+    "threads": "failed_2026-07-20T23:51:59.698786+00:00",
     "twitter": "2026-07-18T20:01:17.330893+00:00",
     "bluesky": "2026-07-19T12:16:41.471302+00:00"
   },
@@ -758,7 +758,7 @@
     "threads": "failed_2026-07-19T01:51:39.408966+00:00"
   },
   "belt-hold-pattern-on-daily-charts": {
-    "threads": "failed_2026-07-20T22:51:02.260348+00:00",
+    "threads": "failed_2026-07-20T23:51:52.637736+00:00",
     "twitter": "2026-07-19T12:16:32.192241+00:00",
     "bluesky": "2026-07-19T12:16:34.026612+00:00"
   },
@@ -773,12 +773,12 @@
     "threads": "failed_2026-07-19T05:09:36.606692+00:00"
   },
   "bullbear-trap-pattern-with-volume-confirmation": {
-    "threads": "failed_2026-07-20T22:51:12.544726+00:00",
+    "threads": "failed_2026-07-20T23:52:03.019379+00:00",
     "bluesky": "2026-07-19T12:16:48.437315+00:00",
     "twitter": "2026-07-19T21:25:57.050408+00:00"
   },
   "basket-handle-pattern-on-point-and-figure-charts": {
-    "threads": "failed_2026-07-20T22:50:58.546371+00:00",
+    "threads": "failed_2026-07-20T23:51:48.830124+00:00",
     "twitter": "2026-07-19T12:16:24.379301+00:00",
     "bluesky": "2026-07-19T12:16:26.606189+00:00"
   },
@@ -792,7 +792,7 @@
     "threads": "failed_2026-07-19T08:28:24.980368+00:00"
   },
   "bubble-burst-pattern-signs-on-the-chart": {
-    "threads": "failed_2026-07-20T22:51:10.808504+00:00",
+    "threads": "failed_2026-07-20T23:52:01.345490+00:00",
     "bluesky": "2026-07-19T12:16:44.968911+00:00",
     "twitter": "2026-07-19T20:24:34.018156+00:00"
   },
@@ -811,7 +811,7 @@
     "threads": "failed_2026-07-19T12:37:30.232291+00:00"
   },
   "break-of-structure-bos-concept-using-btc-as-an-example": {
-    "threads": "failed_2026-07-20T22:51:05.567524+00:00",
+    "threads": "failed_2026-07-20T23:51:56.026626+00:00",
     "twitter": "2026-07-19T20:24:28.498043+00:00",
     "bluesky": "2026-07-20T12:40:46.055921+00:00"
   },
@@ -866,7 +866,7 @@
     "threads": "failed_2026-07-20T00:49:31.468147+00:00"
   },
   "breaker-block-concept-examples": {
-    "threads": "failed_2026-07-20T22:51:07.265386+00:00",
+    "threads": "failed_2026-07-20T23:51:58.051793+00:00",
     "twitter": "2026-07-20T12:40:49.637077+00:00",
     "bluesky": "2026-07-20T12:40:51.536932+00:00"
   },
@@ -963,5 +963,8 @@
   "pyramiding-strategy-for-trend-movements": {
     "twitter": "2026-07-20T22:45:48.644722+00:00",
     "threads": "failed_2026-07-20T22:45:53.314608+00:00"
+  },
+  "candlestick-pattern-entry-and-atr-trailing-stop-exit-strategy": {
+    "threads": "failed_2026-07-20T23:46:43.280576+00:00"
   }
 }
