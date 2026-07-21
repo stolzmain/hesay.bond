@@ -1049,5 +1049,8 @@
   },
   "optimal-riskreward-ratio-for-different-trading-styles": {
     "threads": "failed_2026-07-21T17:34:46.812022+00:00"
+  },
+  "futures-hedging-strategy-for-a-spot-portfolio": {
+    "threads": "failed_2026-07-21T18:20:35.905867+00:00"
   }
 }
