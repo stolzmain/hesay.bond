@@ -995,5 +995,8 @@
   },
   "portfolio-hedging-strategy-with-futures-and-options": {
     "threads": "failed_2026-07-21T06:23:47.626054+00:00"
+  },
+  "portfolio-rebalancing-trading-strategy": {
+    "threads": "failed_2026-07-21T07:09:36.070113+00:00"
   }
 }
