@@ -578,7 +578,7 @@
   "belt-hold-pattern-in-cryptocurrency-candlestick-analysis": {
     "twitter": "2026-07-17T11:32:26.142715+00:00",
     "bluesky": "2026-07-17T11:32:28.306527+00:00",
-    "threads": "failed_2026-07-21T19:11:15.068909+00:00"
+    "threads": "failed_2026-07-27T09:07:38.952343+00:00"
   },
   "dead-cat-bounce-pattern-how-not-to-buy-a-false-bottom-bounce": {
     "bluesky": "2026-07-17T11:32:32.102398+00:00",
@@ -663,13 +663,14 @@
   },
   "exponential-ribbon-ema-ribbon-indicator-on-a-5-minute-chart": {
     "threads": "failed_2026-07-18T19:00:38.347933+00:00",
-    "bluesky": "2026-07-18T11:52:59.944110+00:00"
+    "bluesky": "2026-07-18T11:52:59.944110+00:00",
+    "twitter": "2026-07-27T08:07:04.909140+00:00"
   },
   "relative-strength-rs-indicator-for-selecting-altcoins-against-btc": {
     "threads": "failed_2026-07-18T06:18:08.056898+00:00"
   },
   "absolute-trend-strength-indicator": {
-    "threads": "failed_2026-07-21T19:11:09.701995+00:00",
+    "threads": "failed_2026-07-27T09:07:30.049821+00:00",
     "twitter": "2026-07-18T11:52:40.372059+00:00",
     "bluesky": "2026-07-18T11:52:42.756926+00:00"
   },
@@ -699,7 +700,7 @@
     "bluesky": "2026-07-19T12:17:01.446523+00:00"
   },
   "bollinger-bands-based-on-median-indicator-instead-of-moving-average": {
-    "threads": "failed_2026-07-21T19:11:18.381010+00:00",
+    "threads": "failed_2026-07-27T09:07:42.289751+00:00",
     "twitter": "2026-07-18T20:01:13.868621+00:00",
     "bluesky": "2026-07-19T12:16:37.658966+00:00"
   },
@@ -710,7 +711,7 @@
     "threads": "failed_2026-07-18T15:11:47.512419+00:00"
   },
   "broadening-wedge-pattern-in-crypto-trading": {
-    "threads": "failed_2026-07-21T19:11:25.578236+00:00",
+    "threads": "failed_2026-07-27T09:07:48.991447+00:00",
     "twitter": "2026-07-18T20:01:17.330893+00:00",
     "bluesky": "2026-07-19T12:16:41.471302+00:00"
   },
@@ -721,7 +722,9 @@
     "threads": "failed_2026-07-18T17:28:55.066984+00:00"
   },
   "hanging-man-candlestick-pattern-and-its-confirmations": {
-    "threads": "failed_2026-07-18T18:04:47.446612+00:00"
+    "threads": "failed_2026-07-18T18:04:47.446612+00:00",
+    "twitter": "2026-07-27T08:07:14.356625+00:00",
+    "bluesky": "2026-07-27T08:07:16.205971+00:00"
   },
   "double-bottomtop-pattern-with-rsi-divergence": {
     "threads": "failed_2026-07-18T20:01:29.119005+00:00",
@@ -758,7 +761,7 @@
     "threads": "failed_2026-07-19T01:51:39.408966+00:00"
   },
   "belt-hold-pattern-on-daily-charts": {
-    "threads": "failed_2026-07-21T19:11:16.733043+00:00",
+    "threads": "failed_2026-07-27T09:07:40.621405+00:00",
     "twitter": "2026-07-19T12:16:32.192241+00:00",
     "bluesky": "2026-07-19T12:16:34.026612+00:00"
   },
@@ -778,7 +781,7 @@
     "twitter": "2026-07-19T21:25:57.050408+00:00"
   },
   "basket-handle-pattern-on-point-and-figure-charts": {
-    "threads": "failed_2026-07-21T19:11:13.036781+00:00",
+    "threads": "failed_2026-07-27T09:07:37.237981+00:00",
     "twitter": "2026-07-19T12:16:24.379301+00:00",
     "bluesky": "2026-07-19T12:16:26.606189+00:00"
   },
@@ -786,7 +789,8 @@
     "threads": "failed_2026-07-19T07:06:48.524179+00:00"
   },
   "hook-pattern-by-the-wyckoff-method": {
-    "threads": "failed_2026-07-19T07:42:37.124126+00:00"
+    "threads": "failed_2026-07-19T07:42:37.124126+00:00",
+    "bluesky": "2026-07-27T08:07:23.562863+00:00"
   },
   "price-squeeze-pattern-before-news-release": {
     "threads": "failed_2026-07-19T08:28:24.980368+00:00"
@@ -811,7 +815,7 @@
     "threads": "failed_2026-07-19T12:37:30.232291+00:00"
   },
   "break-of-structure-bos-concept-using-btc-as-an-example": {
-    "threads": "failed_2026-07-21T19:11:20.035011+00:00",
+    "threads": "failed_2026-07-27T09:07:43.954841+00:00",
     "twitter": "2026-07-19T20:24:28.498043+00:00",
     "bluesky": "2026-07-20T12:40:46.055921+00:00"
   },
@@ -822,7 +826,8 @@
     "threads": "failed_2026-07-19T15:19:41.653068+00:00"
   },
   "institutional-breakout-concept-with-high-volume": {
-    "threads": "failed_2026-07-19T15:50:29.470102+00:00"
+    "threads": "failed_2026-07-19T15:50:29.470102+00:00",
+    "bluesky": "2026-07-27T08:07:30.833366+00:00"
   },
   "rebalance-concept-within-the-smart-money-model": {
     "threads": "failed_2026-07-19T16:26:17.834735+00:00"
@@ -834,7 +839,9 @@
     "threads": "failed_2026-07-19T18:17:37.432899+00:00"
   },
   "hidden-weakness-concept-by-vsa": {
-    "threads": "failed_2026-07-19T19:03:27.065267+00:00"
+    "threads": "failed_2026-07-19T19:03:27.065267+00:00",
+    "twitter": "2026-07-27T08:07:18.059186+00:00",
+    "bluesky": "2026-07-27T08:07:19.861085+00:00"
   },
   "spring-trading-concept-with-confirmation": {
     "threads": "failed_2026-07-19T19:49:15.425654+00:00"
@@ -866,7 +873,7 @@
     "threads": "failed_2026-07-20T00:49:31.468147+00:00"
   },
   "breaker-block-concept-examples": {
-    "threads": "failed_2026-07-21T19:11:22.151739+00:00",
+    "threads": "failed_2026-07-27T09:07:45.626376+00:00",
     "twitter": "2026-07-20T12:40:49.637077+00:00",
     "bluesky": "2026-07-20T12:40:51.536932+00:00"
   },
@@ -894,7 +901,8 @@
   },
   "fade-strategy-on-overextended-rsi-assets": {
     "threads": "failed_2026-07-20T07:35:52.716312+00:00",
-    "bluesky": "2026-07-20T12:41:10.382393+00:00"
+    "bluesky": "2026-07-20T12:41:10.382393+00:00",
+    "twitter": "2026-07-27T08:07:06.708568+00:00"
   },
   "pairs-trading-strategy-btc-eth": {
     "threads": "failed_2026-07-20T08:21:40.786464+00:00"
@@ -926,14 +934,16 @@
     "threads": "failed_2026-07-20T13:11:43.709881+00:00"
   },
   "imbalance-rebalance-trading-strategy": {
-    "threads": "failed_2026-07-20T13:52:32.784926+00:00"
+    "threads": "failed_2026-07-20T13:52:32.784926+00:00",
+    "bluesky": "2026-07-27T08:07:29.022419+00:00"
   },
   "strategy-scalping-with-limit-orders-on-depth-of-market-density": {
     "threads": "failed_2026-07-20T14:43:05.110736+00:00"
   },
   "gap-trading-strategy-at-the-futures-market-open": {
     "threads": "failed_2026-07-20T15:18:55.467794+00:00",
-    "bluesky": "2026-07-21T13:05:27.136682+00:00"
+    "bluesky": "2026-07-21T13:05:27.136682+00:00",
+    "twitter": "2026-07-27T08:07:12.565754+00:00"
   },
   "weekly-reversal-strategy-based-on-candlestick-patterns": {
     "threads": "failed_2026-07-20T16:04:45.791816+00:00"
@@ -997,7 +1007,8 @@
   },
   "dca-strategy-with-dynamic-step-based-on-atr": {
     "threads": "failed_2026-07-21T05:47:58.838667+00:00",
-    "bluesky": "2026-07-21T13:05:22.997621+00:00"
+    "bluesky": "2026-07-21T13:05:22.997621+00:00",
+    "twitter": "2026-07-27T08:07:03.069079+00:00"
   },
   "portfolio-hedging-strategy-with-futures-and-options": {
     "threads": "failed_2026-07-21T06:23:47.626054+00:00"
@@ -1007,22 +1018,25 @@
   },
   "cycle-trading-strategy-using-the-schaff-trend-indicator": {
     "threads": "failed_2026-07-21T07:55:06.589650+00:00",
-    "bluesky": "2026-07-21T13:05:21.142606+00:00"
+    "bluesky": "2026-07-21T13:05:21.142606+00:00",
+    "twitter": "2026-07-27T08:07:01.251410+00:00"
   },
   "breakout-and-retest-trading-strategy-for-15-minute-timeframes": {
-    "threads": "failed_2026-07-21T19:11:23.906272+00:00",
+    "threads": "failed_2026-07-27T09:07:47.315681+00:00",
     "twitter": "2026-07-21T13:05:04.266779+00:00",
     "bluesky": "2026-07-21T13:05:06.220762+00:00"
   },
   "chaikin-money-flow-cmf-trading-strategy": {
     "threads": "failed_2026-07-21T09:46:44.170742+00:00",
-    "bluesky": "2026-07-21T13:05:17.422022+00:00"
+    "bluesky": "2026-07-21T13:05:17.422022+00:00",
+    "twitter": "2026-07-27T08:06:59.339575+00:00"
   },
   "weekly-open-trading-strategy": {
     "threads": "failed_2026-07-21T10:22:35.480907+00:00"
   },
   "high-volume-momentum-candles-trading-strategy": {
-    "threads": "failed_2026-07-21T11:08:26.592104+00:00"
+    "threads": "failed_2026-07-21T11:08:26.592104+00:00",
+    "bluesky": "2026-07-27T08:07:21.702028+00:00"
   },
   "intraday-trading-strategy-using-vwap-and-standard-deviations": {
     "threads": "failed_2026-07-21T11:53:57.171284+00:00"
@@ -1033,7 +1047,9 @@
     "threads": "failed_2026-07-21T12:24:48.124512+00:00"
   },
   "adam-and-eve-pattern-trading-strategy": {
-    "threads": "failed_2026-07-21T19:11:11.379830+00:00"
+    "threads": "failed_2026-07-27T09:07:35.576186+00:00",
+    "twitter": "2026-07-27T09:07:31.913027+00:00",
+    "bluesky": "2026-07-27T09:07:33.851319+00:00"
   },
   "trading-strategy-using-japanese-candlesticks-evening-star-and-morning-star-with-volume-filter": {
     "threads": "failed_2026-07-21T13:46:28.942271+00:00"
@@ -1042,7 +1058,8 @@
     "threads": "failed_2026-07-21T14:42:18.022813+00:00"
   },
   "how-to-calculate-position-size-using-volatility-atr-method": {
-    "threads": "failed_2026-07-21T15:38:07.492448+00:00"
+    "threads": "failed_2026-07-21T15:38:07.492448+00:00",
+    "bluesky": "2026-07-27T08:07:25.395372+00:00"
   },
   "the-1-risk-per-trade-rule-adaptation-for-the-cryptocurrency-market": {
     "threads": "failed_2026-07-21T16:33:57.997023+00:00"
@@ -1051,9 +1068,15 @@
     "threads": "failed_2026-07-21T17:34:46.812022+00:00"
   },
   "futures-hedging-strategy-for-a-spot-portfolio": {
-    "threads": "failed_2026-07-21T18:20:35.905867+00:00"
+    "threads": "failed_2026-07-21T18:20:35.905867+00:00",
+    "twitter": "2026-07-27T08:07:08.816040+00:00",
+    "bluesky": "2026-07-27T08:07:10.633176+00:00"
   },
   "using-a-trailing-stop-ladder": {
     "threads": "failed_2026-07-21T19:01:06.412696+00:00"
+  },
+  "how-to-set-stop-loss-based-on-market-structure-not-pips": {
+    "threads": "failed_2026-07-21T19:46:54.997243+00:00",
+    "bluesky": "2026-07-27T08:07:27.236292+00:00"
   }
 }
