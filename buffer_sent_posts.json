@@ -539,7 +539,8 @@
   },
   "internal-range-liquidity-vs-external-liquidity": {
     "bluesky": "2026-07-16T11:18:17.918449+00:00",
-    "threads": "2026-07-16T11:18:19.687862+00:00"
+    "threads": "2026-07-16T11:18:19.687862+00:00",
+    "twitter": "2026-07-28T08:12:14.188589+00:00"
   },
   "the-fair-value-concept-based-on-market-profile": {
     "bluesky": "2026-07-16T11:18:21.496544+00:00"
@@ -689,7 +690,8 @@
   },
   "high-low-activator-indicator-for-stops": {
     "threads": "failed_2026-07-18T14:56:18.071184+00:00",
-    "bluesky": "2026-07-18T11:53:05.573024+00:00"
+    "bluesky": "2026-07-18T11:53:05.573024+00:00",
+    "twitter": "2026-07-28T08:12:01.041292+00:00"
   },
   "triangular-moving-average-trima-indicator-in-noise-filtering": {
     "threads": "failed_2026-07-18T12:13:50.087154+00:00"
@@ -773,7 +775,8 @@
     "threads": "failed_2026-07-19T04:29:04.204114+00:00"
   },
   "moving-average-convergencedivergence-macd-pattern": {
-    "threads": "failed_2026-07-19T05:09:36.606692+00:00"
+    "threads": "failed_2026-07-19T05:09:36.606692+00:00",
+    "bluesky": "2026-07-28T08:12:25.763583+00:00"
   },
   "bullbear-trap-pattern-with-volume-confirmation": {
     "threads": "failed_2026-07-21T08:00:26.578946+00:00",
@@ -790,7 +793,8 @@
   },
   "hook-pattern-by-the-wyckoff-method": {
     "threads": "failed_2026-07-19T07:42:37.124126+00:00",
-    "bluesky": "2026-07-27T08:07:23.562863+00:00"
+    "bluesky": "2026-07-27T08:07:23.562863+00:00",
+    "twitter": "2026-07-28T08:12:04.827322+00:00"
   },
   "price-squeeze-pattern-before-news-release": {
     "threads": "failed_2026-07-19T08:28:24.980368+00:00"
@@ -812,7 +816,8 @@
     "threads": "failed_2026-07-19T11:51:19.201103+00:00"
   },
   "liquidity-abovebelow-structural-levels-concept-external-liquidity": {
-    "threads": "failed_2026-07-19T12:37:30.232291+00:00"
+    "threads": "failed_2026-07-19T12:37:30.232291+00:00",
+    "bluesky": "2026-07-28T08:12:19.838830+00:00"
   },
   "break-of-structure-bos-concept-using-btc-as-an-example": {
     "threads": "failed_2026-07-27T09:07:43.954841+00:00",
@@ -827,7 +832,8 @@
   },
   "institutional-breakout-concept-with-high-volume": {
     "threads": "failed_2026-07-19T15:50:29.470102+00:00",
-    "bluesky": "2026-07-27T08:07:30.833366+00:00"
+    "bluesky": "2026-07-27T08:07:30.833366+00:00",
+    "twitter": "2026-07-28T08:12:12.332493+00:00"
   },
   "rebalance-concept-within-the-smart-money-model": {
     "threads": "failed_2026-07-19T16:26:17.834735+00:00"
@@ -870,7 +876,8 @@
     "bluesky": "2026-07-20T12:41:00.099543+00:00"
   },
   "opening-imbalance-concept-in-futures": {
-    "threads": "failed_2026-07-20T00:49:31.468147+00:00"
+    "threads": "failed_2026-07-20T00:49:31.468147+00:00",
+    "bluesky": "2026-07-28T08:12:29.401491+00:00"
   },
   "breaker-block-concept-examples": {
     "threads": "failed_2026-07-27T09:07:45.626376+00:00",
@@ -891,13 +898,15 @@
     "threads": "failed_2026-07-20T04:32:57.817067+00:00"
   },
   "london-session-open-trading-strategy-for-btcusdt": {
-    "threads": "failed_2026-07-20T05:13:45.606710+00:00"
+    "threads": "failed_2026-07-20T05:13:45.606710+00:00",
+    "bluesky": "2026-07-28T08:12:21.773441+00:00"
   },
   "three-touch-entry-strategy-for-trend-lines": {
     "threads": "failed_2026-07-20T05:44:33.909339+00:00"
   },
   "news-trading-strategy-action-algorithm-for-the-crypto-market": {
-    "threads": "failed_2026-07-20T06:40:21.899699+00:00"
+    "threads": "failed_2026-07-20T06:40:21.899699+00:00",
+    "bluesky": "2026-07-28T08:12:27.588214+00:00"
   },
   "fade-strategy-on-overextended-rsi-assets": {
     "threads": "failed_2026-07-20T07:35:52.716312+00:00",
@@ -913,7 +922,9 @@
     "twitter": "2026-07-20T22:51:14.319205+00:00"
   },
   "intraday-reversal-strategy-using-pivot-points-and-atr": {
-    "threads": "failed_2026-07-20T10:13:21.999275+00:00"
+    "threads": "failed_2026-07-20T10:13:21.999275+00:00",
+    "bluesky": "2026-07-28T08:12:16.131414+00:00",
+    "twitter": "2026-07-28T09:12:32.399373+00:00"
   },
   "elliott-wave-trading-strategy-for-crypto": {
     "threads": "failed_2026-07-20T10:59:11.127460+00:00",
@@ -935,7 +946,8 @@
   },
   "imbalance-rebalance-trading-strategy": {
     "threads": "failed_2026-07-20T13:52:32.784926+00:00",
-    "bluesky": "2026-07-27T08:07:29.022419+00:00"
+    "bluesky": "2026-07-27T08:07:29.022419+00:00",
+    "twitter": "2026-07-28T08:12:10.445736+00:00"
   },
   "strategy-scalping-with-limit-orders-on-depth-of-market-density": {
     "threads": "failed_2026-07-20T14:43:05.110736+00:00"
@@ -1036,10 +1048,12 @@
   },
   "high-volume-momentum-candles-trading-strategy": {
     "threads": "failed_2026-07-21T11:08:26.592104+00:00",
-    "bluesky": "2026-07-27T08:07:21.702028+00:00"
+    "bluesky": "2026-07-27T08:07:21.702028+00:00",
+    "twitter": "2026-07-28T08:12:02.985565+00:00"
   },
   "intraday-trading-strategy-using-vwap-and-standard-deviations": {
-    "threads": "failed_2026-07-21T11:53:57.171284+00:00"
+    "threads": "failed_2026-07-21T11:53:57.171284+00:00",
+    "bluesky": "2026-07-28T08:12:17.982447+00:00"
   },
   "cluster-analysis-trading-strategy": {
     "twitter": "2026-07-21T12:24:42.141907+00:00",
@@ -1059,13 +1073,15 @@
   },
   "how-to-calculate-position-size-using-volatility-atr-method": {
     "threads": "failed_2026-07-21T15:38:07.492448+00:00",
-    "bluesky": "2026-07-27T08:07:25.395372+00:00"
+    "bluesky": "2026-07-27T08:07:25.395372+00:00",
+    "twitter": "2026-07-28T08:12:06.704667+00:00"
   },
   "the-1-risk-per-trade-rule-adaptation-for-the-cryptocurrency-market": {
     "threads": "failed_2026-07-21T16:33:57.997023+00:00"
   },
   "optimal-riskreward-ratio-for-different-trading-styles": {
-    "threads": "failed_2026-07-21T17:34:46.812022+00:00"
+    "threads": "failed_2026-07-21T17:34:46.812022+00:00",
+    "bluesky": "2026-07-28T09:12:34.166424+00:00"
   },
   "futures-hedging-strategy-for-a-spot-portfolio": {
     "threads": "failed_2026-07-21T18:20:35.905867+00:00",
@@ -1077,6 +1093,14 @@
   },
   "how-to-set-stop-loss-based-on-market-structure-not-pips": {
     "threads": "failed_2026-07-21T19:46:54.997243+00:00",
-    "bluesky": "2026-07-27T08:07:27.236292+00:00"
+    "bluesky": "2026-07-27T08:07:27.236292+00:00",
+    "twitter": "2026-07-28T08:12:08.572385+00:00"
+  },
+  "application-of-spent-volume-bracket-for-market-participant-classification": {
+    "twitter": "2026-07-28T08:11:57.029797+00:00",
+    "bluesky": "2026-07-28T08:11:58.961561+00:00"
+  },
+  "market-maker-sell-model": {
+    "bluesky": "2026-07-28T08:12:23.896972+00:00"
   }
 }
