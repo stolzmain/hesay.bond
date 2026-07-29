@@ -6,7 +6,7 @@ tags = ["tradingpsychology", "riskmanagement", "cryptoeducation"]
 image = "/images/posts/confidence-and-arrogance-where-is-the-line.png"
 +++
 
-## Confidence vs. Overconfidence: Where is the Line?
+Confidence vs. Overconfidence: Where is the Line?
 
 In the world of financial markets, the boundary between success and ruin often lies not in a trading algorithm, but in the prism of human perception. Professional trading requires a high degree of 
 
