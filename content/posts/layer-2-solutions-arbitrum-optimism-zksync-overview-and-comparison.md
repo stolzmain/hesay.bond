@@ -8,7 +8,7 @@ image = "/images/posts/layer-2-solutions-arbitrum-optimism-zksync-overview-and-c
 
 ## Layer 2 Solutions: Arbitrum, Optimism, zkSync – Overview and Comparison
 
-## Over the past few years, the Ethereum ecosystem has faced major challenges: high transaction costs and limited throughput. Layer 2 (L2) protocols have emerged as the solution
+Over the past few years, the Ethereum ecosystem has faced major challenges: high transaction costs and limited throughput. Layer 2 (L2) protocols have emerged as the solution
 
 ---
 
@@ -20,7 +20,7 @@ Fees are the silent killer of any trading strategy. To squeeze every drop of pro
 
 ## The Ethereum Scalability Tech Race
 
-## The primary goal of Layer 2 solutions is to aggregate thousands of transactions into a single batch and submit a compressed proof to the Ethereum mainnet. This reduces gas fees by orders of magnitude. However, the methods for verifying the validity of this data differ. Arbitrum and Optimism use Optimistic Rollups, assuming all transactions are valid by default until proven otherwise. Meanwhile, zkSync relies on ZK-Rollups (Zero-Knowledge), where every transaction is verified via complex zero-knowledge mathematical proofs before finalization.
+The primary goal of Layer 2 solutions is to aggregate thousands of transactions into a single batch and submit a compressed proof to the Ethereum mainnet. This reduces gas fees by orders of magnitude. However, the methods for verifying the validity of this data differ. Arbitrum and Optimism use Optimistic Rollups, assuming all transactions are valid by default until proven otherwise. Meanwhile, zkSync relies on ZK-Rollups (Zero-Knowledge), where every transaction is verified via complex zero-knowledge mathematical proofs before finalization.
 
 ## Dominance and the Arbitrum Ecosystem
 
@@ -36,4 +36,4 @@ zkSync Era represents the next generation of scalability. Unlike optimistic roll
 
 ## Comparative Analysis of Key Metrics
 
-## When comparing these three giants, an analyst must consider three factors: speed, cost, and user experience. Arbitrum wins in the category of liquidity and application variety. Optimism leads in network effect and infrastructure for new chains. zkSync takes the win for technological sophistication and security.
+When comparing these three giants, an analyst must consider three factors: speed, cost, and user experience. Arbitrum wins in the category of liquidity and application variety. Optimism leads in network effect and infrastructure for new chains. zkSync takes the win for technological sophistication and security.
