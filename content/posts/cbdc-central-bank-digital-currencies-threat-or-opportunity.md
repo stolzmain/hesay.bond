@@ -6,7 +6,7 @@ tags = ["CBDC", "DeFi", "Fintech"]
 image = "/images/posts/cbdc-central-bank-digital-currencies-threat-or-opportunity.png"
 +++
 
-## Global financial architecture is on the brink of its most significant transformation in decades. The concept of Central Bank Digital Currencies (CBDC) has moved from academic theory to active implementation. Today, this is not merely a technologica
+Global financial architecture is on the brink of its most significant transformation in decades. The concept of Central Bank Digital Currencies (CBDC) has moved from academic theory to active implementation. Today, this is not merely a technologica
 
 ---
 
