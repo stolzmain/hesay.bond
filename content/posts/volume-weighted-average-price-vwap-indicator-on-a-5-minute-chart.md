@@ -18,7 +18,7 @@ These ideas work best on an exchange like MEXC. Low fees help you capture profit
 
 g volume into its calculation. This creates a more objective picture of the fair value of an asset throughout a trading session. The calculation formula sums the product of price and volume for each timeframe and divides the result by the cumulative volume. Thus, high-liquidity periods exert much more influence on the indicator than low-liquidity movements. On a chart, VWAP is displayed as a dynamic line that starts at the market open and resets at the end of the day, making it strictly an intraday tool.
 
-## Why the 5-Minute Timeframe?
+Why the 5-Minute Timeframe?
 
 The choice of the 5-minute (M5) interval for working with VWAP is driven by the balance between market noise detail and the speed of reaction to changes. On a 1-minute chart, the indicator can be overly sensitive to local spikes, while on a 15-minute period, a trader risks missing the optimal entry point. The 5-minute timeframe allows for a clear view of the process of testing the VWAP level, the formation of candlestick patterns around it, and false breakouts. It is on the M5 that price interaction with the indicator as dynamic support or resistance is best observed. This makes it possible to timely identify a short-term trend shift or confirm the strength of the current momentum, relying on confirmed volume.
 
