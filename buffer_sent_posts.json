@@ -1349,7 +1349,8 @@
     "bluesky": "2026-08-03T10:19:36.814755+00:00"
   },
   "glassnode-studio-for-on-chain-analytics": {
-    "twitter": "2026-08-04T10:37:40.109275+00:00"
+    "twitter": "2026-08-04T10:37:40.109275+00:00",
+    "bluesky": "2026-08-05T10:54:28.802630+00:00"
   },
   "how-to-use-trading-range-to-set-targets": {
     "twitter": "failed_2026-08-03T10:50:03.531384+00:00",
@@ -1404,12 +1405,41 @@
     "bluesky": "2026-08-04T11:18:06.815639+00:00"
   },
   "currency-strength-indicator-for-crypto-pairs": {
-    "twitter": "failed_2026-08-04T15:40:51.352040+00:00"
+    "twitter": "2026-08-05T10:54:11.081055+00:00",
+    "bluesky": "2026-08-05T10:54:12.844363+00:00"
   },
   "open-interest-strategy-oi-and-price-divergence": {
     "twitter": "2026-08-04T15:51:18.082759+00:00"
   },
   "volume-profile-indicator-for-finding-significant-levels": {
     "twitter": "2026-08-04T16:41:50.266597+00:00"
+  },
+  "candlestick-pattern-recognition-automatic-indicator": {
+    "twitter": "2026-08-05T10:43:58.169629+00:00",
+    "bluesky": "2026-08-05T10:44:00.964264+00:00"
+  },
+  "commodity-channel-index-cci-indicator-with-a-moving-average": {
+    "twitter": "2026-08-05T10:54:07.463832+00:00",
+    "bluesky": "2026-08-05T10:54:09.302723+00:00"
+  },
+  "divergence-indicator-for-custom-order": {
+    "twitter": "2026-08-05T10:54:14.614238+00:00",
+    "bluesky": "2026-08-05T10:54:16.366715+00:00"
+  },
+  "double-thrust-breakout-pattern": {
+    "twitter": "2026-08-05T10:54:18.187260+00:00",
+    "bluesky": "2026-08-05T10:54:19.987812+00:00"
+  },
+  "dynamic-fibonacci-levels-indicator": {
+    "twitter": "2026-08-05T10:54:21.748807+00:00",
+    "bluesky": "2026-08-05T10:54:23.591062+00:00"
+  },
+  "fractal-dimension-indicator-for-assessing-market-randomness": {
+    "twitter": "2026-08-05T10:54:25.303093+00:00",
+    "bluesky": "2026-08-05T10:54:27.046482+00:00"
+  },
+  "high-volatility-breakout-pattern": {
+    "twitter": "2026-08-05T10:54:30.528808+00:00",
+    "bluesky": "2026-08-05T10:54:32.304363+00:00"
   }
 }
